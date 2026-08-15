@@ -42,31 +42,31 @@ switch (timer)
         i.time=6;
         break;
     
-    case 200+delay-30:
+    case 215:
         img=28;
         break;
                
-    case 200+delay:
+    case 245:
         img=25;
         break;
         
-    case 230+delay+delay2-15:
+    case 320:
         img=26;
         break;
-    case 230+delay+delay2-12:
+    case 323:
         img=27;
         break;
         
-    case 250+delay+delay2:
+    case 355:
         b.img=34;
         break;
-    case 254+delay+delay2:
+    case 359:
         b.img=35;
         break;
-    case 258+delay+delay2:
+    case 363:
         b.img=36;
         break;
-    case 330+delay+delay2:
+    case 435:
         objFrontEnd.next=1;
         break;
     }

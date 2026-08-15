@@ -9,7 +9,7 @@
   "canGenerateBitmap":true,
   "charset":0,
   "first":0,
-  "fontName":"LCDMono",
+  "fontName":"Arial",
   "glyphOperations":0,
   "glyphs":{},
   "hinting":0,
@@ -19,7 +19,7 @@
   "kerningPairs":[],
   "last":0,
   "lineHeight":0,
-  "maintainGms1Font":true,
+  "maintainGms1Font":false,
   "name":"menuFont",
   "parent":{
     "name":"menu",

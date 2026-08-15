@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":24.000000,
   "name":"ForBossenRepShort",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"ForBossenRepShort",
+  "soundFile":"ForBossenRepShort.wav",
   "type":0,
   "volume":0.93,
 }
