@@ -1,5 +1,5 @@
 var __b__;
-__b__ = action_if(function==0);
+__b__ = action_if(menu_function==0);
 if __b__
 {
 //music
@@ -11,7 +11,7 @@ for(a=0; a<items; a+=1)
 item[items]="back";
 items+=1;
 }
-__b__ = action_if(function==1);
+__b__ = action_if(menu_function==1);
 if __b__
 {
 //sound
@@ -23,7 +23,7 @@ for(a=0; a<items; a+=1)
 item[items]="back";
 items+=1;
 }
-__b__ = action_if(function==2);
+__b__ = action_if(menu_function==2);
 if __b__
 {
 a=0;  item[a]="Intro";

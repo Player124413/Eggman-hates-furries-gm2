@@ -29,7 +29,7 @@ i.deep=130;
 
 for(a=0; a<256; a+=64)
     {
-    i=instance_create(remRX-32,remRY-256+a,static);
+    i=instance_create(remRX-32,remRY-256+a,objSceneryStatic);
     i.sprite_index=sprDoomGirder;
     i.image_angle=270;
     i.depth=12;

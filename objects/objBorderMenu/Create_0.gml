@@ -1,6 +1,6 @@
 phase=0;
 soundloop(global.sndChainSewer);
-function = 1;
+menu_function = 1;
 choice = 0;
 able = 0;
 action_set_alarm(1, 0);

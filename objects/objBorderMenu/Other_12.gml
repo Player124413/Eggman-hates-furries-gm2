@@ -28,11 +28,11 @@ if(choice==items-1)
     able=0;
     phase=2;
     hspeed=20;
-    if (function==0)
+    if (menu_function==0)
         audio_play_sound(FoxFace, 10, true);
     soundloop(global.sndChainSewer);
     }
-else if (function==0)
+else if (menu_function==0)
     {
     if(choice==14 && !instance_exists(objScratch))
         instance_create(0,0,objScratch);
@@ -53,12 +53,12 @@ else if (function==0)
         soundloop(mySound);
         }
     }
-else if (function==1)
+else if (menu_function==1)
     {
     mySound=SS_LoadSound(working_directory+"/sound/"+item[choice]);
     soundplay(mySound);
     }
-else if (function==2)
+else if (menu_function==2)
     {
     audio_stop_sound(FoxFace);
     with all

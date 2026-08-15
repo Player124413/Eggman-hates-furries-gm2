@@ -86,7 +86,7 @@ if(lazor)
         gy=0;
         d=(gy-yy)/v;
         gx=xx+h*d;
-        with (static)
+        with (objSceneryStatic)
             {
             if(gx>x && (sprite_index==sprBridgeGirder || sprite_index==sprBridgeEnd || sprite_index==sprBridgeCut))
                 {

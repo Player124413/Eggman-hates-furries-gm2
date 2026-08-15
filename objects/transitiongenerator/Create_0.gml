@@ -33,7 +33,7 @@ i.deep=1280;
 i.x2=xx;
 i.y2=i.y;
 
-edge=instance_create(xx+96,yy,static);
+edge=instance_create(xx+96,yy,objSceneryStatic);
 edge.sprite_index=sprGrassEdge;
 edge.depth=-4;
 i=instance_create(xx,yy,transBlock);

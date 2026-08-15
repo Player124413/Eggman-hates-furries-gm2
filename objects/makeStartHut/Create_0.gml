@@ -84,7 +84,7 @@ ny-=8;
 i.x2=nx;
 i.y2=ny;
 i=instance_create(nx,ny,grassline);
-j=instance_create(nx+64,ny,static); j.sprite_index=sprBush1;
+j=instance_create(nx+64,ny,objSceneryStatic); j.sprite_index=sprBush1;
 j.depth=4;
 nx+=640;
 i.x2=nx;

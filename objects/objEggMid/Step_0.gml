@@ -53,7 +53,7 @@ if (timer>=120 && timer<120+40*7 && timer mod 40 == 0)
     with objDoomRack
         event_user(2);
     }
-    
+
 if (timer==430)
     {
     sonic.physics=0;
@@ -109,7 +109,7 @@ if (timer>=90)
                 y-=other.nyy;}
             }
         }
-    with (static) 
+    with (objSceneryStatic)
         {
         if (sprite_index==sprBridgeGirder)
             {
@@ -141,7 +141,7 @@ if (timer<=90)
     {
     objectfg.flashlight=1-timer/90;
     }
-    
+
 if (timer==180)
     {
     timer=0;

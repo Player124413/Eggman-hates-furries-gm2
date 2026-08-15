@@ -22,7 +22,7 @@ soundplay(global.sndType);
 scroll=0;
 }
 }
-__b__ = action_if(function==2);
+__b__ = action_if(menu_function==2);
 if __b__
 {
 event_user(3);

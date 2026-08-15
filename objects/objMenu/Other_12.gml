@@ -9,7 +9,7 @@ __b__ = action_if(choice==0);
 if __b__
 {
 i=instance_create(656,0,objBorderMenu);
-i.function=2;
+i.menu_function=2;
 able=0;
 }
 __b__ = action_if(choice==1);
@@ -40,14 +40,14 @@ __b__ = action_if(choice==3);
 if __b__
 {
 i=instance_create(656,0,objBorderMenu);
-i.function=0;
+i.menu_function=0;
 able=0;
 }
 __b__ = action_if(choice==4);
 if __b__
 {
 i=instance_create(656,0,objBorderMenu);
-i.function=1;
+i.menu_function=1;
 able=0;
 }
 __b__ = action_if(choice==5);

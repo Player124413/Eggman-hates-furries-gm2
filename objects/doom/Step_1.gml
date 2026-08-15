@@ -452,7 +452,7 @@ if (timer==0)
                     i.depth=3;
                     }
                 }
-            i=instance_create(nxx,nyy,static);
+            i=instance_create(nxx,nyy,objSceneryStatic);
             i.sprite_index=sprBridgeGirder;
             nxx+=64;
             }
@@ -462,7 +462,7 @@ if (timer==0)
         j=instance_create(nxx,nyy,line);
         for(a=0; a<12; a+=1)//SECOND
             {
-            i=instance_create(nxx,nyy,static);
+            i=instance_create(nxx,nyy,objSceneryStatic);
             i.x0=j.x;
             i.y0=j.y;
             i.dist=a*64;
@@ -488,7 +488,7 @@ if (timer==0)
                     }
                 }
             j=instance_create(nxx,nyy,line);
-            i=instance_create(nxx,nyy,static);
+            i=instance_create(nxx,nyy,objSceneryStatic);
             i.sprite_index=sprBridgeGirder;
             nxx+=64;
             j.x2=nxx;
@@ -498,7 +498,7 @@ if (timer==0)
         i=instance_create(nxx,nyy,line);
         i.x2=nxx;
         i.y2=nyy-32;
-        i=instance_create(nxx,nyy,static);
+        i=instance_create(nxx,nyy,objSceneryStatic);
         i.sprite_index=sprBridgeEnd;
         global.tempRingsAllowed=1;
         instance_create(nxx-32,nyy-16,objring);
@@ -530,7 +530,7 @@ if(x>myLine.x)
     lineDir+=lineDirsp*global.time;
     lineDirsp-=lengthdir_x(global.grav/global.meter*global.time,lineDir)/3.4;
         
-    with (static)
+    with (objSceneryStatic)
         {
         if(special)
             {
@@ -551,7 +551,7 @@ if(x>myLine.x)
         count=2;
         with myLine
             instance_destroy();
-        with (static)
+        with (objSceneryStatic)
             {if(special || x<view_xview)
                 instance_destroy();}
         with (rockline)
@@ -585,7 +585,7 @@ if (x>nxx-192 && hspeed>0)
         {if (other.x>=x-192)
             instance_destroy();
         }
-    with instance_nearest(x,y,static)
+    with instance_nearest(x,y,objSceneryStatic)
         {
         repeat(3)
             {i=instance_create(other.x+192,y,objspark);

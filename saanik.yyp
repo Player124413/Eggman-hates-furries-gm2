@@ -428,7 +428,7 @@
     {"id":{"name":"sonic","path":"objects/sonic/sonic.yy",},},
     {"id":{"name":"sparkables","path":"objects/sparkables/sparkables.yy",},},
     {"id":{"name":"stair","path":"objects/stair/stair.yy",},},
-    {"id":{"name":"static","path":"objects/static/static.yy",},},
+    {"id":{"name":"objSceneryStatic","path":"objects/objSceneryStatic/objSceneryStatic.yy",},},
     {"id":{"name":"supergenerator","path":"objects/supergenerator/supergenerator.yy",},},
     {"id":{"name":"tinyBlock","path":"objects/tinyBlock/tinyBlock.yy",},},
     {"id":{"name":"tornado","path":"objects/tornado/tornado.yy",},},

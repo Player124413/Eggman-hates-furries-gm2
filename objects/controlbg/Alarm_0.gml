@@ -787,13 +787,13 @@ with doom
             }
         if(a==6)
             {    
-            i=instance_create(nxx,nyy,static);
+            i=instance_create(nxx,nyy,objSceneryStatic);
             i.sprite_index=sprBridgeCut;
             }
         if(a>=6)
             {
             j=instance_create(nxx,nyy,line);
-            i=instance_create(nxx,nyy,static);
+            i=instance_create(nxx,nyy,objSceneryStatic);
             i.sprite_index=sprBridgeGirder;
             
             j.x2=nxx+64;
@@ -805,7 +805,7 @@ with doom
     i=instance_create(nxx,nyy,line);
     i.x2=nxx;
     i.y2=nyy-32;
-    i=instance_create(nxx,nyy,static);
+    i=instance_create(nxx,nyy,objSceneryStatic);
     i.sprite_index=sprBridgeEnd;
     global.tempRingsAllowed=1;
     instance_create(nxx-32,nyy-16,objring);

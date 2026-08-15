@@ -74,7 +74,7 @@ function __global_object_depths() {
 	global.__objectDepths[66] = -2; // doom
 	global.__objectDepths[67] = -3; // objFinalOuter
 	global.__objectDepths[68] = -6; // objEggMid
-	global.__objectDepths[69] = 0; // static
+	global.__objectDepths[69] = 0; // objSceneryStatic
 	global.__objectDepths[70] = 0; // objBridgeCut
 	global.__objectDepths[71] = 10; // objFinalRail
 	global.__objectDepths[72] = 4; // objDoomKnife
@@ -390,7 +390,7 @@ function __global_object_depths() {
 	global.__objectNames[66] = "doom";
 	global.__objectNames[67] = "objFinalOuter";
 	global.__objectNames[68] = "objEggMid";
-	global.__objectNames[69] = "static";
+	global.__objectNames[69] = "objSceneryStatic";
 	global.__objectNames[70] = "objBridgeCut";
 	global.__objectNames[71] = "objFinalRail";
 	global.__objectNames[72] = "objDoomKnife";
