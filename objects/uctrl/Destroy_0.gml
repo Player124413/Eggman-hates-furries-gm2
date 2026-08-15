@@ -4,3 +4,10 @@ soundvolume(global.sndQuake,1);
 soundstop(global.handle);
 SS_FreeSound(global.handle);
 
+if (variable_global_exists("bgDustBottomRuntime"))
+{
+    if (sprite_exists(global.bgDustBottomRuntime))
+        sprite_delete(global.bgDustBottomRuntime);
+    variable_global_remove("bgDustBottomRuntime");
+}
+

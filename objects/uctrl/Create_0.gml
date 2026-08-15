@@ -21,7 +21,7 @@ fxSpeedup=0;
 camLock=-1;
 nextCamLock=-1;
 
-background_set_alpha_from_background(bgDustBottom,bgDustAlpha);
+global.bgDustBottomRuntime = background_set_alpha_from_background(bgDustBottom, bgDustAlpha);
 
 global.handle=SS_LoadSound("SuperUltraViolet2.ogg");
 SS_LoopSound(global.handle);

@@ -63,7 +63,7 @@ surf=surface_create(w,h);
 surface_set_target(surf);
 
 draw_background(fgLand,0,0);
-draw_sprite_ext(sprPlaneShadow2,0,x,y-288,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+draw_sprite_ext(planeShadowSprite, 0, x, y - 288, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
 gpu_set_blendmode_ext(13,0);
 draw_background(fgLand,0,0)

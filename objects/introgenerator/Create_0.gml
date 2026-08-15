@@ -19,9 +19,10 @@ baseSurf=surface_create(320,960);
 textSurf=surface_create(320,480);
 txt="";
 
-//IN A SERIES OF A WORKAROUND BECAUSE SUBTRACT IS BEING AN ASSHOLE:
-upperGrad=bgWhite2;
-lowerGrad=bgWhite;
+// Runtime duplicates are created by presentation's Game Start event because
+// modern GameMaker does not allow modifying asset sprites directly.
+upperGrad = global.upperGradSprite;
+lowerGrad = global.lowerGradSprite;
 /*background_delete(bgGradient);//is done at presentation
 background_delete(bgGradient2);*/
 

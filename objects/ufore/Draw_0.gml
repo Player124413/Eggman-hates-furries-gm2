@@ -4,7 +4,7 @@ while (ax<__view_get( e__VW.XView, 0 )-192)
     ax+=192;
 while (ax<__view_get( e__VW.XView, 0 )+640)
     {
-    draw_background(bgDustBottom,ax,288);
+    draw_background(global.bgDustBottomRuntime, ax, 288);
     ax+=192;
     }
 if(instance_exists(objUltima) && rA>0)

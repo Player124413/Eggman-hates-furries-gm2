@@ -8,10 +8,10 @@ global.introProg=0;
 global.zeroRingMode=0;
 global.tempRingsAllowed=0;//ALWAYS 0 EXCEPT FOR A NANOSECOND
 
-upperGrad=bgWhite2;
-lowerGrad=bgWhite;
-background_set_alpha_from_background(upperGrad,bgGradient2);
-background_set_alpha_from_background(lowerGrad,bgGradient);
+global.upperGradSprite = background_set_alpha_from_background(bgWhite2, bgGradient2);
+global.lowerGradSprite = background_set_alpha_from_background(bgWhite, bgGradient);
+upperGrad = global.upperGradSprite;
+lowerGrad = global.lowerGradSprite;
 
 
 

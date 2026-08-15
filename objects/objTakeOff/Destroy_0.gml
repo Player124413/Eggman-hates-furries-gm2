@@ -1,5 +1,7 @@
 
 objectfg.darkness=0;
+if (sprite_exists(planeShadowSprite))
+    sprite_delete(planeShadowSprite);
 if surface_exists(surf)
     surface_free(surf);
 with objTakeOffSmoke
