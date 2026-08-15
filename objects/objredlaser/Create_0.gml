@@ -1,0 +1,10 @@
+speed=64;
+soundplay(global.sndRedLaser);
+image_xscale = 0.1;
+ux = 1;
+uy = 0;
+nx = 0;
+ny = -1;
+gnd = 0;
+radius = 8;
+frict = 0;

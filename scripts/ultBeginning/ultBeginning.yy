@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultBeginning",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultBeginning",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

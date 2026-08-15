@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"robotdie",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"robotdie",
+  "parent":{
+    "name":"ROBOT",
+    "path":"folders/Scripts/ROBOT.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

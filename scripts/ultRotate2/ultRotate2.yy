@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultRotate2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultRotate2",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

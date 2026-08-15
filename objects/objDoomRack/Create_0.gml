@@ -1,0 +1,14 @@
+rackAngle = 0;
+charge = 0;
+charging = 0;
+timer = 0;
+timerReset = 0;
+chargeSeconds = 45;
+second = 0;
+fourstage = 0;
+lazor = 0;
+lazortime = 0;
+spd = 1;
+lastlazor = 0;
+emeralds = 7;
+noMoreLazors = 0;

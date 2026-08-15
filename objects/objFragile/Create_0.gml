@@ -1,0 +1,12 @@
+sig = -1;
+image_single = floor(random(3));
+reps = 0;
+fragile = 1;
+timer = 0;
+i1=instance_create(x,y,reportingline);
+i1.x2=x+48;
+i1.y2=y;
+i1.pp=id;
+report2 = 0;
+oldreport2 = 0;
+report = 0;

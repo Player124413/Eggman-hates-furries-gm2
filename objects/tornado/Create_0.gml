@@ -1,0 +1,14 @@
+mytails = stornado;
+image_speed = 2;
+i1=instance_create(0,0,movingline);
+i1.on=0;
+i1.frict=1.5;
+i1.pp=id;
+phase = 0;
+gh = 224;
+report = 0;
+report2 = 0;
+subphs = 0;
+remX = 0;
+tailsBlink = 0;
+backTime = 0;

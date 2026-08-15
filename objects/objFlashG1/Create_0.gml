@@ -1,0 +1,12 @@
+soundplay(global.sndFomp);
+frict = 0.5;
+lastgnd = 0;
+phase = 0;
+timer = 0;
+radius = 4;
+image_speed = 0;
+ux = 1;
+uy = 0;
+nx = 0;
+ny = -1;
+gnd = 0;

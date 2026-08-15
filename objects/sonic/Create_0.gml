@@ -1,0 +1,34 @@
+physics = 1;
+ts = 0;
+radius = 16;
+mass = 50;
+frict = 0;
+jump = 9;
+acc = 0.25;
+airResist = 1;
+canSkid = 1;
+roll = 0;
+able = true;
+dash = 0;
+lastgnd = 0;
+standcount = 0;
+damaged=0;
+invulnerable=0;
+damagex=-1;
+damagey=-1;
+
+//Use only when gravity is WRONG
+specialStopCase=0;
+myfish = 0;
+lockMovement = 0;
+ux = 1;
+uy = 0;
+nx = 0;
+ny = -1;
+gnd = 0;
+nullh=0;
+nullv=0;
+render = 1;
+rings = 0;
+flyRight = 0;
+windSound=global.sndWind;

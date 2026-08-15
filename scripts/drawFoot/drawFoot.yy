@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"drawFoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"drawFoot",
+  "parent":{
+    "name":"dancing",
+    "path":"folders/Scripts/dancing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

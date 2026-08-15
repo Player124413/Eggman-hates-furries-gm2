@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"action_sprite_set",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"action_sprite_set",
+  "parent":{
+    "name":"action",
+    "path":"folders/Scripts/compatibility/action.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

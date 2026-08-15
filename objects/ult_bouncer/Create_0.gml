@@ -1,0 +1,9 @@
+image_angle = 45;
+radius = 9;
+amount = 14;
+image_single = 0;
+timer = 0;
+on = 1;
+stick = -1;
+lx=-1;
+ly=-1;

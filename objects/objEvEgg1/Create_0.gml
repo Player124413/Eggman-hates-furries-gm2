@@ -1,0 +1,13 @@
+blink = 0;
+image_speed = 0.1;
+camtimer = 0.33;
+xx=x+36;
+yy=y+14;
+dir=-60;
+phase = 0;
+sonic.physics = 1;
+sonic.able = 1;
+timer = 0;
+eightstage = 0;
+lazor = 0;
+width = 1;

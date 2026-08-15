@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"destroy_outside",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"destroy_outside",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

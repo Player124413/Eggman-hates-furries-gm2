@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"soundglobal_volume",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"soundglobal_volume",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

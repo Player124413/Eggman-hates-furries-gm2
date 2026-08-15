@@ -1,0 +1,12 @@
+if(a>0)
+    {i=instance_create(xx,yy,grassline);
+    i.x2=xx+a;
+    i.y2=yy+b;
+    xx=xx+a;
+    yy=yy+b;}
+else
+    {i=instance_create(xx+a,yy+b,grassline);
+    i.x2=xx;
+    i.y2=yy;
+    xx=xx+a;
+    yy=yy+b;}

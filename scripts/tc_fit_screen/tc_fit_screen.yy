@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"tc_fit_screen",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tc_fit_screen",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

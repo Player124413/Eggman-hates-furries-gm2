@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"drawHand",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"drawHand",
+  "parent":{
+    "name":"dancing",
+    "path":"folders/Scripts/dancing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,12 @@
+action_set_vspeed(0.5);
+soundplay(global.sndJump);
+jumping = 1;
+action_move_to(96, 250);
+z = -64;
+zspeed = 1.3;
+cnt = 0;
+phase = 0;
+timer = 0;
+image_xscale = 0.15;
+image_yscale = image_xscale;
+image_speed = 0;

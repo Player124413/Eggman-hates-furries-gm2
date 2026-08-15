@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"action_snap",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"action_snap",
+  "parent":{
+    "name":"action",
+    "path":"folders/Scripts/compatibility/action.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

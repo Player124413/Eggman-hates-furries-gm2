@@ -1,0 +1,13 @@
+image_speed = 0.25;
+timer = 15;
+soundplay(global.sndFomp);
+soundvolume(global.sndFomp,drill.vol);
+frict = 0.2;
+radius = 8;
+ux = 1;
+uy = 0;
+nx = 0;
+ny = -1;
+gnd = 0;
+nullh=0;
+nullv=0;

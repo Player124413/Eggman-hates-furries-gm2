@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"surfaceError",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"surfaceError",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

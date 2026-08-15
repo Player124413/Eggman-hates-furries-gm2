@@ -1,0 +1,14 @@
+soundplay(global.sndFomp);
+lastgnd = 0;
+phase = 0;
+timer = 0;
+radius = 4;
+explosive = 0;
+image_speed = 0;
+target = -1;
+frict = 0.15;
+ux = 1;
+uy = 0;
+nx = 0;
+ny = -1;
+gnd = 0;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"defineEmeralds",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"defineEmeralds",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

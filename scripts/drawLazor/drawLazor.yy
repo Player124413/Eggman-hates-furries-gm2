@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"drawLazor",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"drawLazor",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

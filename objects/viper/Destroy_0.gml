@@ -1,0 +1,1 @@
+soundstop(global.sndViper);

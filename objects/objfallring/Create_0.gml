@@ -1,0 +1,15 @@
+timer = 0;
+image_speed = 1/3;
+phspeed = 0;
+pvspeed = 0;
+maxtimer = 90+random(120);
+lastgnd = 0;
+frict = 0.2;
+radius = 8;
+ux = 1;
+uy = 0;
+nx = 0;
+ny = -1;
+gnd = 0;
+nullh=0;
+nullv=0;

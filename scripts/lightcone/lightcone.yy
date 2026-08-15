@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"lightcone",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"lightcone",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

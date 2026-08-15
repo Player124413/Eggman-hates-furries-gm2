@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"moveMap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"moveMap",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

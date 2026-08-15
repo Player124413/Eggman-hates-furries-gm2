@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"deleteSelf",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"deleteSelf",
+  "parent":{
+    "name":"drilling",
+    "path":"folders/Scripts/drilling.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

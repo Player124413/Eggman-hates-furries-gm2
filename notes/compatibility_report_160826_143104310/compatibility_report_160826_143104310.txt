@@ -1,0 +1,1232 @@
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\scripts\destroy_outside\destroy_outside.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\scripts\goToLast\goToLast.gml
+Converted builtin - line 10: background_color=make_color_rgb(12,0,17) -> __background_set_colour( make_color_rgb(12,0,17) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\scripts\in_clean\in_clean.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\scripts\lightcone\lightcone.gml
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 9: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\scripts\drawRain\drawRain.gml
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 17: view_yview -> __view_get( e__VW.YView, 0 )
+
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Font has no texture in GameMaker Studio 1 project, forced to regenerate
+Font texture has been regenerated - inconsistencies may occur
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objMenu\Create_0.gml
+Converted builtin - line 158: background_visible[a]=0 -> __background_set( e__BG.Visible, a, 0 )
+Converted builtin - line 162: background_foreground[a]=0 -> __background_set( e__BG.Foreground, a, 0 )
+Converted builtin - line 159: background_hspeed[a]=0 -> __background_set( e__BG.HSpeed, a, 0 )
+Converted builtin - line 160: background_vspeed[a]=0 -> __background_set( e__BG.VSpeed, a, 0 )
+Converted builtin - line 161: background_alpha[a]=1 -> __background_set( e__BG.Alpha, a, 1 )
+Converted builtin - line 151: background_color=c_black -> __background_set_colour( c_black )
+Converted builtin - line 1: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 2: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Create_0.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Create_0.gml - 3: Got '=' (=) expected 'id'
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Create_0.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Alarm_0.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Alarm_0.gml - 2: Got '==' (equal) expected '('
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Alarm_0.gml - 14: Got '==' (equal) expected '('
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Alarm_0.gml - 26: Got '==' (equal) expected '('
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Alarm_0.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_12.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_12.gml - 31: Got '==' (equal) expected '('
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_12.gml - 34: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_12.gml - 55: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_12.gml - 60: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_12.gml - 76: unexpected syntax error
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_12.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_11.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_11.gml - 25: Got '==' (equal) expected '('
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_11.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_10.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_10.gml - 25: Got '==' (equal) expected '('
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBorderMenu\Other_10.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objMenuCreds\Create_0.gml
+Converted builtin - line 4: background_color=c_blue -> __background_set_colour( c_blue )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\makestairs\Create_0.gml
+Converted builtin - line 19: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 20: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objStairTails\Destroy_0.gml
+Converted builtin - line 2: background_color=c_black -> __background_set_colour( c_black )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBGStairs\Step_0.gml
+Converted builtin - line 23: background_color=make_color_rgb(r,g,b) -> __background_set_colour( make_color_rgb(r,g,b) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\presentation\Create_0.gml
+Converted builtin - line 40: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 41: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml - 790: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml - 790: expected expression
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml - 792: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml - 796: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml - 796: expected expression
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml - 801: unexpected syntax error
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Alarm_0.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Step_0.gml
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\controlbg\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 40: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 41: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 42: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 52: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 52: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 55: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 59: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 59: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 62: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 71: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 74: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 81: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 82: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 83: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 87: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 12: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 15: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 18: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 41: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 42: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 53: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 53: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 56: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 60: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 60: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 63: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 72: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 78: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 78: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 88: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objectfg\Step_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objectfg\Draw_0.gml
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 16: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 51: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 51: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 60: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 60: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 70: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 75: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 75: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 79: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 79: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 83: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 83: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 84: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 84: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 88: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 88: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 89: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 89: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 90: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 90: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 94: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 94: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 95: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 95: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 96: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 96: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 98: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 11: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 39: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 39: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 51: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 51: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 60: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 60: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 67: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 70: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 75: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 75: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 79: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 79: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 83: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 83: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 84: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 84: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 88: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 88: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 89: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 89: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 90: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 90: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 94: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 94: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 95: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 95: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 96: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 96: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 98: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objRingCounter\Step_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objRingCounter\Draw_0.gml
+Converted builtin - line 85: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 91: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 93: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 102: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 103: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 115: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 85: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 91: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 93: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 102: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 103: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 115: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\robot\Step_0.gml
+Converted builtin - line 150: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 153: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 248: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 151: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 154: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 249: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 308: view_yview-=12800 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (12800) )
+Converted builtin - line 150: view_xview=(__view_get( e__VW.XView, 0 )*13+x-320)/14 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*13+x-320)/14 )
+Converted builtin - line 153: view_xview=(__view_get( e__VW.XView, 0 )*13+(x-320)/damaged)/(13+1/damaged) -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*13+(x-320)/damaged)/(13+1/damaged) )
+Converted builtin - line 248: view_xview=(__view_get( e__VW.XView, 0 )*(13)+(x-320)*min(1,timer/90))/(13+min(1,timer/90)) -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*(13)+(x-320)*min(1,timer/90))/(13+min(1,timer/90)) )
+Converted builtin - line 151: view_yview=(__view_get( e__VW.YView, 0 )*13+y-240)/14 -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*13+y-240)/14 )
+Converted builtin - line 154: view_yview=(__view_get( e__VW.YView, 0 )*13+(y-240)/damaged)/(13+1/damaged) -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*13+(y-240)/damaged)/(13+1/damaged) )
+Converted builtin - line 249: view_yview=(__view_get( e__VW.YView, 0 )*(13)+(y-240)*min(1,timer/90))/(13+min(1,timer/90)) -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*(13)+(y-240)*min(1,timer/90))/(13+min(1,timer/90)) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objcore1\Step_0.gml
+Converted builtin - line 74: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objcore2\Step_0.gml
+Converted builtin - line 16: view_yview+=8 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (8) )
+Converted builtin - line 18: view_yview-=8 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (8) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objtornado2\Step_0.gml
+Converted builtin - line 28: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 61: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 83: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 92: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 65: view_xview+=shaking/2 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (shaking/2) )
+Converted builtin - line 62: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 83: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 92: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 293: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 28: view_xview=__view_get( e__VW.XView, 0 ) mod 12800 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) mod 12800 )
+Converted builtin - line 61: view_xview=(__view_get( e__VW.XView, 0 )*3+x-320)/4 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320)/4 )
+Converted builtin - line 62: view_yview=(__view_get( e__VW.YView, 0 )*3+y-240)/4 -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+y-240)/4 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\chopper\Step_0.gml
+Converted builtin - line 139: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 140: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objElevator\Draw_0.gml
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objLava\Step_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objLava\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objLavaFader\Draw_0.gml
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBlobSpawner\Step_0.gml
+Converted builtin - line 15: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 15: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objCraft2\Step_0.gml
+Converted builtin - line 279: background_color=make_color_rgb(12,0,17) -> __background_set_colour( make_color_rgb(12,0,17) )
+Converted builtin - line 225: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 527: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 569: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 69: view_xview+=max(0,min(72,(90+timer)/2)) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (max(0,min(72,(90+timer)/2))) )
+Converted builtin - line 163: view_xview+=max(0,min(72,72-(timer)/2)) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (max(0,min(72,72-(timer)/2))) )
+Converted builtin - line 217: view_xview+=max(0,min(72,72-(timer)/2)) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (max(0,min(72,72-(timer)/2))) )
+Converted builtin - line 177: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objCraft2\Other_12.gml
+Converted builtin - line 9: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 9: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 14: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 14: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objCraft2\Other_11.gml
+Converted builtin - line 7: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 7: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objCraft2\Draw_0.gml
+Converted builtin - line 64: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 69: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objInstaDie\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_2.gml
+Converted builtin - line 41: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 42: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 41: view_xview=(__view_get( e__VW.XView, 0 )+(objEggMid.x-320)*camtimer)/(1+camtimer) -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )+(objEggMid.x-320)*camtimer)/(1+camtimer) )
+Converted builtin - line 42: view_yview=(__view_get( e__VW.YView, 0 )+(objEggMid.y-240)*camtimer)/(1+camtimer) -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )+(objEggMid.y-240)*camtimer)/(1+camtimer) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 455: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 455: expected expression
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 458: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 472: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 491: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 491: expected expression
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 496: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 533: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 533: unexpected terminal operator static
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 554: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 554: unexpected terminal operator static
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 562: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 592: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 627: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 651: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml - 663: unexpected syntax error
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\doom\Step_1.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml - 112: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml - 112: unexpected terminal operator static
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml - 127: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml - 134: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml - 143: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml - 149: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml - 173: unexpected syntax error
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEggMid\Step_0.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objFinalRail\Draw_0.gml
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objRoxxorz\Step_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objRockWarning\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEvEgg1\Step_0.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEvEgg1\Step_0.gml - 89: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEvEgg1\Step_0.gml - 89: unexpected terminal operator static
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEvEgg1\Step_0.gml - 107: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEvEgg1\Step_0.gml - 170: unexpected syntax error
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objEvEgg1\Step_0.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objDarkDepths\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 9: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 12: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 12: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objDeath\Step_0.gml
+Converted builtin - line 23: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objDeath\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objGetSuper\Step_0.gml
+Converted builtin - line 119: background_visible[0]=1 -> __background_set( e__BG.Visible, 0, 1 )
+Converted builtin - line 122: background_foreground[0]=0 -> __background_set( e__BG.Foreground, 0, 0 )
+Converted builtin - line 120: background_index[0]=bgsky -> __background_set( e__BG.Index, 0, bgsky )
+Converted builtin - line 104: background_x[0]=-view_xview*controlbg.scrollFactor mod 512 -> __background_set( e__BG.X, 0, -view_xview*controlbg.scrollFactor mod 512 )
+Converted builtin - line 105: background_y[0]=objCraft2.yy-428-view_yview -> __background_set( e__BG.Y, 0, objCraft2.yy-428-view_yview )
+Converted builtin - line 121: background_htiled[0]=1 -> __background_set( e__BG.HTiled, 0, 1 )
+Converted builtin - line 123: background_hspeed[0]=-0.5 -> __background_set( e__BG.HSpeed, 0, -0.5 )
+Converted builtin - line 57: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 61: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 66: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 113: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 55: view_xview-=timer*28/20 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (timer*28/20) )
+Converted builtin - line 62: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 67: view_xview=room_width-640 -> __view_set( e__VW.XView, 0, room_width-640 )
+Converted builtin - line 99: view_xview+=timer*28/20 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (timer*28/20) )
+Converted builtin - line 117: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 58: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 113: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 56: view_yview+=timer*(114)/(375*2/3) -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (timer*(114)/(375*2/3)) )
+Converted builtin - line 100: view_yview-=timer*(114)/(375*2/3) -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (timer*(114)/(375*2/3)) )
+Converted builtin - line 118: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 104: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 57: view_xview=(__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 )
+Converted builtin - line 105: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 58: view_yview=(__view_get( e__VW.YView, 0 )*3+y-240+2*vspeed*global.time)/4 -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+y-240+2*vspeed*global.time)/4 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\sonic\Step_0.gml
+Converted builtin - line 214: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 215: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 214: view_xview=(__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 )
+Converted builtin - line 215: view_yview=(__view_get( e__VW.YView, 0 )*3+y-240+2*vspeed*global.time)/4 -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+y-240+2*vspeed*global.time)/4 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objtails2\Step_2.gml
+Converted builtin - line 73: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 74: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 110: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 73: view_xview=(__view_get( e__VW.XView, 0 )*3+(x*(1-ffff)+boozx*ffff)-320+2*hspeed*global.time)/4 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+(x*(1-ffff)+boozx*ffff)-320+2*hspeed*global.time)/4 )
+Converted builtin - line 74: view_yview=(__view_get( e__VW.YView, 0 )*3+(y*(1-ffff)+boozy*ffff)-240+2*vspeed*global.time)/4 -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+(y*(1-ffff)+boozy*ffff)-240+2*vspeed*global.time)/4 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objtails3\Step_2.gml
+Converted builtin - line 56: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 72: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 57: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 73: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 56: view_xview=(__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 )
+Converted builtin - line 72: view_xview=(__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 )
+Converted builtin - line 57: view_yview=(__view_get( e__VW.YView, 0 )*3+y+26-240+2*vspeed*global.time)/4 -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+y+26-240+2*vspeed*global.time)/4 )
+Converted builtin - line 73: view_yview=(__view_get( e__VW.YView, 0 )*3+y+26-240+2*vspeed*global.time)/4 -> __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+y+26-240+2*vspeed*global.time)/4 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\ult_bouncer\Step_0.gml
+Converted builtin - line 50: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\sonails\Step_0.gml
+Converted builtin - line 136: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\rotBlock\Step_1.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 158: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 158: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\rotBlock\Draw_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\fragileBlock\Step_1.gml
+Converted builtin - line 15: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\fragileBlock\Draw_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transBlock\Step_0.gml
+Converted builtin - line 25: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 27: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transBlock\Draw_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\ult_fraction\Step_0.gml
+Converted builtin - line 14: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\trans_fraction\Step_0.gml
+Converted builtin - line 34: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\uline\Step_2.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objRean\Step_0.gml
+Converted builtin - line 45: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 47: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 97: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 116: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 126: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 128: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 138: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 139: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objReanAura\Draw_0.gml
+Converted builtin - line 7: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 9: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 9: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\ult_chargeBalls\Create_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\ult_chargeBalls\Draw_0.gml
+Converted builtin - line 16: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objNormalEggFall\Step_0.gml
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\uctrl\Create_0.gml
+Converted builtin - line 6: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 5: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\uctrl\Step_0.gml
+Converted builtin - line 20: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 485: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 493: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 121: view_xview=viewX -> __view_set( e__VW.XView, 0, viewX )
+Converted builtin - line 7: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 12: view_yview=-shakeInt -> __view_set( e__VW.YView, 0, -shakeInt )
+Converted builtin - line 14: view_yview=shakeInt -> __view_set( e__VW.YView, 0, shakeInt )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\uctrl\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\ufore\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 23: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 31: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 41: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 41: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 21: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 23: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 31: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 41: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 41: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\ubgline\Draw_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\tinyBlock\Step_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objmogusbg\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objTakeOff\Create_0.gml
+Converted builtin - line 13: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 14: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objTailsPolish\Step_0.gml
+Converted builtin - line 46: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\line\Step_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\verySpecialLine\Step_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\movingline\Step_0.gml
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 21: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\reportingline\Step_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\point\Step_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\movingball\Step_2.gml
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\movingsector\Step_2.gml
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\grassline\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\rockline\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\grassline2\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\metaline\Draw_0.gml
+Converted builtin - line 7: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\metaside\Draw_0.gml
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\cleanline\Draw_0.gml
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 7: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\upground\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\makeStartHut\Create_0.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\makeStartHut\Create_0.gml - 87: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\makeStartHut\Create_0.gml - 87: expected expression
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\makeStartHut\Create_0.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transitiongenerator\Create_0.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transitiongenerator\Create_0.gml - 36: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transitiongenerator\Create_0.gml - 36: expected expression
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transitiongenerator\Create_0.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transitiongenerator\Step_2.gml
+Converted builtin - line 158: view_xview+=min(16,16*(timer-60)/60) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (min(16,16*(timer-60)/60)) )
+Converted builtin - line 160: view_xview+=16 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (16) )
+Converted builtin - line 162: view_xview+=max(0,16-16*(timer)/60) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (max(0,16-16*(timer)/60)) )
+Converted builtin - line 141: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\transitiongenerator\Draw_0.gml
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 16: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 11: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 13: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 16: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 18: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\zerogenerator\Step_0.gml
+Converted builtin - line 13: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 33: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 41: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 47: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 49: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 90: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 43: view_xview-=min((16-stufu)*16,32) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (min((16-stufu)*16,32)) )
+Converted builtin - line 48: view_xview=sonic.x-608 -> __view_set( e__VW.XView, 0, sonic.x-608 )
+Converted builtin - line 50: view_xview=sonic.x-16 -> __view_set( e__VW.XView, 0, sonic.x-16 )
+Converted builtin - line 91: view_xview-=min((16-stufu)*16,32)*a -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (min((16-stufu)*16,32)*a) )
+Converted builtin - line 33: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 93: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 94: view_yview=objWaterFront.y-128 -> __view_set( e__VW.YView, 0, objWaterFront.y-128 )
+Converted builtin - line 41: view_xview=(__view_get( e__VW.XView, 0 )*(7+k)+obj.x-320)/(8+k) -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*(7+k)+obj.x-320)/(8+k) )
+Converted builtin - line 90: view_xview=(__view_get( e__VW.XView, 0 )*(7+k)+(obj.x-320)*a)/(7+k+1*a) -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*(7+k)+(obj.x-320)*a)/(7+k+1*a) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\grassgenerator\Step_0.gml
+Converted builtin - line 620: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\grassgenerator\Draw_0.gml
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 11: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 12: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 13: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 14: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\tutorialgenerator\Create_0.gml
+Converted builtin - line 46: background_color=c_black -> __background_set_colour( c_black )
+Converted builtin - line 74: background_color=c_black -> __background_set_colour( c_black )
+Converted builtin - line 20: view_yview[a]=a*480/nu -> __view_set( e__VW.YView, a, a*480/nu )
+Converted builtin - line 21: view_hview[a]=480/nu -> __view_set( e__VW.HView, a, 480/nu )
+Converted builtin - line 16: view_visible[a]=1 -> __view_set( e__VW.Visible, a, 1 )
+Converted builtin - line 23: view_yport[a]=a*480/nu -> __view_set( e__VW.YPort, a, a*480/nu )
+Converted builtin - line 22: view_hport[a]=480/nu -> __view_set( e__VW.HPort, a, 480/nu )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\tutorialgenerator\Step_2.gml
+Converted builtin - line 35: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 41: view_xview[a]=xxx+xv[a] -> __view_set( e__VW.XView, a, xxx+xv[a] )
+Converted builtin - line 36: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 42: view_yview[a]=yyy+yv[a] -> __view_set( e__VW.YView, a, yyy+yv[a] )
+Converted builtin - line 40: view_hview[a]=vh[a] -> __view_set( e__VW.HView, a, vh[a] )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\tutorialgenerator\Step_1.gml
+Converted builtin - line 5: view_xview[0]-=xv[0] -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (xv[0]) )
+Converted builtin - line 6: view_yview[0]-=yv[0] -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (yv[0]) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\tutorialgenerator\Step_0.gml
+Converted builtin - line 477: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 390: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 399: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 403: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 409: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 413: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 418: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 478: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\tutorialgenerator\Other_11.gml
+Converted builtin - line 4: view_xview[a]=0 -> __view_set( e__VW.XView, a, 0 )
+Converted builtin - line 5: view_yview[a]=0 -> __view_set( e__VW.YView, a, 0 )
+Converted builtin - line 6: view_hview[a]=480 -> __view_set( e__VW.HView, a, 480 )
+Converted builtin - line 3: view_visible[a]=0 -> __view_set( e__VW.Visible, a, 0 )
+Converted builtin - line 10: view_visible[0]=1 -> __view_set( e__VW.Visible, 0, 1 )
+Converted builtin - line 8: view_yport[a]=0 -> __view_set( e__VW.YPort, a, 0 )
+Converted builtin - line 7: view_hport[a]=480 -> __view_set( e__VW.HPort, a, 480 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\finalgenerator\Step_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 337: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 682: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 695: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: view_xview-=x -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (x) )
+Converted builtin - line 704: view_xview-=x -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (x) )
+Converted builtin - line 926: view_xview-=x -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (x) )
+Converted builtin - line 69: view_yview-=y -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (y) )
+Converted builtin - line 705: view_yview-=y -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (y) )
+Converted builtin - line 927: view_yview-=y -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (y) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\supergenerator\Step_0.gml
+Converted builtin - line 70: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 296: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 709: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 826: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 693: view_xview+=min(timer/2,48) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (min(timer/2,48)) )
+Converted builtin - line 751: view_xview+=48/(1+timer/60) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (48/(1+timer/60)) )
+Converted builtin - line 814: view_xview-=xx -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (xx) )
+Converted builtin - line 293: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 709: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 147: view_yview+=(blink-0.5)*8 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + ((blink-0.5)*8) )
+Converted builtin - line 295: view_yview=b-240 -> __view_set( e__VW.YView, 0, b-240 )
+Converted builtin - line 304: view_yview=sonic.y-340 -> __view_set( e__VW.YView, 0, sonic.y-340 )
+Converted builtin - line 305: view_yview+=(blink-0.5)*8 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + ((blink-0.5)*8) )
+Converted builtin - line 343: view_yview=sonic.y-340 -> __view_set( e__VW.YView, 0, sonic.y-340 )
+Converted builtin - line 815: view_yview-=yy -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (yy) )
+Converted builtin - line 296: view_xview=(__view_get( e__VW.XView, 0 )*19+a-320)/20 -> __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*19+a-320)/20 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\panjan\Step_0.gml
+Converted builtin - line 157: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 391: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 410: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 520: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 531: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 588: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 636: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 662: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 939: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1031: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1032: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1098: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 516: view_xview-=movX -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (movX) )
+Converted builtin - line 410: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 626: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objPanjanCore\Step_0.gml
+Converted builtin - line 67: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 90: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 95: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBot\Create_0.gml
+Converted builtin - line 12: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBot\Step_0.gml
+Converted builtin - line 24: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 26: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 93: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 98: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 94: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 99: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\tornado\Step_0.gml
+Converted builtin - line 114: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objWaterBack\Step_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objWaterBack\Draw_0.gml
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 20: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 25: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 25: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 44: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 25: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objWaterFront\Create_0.gml
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objWaterFront\Step_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 26: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 27: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 28: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objWaterFront\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 26: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 28: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 26: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 28: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\sandline\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\upsand\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objFireWall\Step_0.gml
+Converted builtin - line 13: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBubble\Step_0.gml
+Converted builtin - line 11: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 16: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\dLine\Step_0.gml
+Converted builtin - line 27: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 27: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 27: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 27: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\drill\Step_2.gml
+Converted builtin - line 51: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 51: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 260: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 260: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 514: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 514: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 631: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 631: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 783: view_xview-=mx -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (mx) )
+Converted builtin - line 784: view_yview-=my -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (my) )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\drill\Step_0.gml
+Converted builtin - line 64: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 64: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 64: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 64: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\drill\Other_10.gml
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\drill\Other_10.gml - 32: unexpected syntax error
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\drill\Other_10.gml - 32: expected expression
+ERROR: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\drill\Other_10.gml - 36: unexpected syntax error
+Too many errors - GML not processed : F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\drill\Other_10.gml
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objbullet\Step_0.gml
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objdebris\Step_0.gml
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\partialdebris\Step_0.gml
+Converted builtin - line 16: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objdebrisbouncer\Step_0.gml
+Converted builtin - line 21: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 21: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objredlaser\Step_0.gml
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objredblob\Step_2.gml
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objPipeFollower\Step_0.gml
+Converted builtin - line 50: view_xview=x-320 -> __view_set( e__VW.XView, 0, x-320 )
+Converted builtin - line 51: view_yview=y-240 -> __view_set( e__VW.YView, 0, y-240 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objLavaFall\Step_0.gml
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objLavaFall\Draw_0.gml
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objSuperFG\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objFrontEnd\Create_0.gml
+Converted builtin - line 48: background_visible[0]=1 -> __background_set( e__BG.Visible, 0, 1 )
+Converted builtin - line 58: background_visible[1]=1 -> __background_set( e__BG.Visible, 1, 1 )
+Converted builtin - line 47: background_index[0]=bgsky -> __background_set( e__BG.Index, 0, bgsky )
+Converted builtin - line 57: background_index[1]=bgBackEnd -> __background_set( e__BG.Index, 1, bgBackEnd )
+Converted builtin - line 53: background_x[0]=0 -> __background_set( e__BG.X, 0, 0 )
+Converted builtin - line 63: background_x[1]=0 -> __background_set( e__BG.X, 1, 0 )
+Converted builtin - line 54: background_y[0]=-64 -> __background_set( e__BG.Y, 0, -64 )
+Converted builtin - line 64: background_y[1]=150 -> __background_set( e__BG.Y, 1, 150 )
+Converted builtin - line 49: background_htiled[0]=1 -> __background_set( e__BG.HTiled, 0, 1 )
+Converted builtin - line 59: background_htiled[1]=0 -> __background_set( e__BG.HTiled, 1, 0 )
+Converted builtin - line 50: background_vtiled[0]=0 -> __background_set( e__BG.VTiled, 0, 0 )
+Converted builtin - line 60: background_vtiled[1]=0 -> __background_set( e__BG.VTiled, 1, 0 )
+Converted builtin - line 52: background_hspeed[0]=0 -> __background_set( e__BG.HSpeed, 0, 0 )
+Converted builtin - line 62: background_hspeed[1]=0 -> __background_set( e__BG.HSpeed, 1, 0 )
+Converted builtin - line 51: background_vspeed[0]=0 -> __background_set( e__BG.VSpeed, 0, 0 )
+Converted builtin - line 61: background_vspeed[1]=0 -> __background_set( e__BG.VSpeed, 1, 0 )
+Converted builtin - line 55: background_alpha[0]=0.5 -> __background_set( e__BG.Alpha, 0, 0.5 )
+Converted builtin - line 45: background_color=make_color_rgb(64,0,32) -> __background_set_colour( make_color_rgb(64,0,32) )
+Converted builtin - line 3: view_xview=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 4: view_yview=0 -> __view_set( e__VW.YView, 0, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objFrontEnd\Destroy_0.gml
+Converted builtin - line 10: background_hspeed[0]=0 -> __background_set( e__BG.HSpeed, 0, 0 )
+Converted builtin - line 13: background_blend[1]=c_white -> __background_set( e__BG.Blend, 1, c_white )
+Converted builtin - line 11: background_alpha[0]=1 -> __background_set( e__BG.Alpha, 0, 1 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objFrontEnd\Step_0.gml
+Converted builtin - line 37: background_visible[i]=0 -> __background_set( e__BG.Visible, i, 0 )
+Converted builtin - line 67: background_visible[i]=0 -> __background_set( e__BG.Visible, i, 0 )
+Converted builtin - line 12: background_blend[1]=make_color_hsv(0,0,160+c*80/300) -> __background_set( e__BG.Blend, 1, make_color_hsv(0,0,160+c*80/300) )
+Converted builtin - line 8: background_alpha[0] -> __background_get( e__BG.Alpha, 0 )
+Converted builtin - line 11: background_alpha[0]=0.5+0.5*power(c,2) -> __background_set( e__BG.Alpha, 0, 0.5+0.5*power(c,2) )
+Converted builtin - line 70: background_color=c_black -> __background_set_colour( c_black )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objFrontEnd\Draw_0.gml
+Converted builtin - line 76: background_blend[1] -> __background_get( e__BG.Blend, 1 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\makeDance\Create_0.gml
+Converted builtin - line 5: background_color=c_black -> __background_set_colour( c_black )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\mtline\Draw_0.gml
+Converted builtin - line 13: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 15: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 19: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 38: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\bike\Step_2.gml
+Converted builtin - line 27: view_xview=x-320 -> __view_set( e__VW.XView, 0, x-320 )
+Converted builtin - line 28: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 32: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 215: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 29: view_yview=y-320 -> __view_set( e__VW.YView, 0, y-320 )
+Converted builtin - line 33: view_yview=introgenerator.maxCam -> __view_set( e__VW.YView, 0, introgenerator.maxCam )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objIntroHurt\Step_0.gml
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objIntroSonic\Step_0.gml
+Converted builtin - line 9: view_xview=x-320 -> __view_set( e__VW.XView, 0, x-320 )
+Converted builtin - line 10: view_yview=y-320 -> __view_set( e__VW.YView, 0, y-320 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\introgenerator\Step_0.gml
+Converted builtin - line 24: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 45: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 112: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 182: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 211: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 324: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 351: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 527: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 563: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 569: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 573: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 577: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 351: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 470: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 527: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 563: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 569: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 573: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 577: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 24: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 45: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 112: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 182: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 211: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 324: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 351: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 527: view_wview -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\introgenerator\Draw_0.gml
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 64: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 83: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 94: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 94: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 108: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 118: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 64: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 83: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 94: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 94: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 108: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 118: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBG\Draw_0.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBolt\Draw_0.gml
+Converted builtin - line 10: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objBranch\Draw_0.gml
+Converted builtin - line 47: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 47: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 47: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 47: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objCloudMaker\Other_11.gml
+Converted builtin - line 1: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objCloud\Draw_0.gml
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\viper\Step_0.gml
+Converted builtin - line 20: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 23: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 45: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 20: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 23: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 23: view_wview -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objTuText\Draw_0.gml
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: F:\Eggman-hates-furries-arena-01a00272-eggman-hates-furries\mvc\objects\objQuitWarning\Draw_0.gml
+Converted builtin - line 11: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: MACRO: mono_0
+ERROR:  - 1: unterminated string literal
+Too many errors - GML not processed : MACRO: mono_0
+
+Missing audiogroup for sound: 'OrSmovrBos' - setting to default audio group
+Missing audiogroup for sound: 'ForBossenRepShort' - setting to default audio group
+Missing audiogroup for sound: 'Samwedo' - setting to default audio group
+Missing audiogroup for sound: 'Ingenious' - setting to default audio group
+Missing audiogroup for sound: 'FoxFace' - setting to default audio group
+Missing audiogroup for sound: 'Spot' - setting to default audio group
+Missing audiogroup for sound: 'game' - setting to default audio group
+Missing audiogroup for sound: 'oxygen' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'action\action_change_object.gml'
+Added compatibility script 'action\action_color.gml'
+Added compatibility script 'action\action_create_object.gml'
+Added compatibility script 'action\action_draw_arrow.gml'
+Added compatibility script 'action\action_draw_background.gml'
+Added compatibility script 'action\action_draw_ellipse.gml'
+Added compatibility script 'action\action_draw_gradient_vert.gml'
+Added compatibility script 'action\action_draw_line.gml'
+Added compatibility script 'action\action_draw_rectangle.gml'
+Added compatibility script 'action\action_draw_sprite.gml'
+Added compatibility script 'action\action_draw_text.gml'
+Added compatibility script 'action\action_end_game.gml'
+Added compatibility script 'action\action_end_sound.gml'
+Added compatibility script 'action\action_font.gml'
+Added compatibility script 'action\action_if.gml'
+Added compatibility script 'action\action_if_dice.gml'
+Added compatibility script 'action\action_inherited.gml'
+Added compatibility script 'action\action_kill_object.gml'
+Added compatibility script 'action\action_move.gml'
+Added compatibility script 'action\action_move_point.gml'
+Added compatibility script 'action\action_move_to.gml'
+Added compatibility script 'action\action_set_alarm.gml'
+Added compatibility script 'action\action_set_friction.gml'
+Added compatibility script 'action\action_set_hspeed.gml'
+Added compatibility script 'action\action_set_motion.gml'
+Added compatibility script 'action\action_set_relative.gml'
+Added compatibility script 'action\action_set_vspeed.gml'
+Added compatibility script 'action\action_snap.gml'
+Added compatibility script 'action\action_sound.gml'
+Added compatibility script 'action\action_sprite_set.gml'
+Added compatibility script 'background\background_add.gml'
+Added compatibility script 'background\background_delete.gml'
+Added compatibility script 'background\background_get_height.gml'
+Added compatibility script 'background\background_get_texture.gml'
+Added compatibility script 'background\background_get_width.gml'
+Added compatibility script 'background\background_set_alpha_from_background.gml'
+Added compatibility script 'background\draw_background.gml'
+Added compatibility script 'background\draw_background_ext.gml'
+Added compatibility script 'background\draw_background_part.gml'
+Added compatibility script 'background\draw_background_stretched.gml'
+Added compatibility script 'background\__background_get.gml'
+Added compatibility script 'background\__background_get_element.gml'
+Added compatibility script 'background\__background_get_internal.gml'
+Added compatibility script 'background\__background_set.gml'
+Added compatibility script 'background\__background_set_colour.gml'
+Added compatibility script 'background\__background_set_element.gml'
+Added compatibility script 'background\__background_set_internal.gml'
+Added compatibility script 'd3d\d3d_draw_block.gml'
+Added compatibility script 'd3d\d3d_draw_cone.gml'
+Added compatibility script 'd3d\d3d_draw_cylinder.gml'
+Added compatibility script 'd3d\d3d_draw_ellipsoid.gml'
+Added compatibility script 'd3d\d3d_draw_floor.gml'
+Added compatibility script 'd3d\d3d_draw_wall.gml'
+Added compatibility script 'd3d\d3d_end.gml'
+Added compatibility script 'd3d\d3d_model_create.gml'
+Added compatibility script 'd3d\d3d_model_destroy.gml'
+Added compatibility script 'd3d\d3d_model_draw.gml'
+Added compatibility script 'd3d\d3d_model_ellipsoid.gml'
+Added compatibility script 'd3d\d3d_model_floor.gml'
+Added compatibility script 'd3d\d3d_model_primitive_begin.gml'
+Added compatibility script 'd3d\d3d_model_primitive_end.gml'
+Added compatibility script 'd3d\d3d_model_vertex_normal_texture.gml'
+Added compatibility script 'd3d\d3d_model_wall.gml'
+Added compatibility script 'd3d\d3d_primitive_begin.gml'
+Added compatibility script 'd3d\d3d_primitive_begin_texture.gml'
+Added compatibility script 'd3d\d3d_primitive_end.gml'
+Added compatibility script 'd3d\d3d_set_culling.gml'
+Added compatibility script 'd3d\d3d_set_fog.gml'
+Added compatibility script 'd3d\d3d_set_hidden.gml'
+Added compatibility script 'd3d\d3d_set_projection_ext.gml'
+Added compatibility script 'd3d\d3d_set_projection_ortho.gml'
+Added compatibility script 'd3d\d3d_start.gml'
+Added compatibility script 'd3d\d3d_transform_add_rotation_x.gml'
+Added compatibility script 'd3d\d3d_transform_add_rotation_y.gml'
+Added compatibility script 'd3d\d3d_transform_add_rotation_z.gml'
+Added compatibility script 'd3d\d3d_transform_add_scaling.gml'
+Added compatibility script 'd3d\d3d_transform_add_translation.gml'
+Added compatibility script 'd3d\d3d_transform_set_identity.gml'
+Added compatibility script 'd3d\d3d_vertex_color.gml'
+Added compatibility script 'd3d\d3d_vertex_normal_texture.gml'
+Added compatibility script 'd3d\__d3d_model_add_vertex.gml'
+Added compatibility script 'draw\draw_set_blend_mode.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'view\__view_get.gml'
+Added compatibility script 'view\__view_set.gml'
+Added compatibility script 'view\__view_set_internal.gml'
+Added compatibility script 'action\__init_action.gml'
+Added compatibility script 'background\__init_background.gml'
+Added compatibility script 'd3d\__init_d3d.gml'
+Added compatibility script 'view\__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'background\__background_get_colour_element.gml'
+Added compatibility script 'd3d\d3d_model_clear.gml'
+Added compatibility script '__global_object_depths.gml'

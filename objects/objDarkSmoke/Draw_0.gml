@@ -1,0 +1,9 @@
+//draw_set_blend_mode(bm_add);
+a=image_xscale;
+b=image_yscale;
+image_xscale=image_xscale*sc;
+image_yscale=image_yscale*sc;
+d3d_sprite();
+draw_set_blend_mode(bm_normal);
+image_xscale=a;
+image_yscale=b;

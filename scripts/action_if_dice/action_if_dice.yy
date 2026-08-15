@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"action_if_dice",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"action_if_dice",
+  "parent":{
+    "name":"action",
+    "path":"folders/Scripts/compatibility/action.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

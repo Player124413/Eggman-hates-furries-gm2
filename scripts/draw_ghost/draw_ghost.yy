@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"draw_ghost",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_ghost",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"draw_background_part",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"draw_background_part",
+  "parent":{
+    "name":"background",
+    "path":"folders/Scripts/compatibility/background.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"d3dist",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"d3dist",
+  "parent":{
+    "name":"last",
+    "path":"folders/Scripts/last.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

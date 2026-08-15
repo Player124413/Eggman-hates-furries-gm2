@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"robotsupersaw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"robotsupersaw",
+  "parent":{
+    "name":"ROBOT",
+    "path":"folders/Scripts/ROBOT.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

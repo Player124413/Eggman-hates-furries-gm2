@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultBreak",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultBreak",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

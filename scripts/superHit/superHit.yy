@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"superHit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"superHit",
+  "parent":{
+    "name":"eggy",
+    "path":"folders/Scripts/eggy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

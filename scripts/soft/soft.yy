@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"soft",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"soft",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

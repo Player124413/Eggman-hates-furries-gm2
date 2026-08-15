@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"d3d_draw_cylinder",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"d3d_draw_cylinder",
+  "parent":{
+    "name":"d3d",
+    "path":"folders/Scripts/compatibility/d3d.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

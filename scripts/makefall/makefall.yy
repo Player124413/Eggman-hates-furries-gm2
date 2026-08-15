@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"makefall",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"makefall",
+  "parent":{
+    "name":"last",
+    "path":"folders/Scripts/last.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

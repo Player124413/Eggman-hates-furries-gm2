@@ -1,0 +1,1 @@
+soundplay(global.sndCrash);

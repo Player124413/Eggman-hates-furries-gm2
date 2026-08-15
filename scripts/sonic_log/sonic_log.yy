@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"sonic_log",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sonic_log",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

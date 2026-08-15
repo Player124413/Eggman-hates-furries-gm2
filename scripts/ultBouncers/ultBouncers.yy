@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultBouncers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultBouncers",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"shieldDown",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"shieldDown",
+  "parent":{
+    "name":"eggy",
+    "path":"folders/Scripts/eggy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

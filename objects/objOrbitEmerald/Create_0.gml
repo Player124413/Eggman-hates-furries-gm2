@@ -1,0 +1,10 @@
+index = 0;
+active = 0;
+prog = 0;
+p = -1;
+sid = 0;
+cod = 0;
+width=32;
+height=8;
+sp = pi/70;
+yoff = -40;

@@ -1,0 +1,1 @@
+global.gameWantsControls = 0;

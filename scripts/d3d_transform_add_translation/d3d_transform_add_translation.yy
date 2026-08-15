@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"d3d_transform_add_translation",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"d3d_transform_add_translation",
+  "parent":{
+    "name":"d3d",
+    "path":"folders/Scripts/compatibility/d3d.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

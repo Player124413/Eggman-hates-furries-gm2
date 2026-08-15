@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultThrow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultThrow",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

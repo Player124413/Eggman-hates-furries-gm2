@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"spawnTopRocks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spawnTopRocks",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

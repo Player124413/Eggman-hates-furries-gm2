@@ -1,0 +1,13 @@
+counter = 0;
+timer = 0;
+roll = 0;
+phase = 0;
+global.time = 0.25;
+action_set_alarm(4, 0);
+radius = 48;
+ux = 0;
+uy = 1;
+nx = 1;
+ny = 0;
+gnd = 0;
+frict = 0;

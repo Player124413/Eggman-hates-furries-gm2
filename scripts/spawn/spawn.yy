@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"spawn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spawn",
+  "parent":{
+    "name":"drilling",
+    "path":"folders/Scripts/drilling.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultTerminal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultTerminal",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

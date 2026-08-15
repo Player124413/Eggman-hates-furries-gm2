@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultSparse1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultSparse1",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

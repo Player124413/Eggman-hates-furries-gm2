@@ -1,0 +1,2 @@
+timer+=global.time;
+

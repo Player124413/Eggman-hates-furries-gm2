@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ult_die",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ult_die",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"setfog",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"setfog",
+  "parent":{
+    "name":"last",
+    "path":"folders/Scripts/last.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

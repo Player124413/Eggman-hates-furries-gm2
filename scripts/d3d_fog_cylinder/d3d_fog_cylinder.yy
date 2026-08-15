@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"d3d_fog_cylinder",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"d3d_fog_cylinder",
+  "parent":{
+    "name":"last",
+    "path":"folders/Scripts/last.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

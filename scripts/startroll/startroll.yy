@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"startroll",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"startroll",
+  "parent":{
+    "name":"sonic",
+    "path":"folders/Scripts/sonic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

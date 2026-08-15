@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"addNeighbour",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"addNeighbour",
+  "parent":{
+    "name":"drilling",
+    "path":"folders/Scripts/drilling.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

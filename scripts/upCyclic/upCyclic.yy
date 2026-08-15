@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"upCyclic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"upCyclic",
+  "parent":{
+    "name":"drilling",
+    "path":"folders/Scripts/drilling.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

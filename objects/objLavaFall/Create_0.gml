@@ -1,0 +1,11 @@
+y = objLava.y-800;
+ystart = y;
+x2 = x+192;
+y2 = y;
+image_speed = 2;
+hh = 128;
+timer = 30;
+phase = 0;
+soundvolume(global.sndLavaFall,0);
+vol=0;
+playing = 0;

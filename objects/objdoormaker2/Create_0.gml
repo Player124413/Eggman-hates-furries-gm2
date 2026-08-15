@@ -1,0 +1,11 @@
+prog = 0;
+progsp = 0;
+soundplay(global.sndRedWave);
+angle = 0;
+i1=instance_create(x-16,y-96,reportingline);
+i1.pp=id;
+i1.y2=y+96;
+i1.x2=i1.x;
+report = 0;
+maxforce = 16;
+closesp = 1;

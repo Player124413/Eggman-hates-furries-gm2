@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"action_draw_line",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"action_draw_line",
+  "parent":{
+    "name":"action",
+    "path":"folders/Scripts/compatibility/action.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

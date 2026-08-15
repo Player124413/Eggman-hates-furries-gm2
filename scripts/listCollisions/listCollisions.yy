@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"listCollisions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"listCollisions",
+  "parent":{
+    "name":"drilling",
+    "path":"folders/Scripts/drilling.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

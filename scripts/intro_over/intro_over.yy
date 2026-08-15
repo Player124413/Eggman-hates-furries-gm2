@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"intro_over",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"intro_over",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

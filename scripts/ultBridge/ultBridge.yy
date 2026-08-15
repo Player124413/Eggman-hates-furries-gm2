@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultBridge",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultBridge",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

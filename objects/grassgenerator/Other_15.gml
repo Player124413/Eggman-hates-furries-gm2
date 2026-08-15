@@ -1,0 +1,23 @@
+if(a>0)
+    {
+    i=instance_create(xx,yy,grassline);
+    i.deep=deep;
+    i.c4=i.c3;
+    i.x2=xx+a;
+    i.y2=yy+b;
+    }
+else
+    {
+    i=instance_create(xx+a,yy+b,grassline);
+    i.deep=deep;
+    i.c4=i.c3;
+    i.x2=xx;
+    i.y2=yy;
+    }
+i=instance_create(xx,yy+deep,line);
+i.visible=1;
+i.x2=xx+a;
+i.y2=yy+b+deep;
+xx=xx+a;
+yy=yy+b;
+

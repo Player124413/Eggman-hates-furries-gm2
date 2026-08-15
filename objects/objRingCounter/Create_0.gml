@@ -1,0 +1,11 @@
+global.rings = 0;
+kill = 0;
+lastTab = 1;
+global.playerWantsControls = 0;
+global.gameWantsControls = 0;
+showControls = 0;
+lastP = 0;
+lastC = 0;
+dirr = 0;
+slowDownTimer = 0;
+slowDownMessage = 0;

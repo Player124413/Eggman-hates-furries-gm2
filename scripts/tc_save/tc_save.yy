@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"tc_save",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tc_save",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

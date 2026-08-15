@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"robotrecover",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"robotrecover",
+  "parent":{
+    "name":"ROBOT",
+    "path":"folders/Scripts/ROBOT.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

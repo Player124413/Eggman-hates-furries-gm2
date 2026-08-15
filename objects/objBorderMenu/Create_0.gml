@@ -1,0 +1,14 @@
+phase=0;
+soundloop(global.sndChainSewer);
+function = 1;
+choice = 0;
+able = 0;
+action_set_alarm(1, 0);
+scroll = 0;
+items = 0;
+delayUp = -1;
+delayDown = -1;
+midiSound=-1;
+mySound="";
+myImg=-1;
+geWhite = 0;

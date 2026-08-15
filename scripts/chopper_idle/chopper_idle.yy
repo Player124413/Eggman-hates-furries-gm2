@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"chopper_idle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"chopper_idle",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

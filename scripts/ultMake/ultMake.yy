@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultMake",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultMake",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"draw_overlay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_overlay",
+  "parent":{
+    "name":"last",
+    "path":"folders/Scripts/last.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"tc_release_all",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tc_release_all",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

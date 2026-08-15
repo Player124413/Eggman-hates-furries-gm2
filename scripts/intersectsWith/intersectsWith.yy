@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"intersectsWith",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"intersectsWith",
+  "parent":{
+    "name":"drilling",
+    "path":"folders/Scripts/drilling.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

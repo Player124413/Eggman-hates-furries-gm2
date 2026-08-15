@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"robot_lazor",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"robot_lazor",
+  "parent":{
+    "name":"ROBOT",
+    "path":"folders/Scripts/ROBOT.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

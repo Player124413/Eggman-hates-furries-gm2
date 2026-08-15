@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"interruptableLazor",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"interruptableLazor",
+  "parent":{
+    "name":"eggy",
+    "path":"folders/Scripts/eggy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

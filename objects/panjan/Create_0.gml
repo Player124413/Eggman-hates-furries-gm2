@@ -1,0 +1,38 @@
+blink=0;
+angle=0;
+angle2=0;
+pri=1;
+sec=0;
+
+sprite_index=sprcore;
+splashTimer=0;
+
+soundloop(global.sndTurbulence);
+soundvolume(global.sndTurbulence,0.8);
+soundvolume(global.sndWetFall,0.9);
+
+bot1=instance_create(x-128,y-128,objBot);
+bot1.kind=1;
+phase = 0;
+subphs = 0;
+stdSpin = -29;
+spin = stdSpin;
+yp = y;
+timer = -60;
+dangerRadius = 64;
+nextRock = 0;
+firstRock = 1;
+ry = 0;
+rx = 0;
+invulnerable = 0;
+fukTimer = 0;
+burnStage = 0;
+loopTrigger = 0;
+firstCrash = 1;
+counter = 0;
+lastFire = 0;
+blinkFire = 0;
+firstGrass = -1;
+hasHit = 0;
+muPad = -1;
+lightEmUp = -1;

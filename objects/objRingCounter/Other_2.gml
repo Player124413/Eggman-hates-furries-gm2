@@ -1,0 +1,1 @@
+global.saved = 0;

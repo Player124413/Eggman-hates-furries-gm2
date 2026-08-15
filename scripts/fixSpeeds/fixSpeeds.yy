@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"fixSpeeds",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fixSpeeds",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

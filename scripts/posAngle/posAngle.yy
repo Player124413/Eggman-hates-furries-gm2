@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"posAngle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"posAngle",
+  "parent":{
+    "name":"drilling",
+    "path":"folders/Scripts/drilling.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

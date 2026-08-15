@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"drawRain",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"drawRain",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

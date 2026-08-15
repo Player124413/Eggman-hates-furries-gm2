@@ -1,0 +1,19 @@
+angle=0;
+mainDir=0;
+secDir=-90;
+kind=0;
+image_speed=2;
+
+splashTimer=0;
+yp=y;
+goalx=x;
+goaly=y;
+lulsp = sonic.speed;
+lastVX = __view_get( e__VW.XView, 0 );
+shield = 1;
+fourstage = 0;
+excl = 0;
+shieldTimer = 0;
+invulnerable = 0;
+blink = 0;
+damaged = 0;

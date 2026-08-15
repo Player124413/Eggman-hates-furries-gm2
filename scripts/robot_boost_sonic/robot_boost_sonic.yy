@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"robot_boost_sonic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"robot_boost_sonic",
+  "parent":{
+    "name":"ROBOT",
+    "path":"folders/Scripts/ROBOT.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

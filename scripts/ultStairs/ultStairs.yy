@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultStairs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultStairs",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

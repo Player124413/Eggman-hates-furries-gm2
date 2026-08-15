@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultNaught",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultNaught",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

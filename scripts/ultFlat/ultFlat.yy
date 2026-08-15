@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ultFlat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ultFlat",
+  "parent":{
+    "name":"ultimate",
+    "path":"folders/Scripts/ultimate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

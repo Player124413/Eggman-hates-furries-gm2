@@ -1,0 +1,11 @@
+image_speed = 0.25;
+radius = 16;
+mass = 50;
+frict = 0;
+lastgnd = 0;
+phase = 0;
+ux = 1;
+uy = 0;
+nx = 0;
+ny = -1;
+gnd = 0;

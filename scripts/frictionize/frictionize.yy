@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"frictionize",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"frictionize",
+  "parent":{
+    "name":"basic",
+    "path":"folders/Scripts/basic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
