@@ -20,7 +20,8 @@ if(global.verticalSync)
     emerald_t[1]="Vsync: On";
 else
     emerald_t[1]="Vsync: Off";
-set_synchronization(global.verticalSync);
+// Apply the VSync preference using the modern GameMaker API.
+display_reset(0, global.verticalSync);
 }
 __b__ = action_if(choice==2);
 if __b__

@@ -21,7 +21,9 @@ with all
         instance_destroy();
     }
     
-    mybg=background_create_from_screen(0,0,640,480,0,0,1);
+    // background_create_from_screen() no longer exists. Capture the
+    // already-rendered application surface as a runtime sprite instead.
+    mybg = sprite_create_from_surface(application_surface, 0, 0, 640, 480, false, false, 0, 0);
 visible=1;
 soundplay(global.sndDeath);
 

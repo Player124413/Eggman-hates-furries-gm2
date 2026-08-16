@@ -1,7 +1,9 @@
 if(file_exists("dat.dat"))
     {
     load();
-    set_synchronization(global.verticalSync);
+    // set_synchronization() was removed after GameMaker: Studio 1.
+    // display_reset() is the supported runtime VSync switch.
+    display_reset(0, global.verticalSync);
     }
 else
     {

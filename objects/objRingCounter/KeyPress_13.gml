@@ -80,7 +80,8 @@ if(instance_exists(introgenerator))
         SS_PauseSound(global.speech2);
         }
     }
-sound_background_tempo(0.01);
+// sound_background_tempo() only controlled the removed legacy MIDI
+// subsystem. The modern audio engine is paused/muted below.
 audio_master_gain(0);
 //Pause loop incoming!
 soundplay(global.sndPause);
@@ -114,7 +115,6 @@ if(k2)
     SS_ResumeSound(global.speech2);
 if(m)
     SS_ResumeSound(global.handle);
-sound_background_tempo(1);
 audio_master_gain(1);
 io_clear();
 }
