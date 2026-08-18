@@ -1,3 +1,11 @@
+// The original code assumes the root objBolt remains alive. Accessing fields
+// through a destroyed instance reference is a fatal error in modern GML.
+if (!instance_exists(sp))
+{
+    instance_destroy();
+    exit;
+}
+
 var __b__;
 __b__ = action_if(lol==0);
 if __b__
@@ -29,7 +37,10 @@ lol=1;
 __b__ = action_if(render);
 if __b__
 {
-var s,c;
+var s, c;
+var cloud_scroll = 0;
+if (instance_exists(objCloudMaker))
+    cloud_scroll = objCloudMaker.scroll;
 draw_set_alpha(alpha*(0.5+super/2));
 draw_set_color(make_color_rgb(96,80,128));
 draw_set_blend_mode(bm_add);
@@ -44,7 +55,10 @@ else
 for(c=0; c<=s; c+=1)
     {
     draw_set_color(sp.color[c]);
-    draw_line(__view_get( e__VW.XView, 0 )*objCloudMaker.scroll+x-s+c,__view_get( e__VW.YView, 0 )*objCloudMaker.scroll+y,__view_get( e__VW.XView, 0 )*objCloudMaker.scroll+x2+c,__view_get( e__VW.YView, 0 )*objCloudMaker.scroll+y2);
+    draw_line(__view_get(e__VW.XView, 0) * cloud_scroll + x - s + c,
+              __view_get(e__VW.YView, 0) * cloud_scroll + y,
+              __view_get(e__VW.XView, 0) * cloud_scroll + x2 + c,
+              __view_get(e__VW.YView, 0) * cloud_scroll + y2);
     }
 
 

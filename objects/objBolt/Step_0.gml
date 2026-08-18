@@ -13,6 +13,8 @@ if (timer==15)
         c=global.sndThunder4;
     soundplay(c);
     }
-if (timer>31)
+// Branches keep a reference to this controller for their shared palette and
+// destination. Keep it alive until the complete lightning tree has faded.
+if (timer > 31 && !instance_exists(objBranch))
     instance_destroy();
 alpha=max(0,1-timer/30);
