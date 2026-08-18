@@ -89,7 +89,18 @@ def render_resource(path: Path) -> None:
     rgba.save(path.with_suffix(".png"), optimize=True)
 
     original = path.read_text(encoding="utf-8")
-    glyph_text = json.dumps(glyphs, ensure_ascii=False, separators=(",", ":"))
+    # GameMaker's YY loader validates glyph fields in schema order; generic
+    # JSON ordering (x/y first) produces the misleading "character expected"
+    # project-load error. It also expects its usual trailing-comma dialect.
+    glyph_lines = []
+    for key, glyph in glyphs.items():
+        glyph_lines.append(
+            f'    "{key}":{{"character":{glyph["character"]},'
+            f'"h":{glyph["h"]},"offset":{glyph["offset"]},'
+            f'"shift":{glyph["shift"]},"w":{glyph["w"]},'
+            f'"x":{glyph["x"]},"y":{glyph["y"]},}},'
+        )
+    glyph_text = "{\n" + "\n".join(glyph_lines) + "\n  }"
     original = re.sub(r'"glyphs":\{.*?\},\s*"hinting"', f'"glyphs":{glyph_text},\n  "hinting"', original, flags=re.S)
     original = re.sub(r'"ascender":-?[0-9.]+', f'"ascender":{ascent}', original)
     original = re.sub(r'"lineHeight":-?[0-9.]+', f'"lineHeight":{line_height}', original)
