@@ -549,6 +549,9 @@ if (__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )>xx-32 && __view_ge
     }
 /* */
 }
+// Surfaces can be discarded by the runtime (for example after display_reset).
+if (!surface_exists(surf))
+    surf = surface_create(640, 480);
 surface_set_target(surf);
 
 draw_clear(c_gray);
@@ -592,6 +595,8 @@ if (txtAlpha>0)
     if(newText)
         {
         newText=false;
+        if (!surface_exists(baseSurf))
+            baseSurf = surface_create(320, 960);
         surface_set_target(baseSurf);
         draw_clear(c_black);
         draw_set_color(make_color_rgb(96+32*cos(timer/100),112+16*sin(timer/100),64));
@@ -599,9 +604,15 @@ if (txtAlpha>0)
         for(xxx=-1; xxx<=1; xxx+=1)
             draw_text_ext(160+xxx,0,string_hash_to_newline(txt),32,256);
         draw_set_blend_mode(bm_normal);
+        // Every surface_set_target() must have its own matching reset before
+        // another target is selected. Leaving baseSurf active corrupted the
+        // surface stack and made the next room fail in presentation.Create.
+        surface_reset_target();
         }
     yyy=496-textProg*480;
     draw_set_alpha(txtAlpha);
+    if (!surface_exists(textSurf))
+        textSurf = surface_create(320, 480);
     surface_set_target(textSurf);
     draw_clear(c_black);
     if(surface_exists(baseSurf))
