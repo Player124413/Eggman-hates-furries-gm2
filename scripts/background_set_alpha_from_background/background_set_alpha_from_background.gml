@@ -6,6 +6,8 @@ function background_set_alpha_from_background(argument0, argument1) {
     // Asset sprites are immutable in modern GameMaker. Legacy backgrounds
     // were mutable, so reproduce that behaviour with a runtime duplicate.
     var result = sprite_duplicate(argument0);
-    sprite_set_alpha_from_sprite(result, argument1);
+    var alpha_source = sprite_duplicate(argument1);
+    sprite_set_alpha_from_sprite(result, alpha_source);
+    sprite_delete(alpha_source);
     return result;
 }
