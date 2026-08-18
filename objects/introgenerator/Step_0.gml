@@ -203,8 +203,6 @@ if (timer>10+20*30)
 __b__ = action_if(phase==4);
 if __b__
 {
-var mxx,rxx,ryy;
-
 timer+=global.time;
 
 
@@ -469,6 +467,9 @@ timer+=global.time;
 
 maxCam=__view_get( e__VW.YView, 0 );
 
+// The bike can be removed when resuming/skipping parts of the intro.
+if (instance_exists(bike))
+{
 if (bike.y<ryy+960 && bike.correction==0 && bike.mySonic==1)
     {
     if (bike.able==1)
@@ -507,8 +508,8 @@ if (bike.correction==1 && bike.able==0 && cos(degtorad(bike.dir))>0 && global.ti
             dy=myy-i.y;
             i.t=dx/i.hspeed;
             i.vspeed=dy/i.t-0.5*i.g*i.t;
-            bike.hspeed-=objIntroSonic.hspeed;
-            bike.vspeed-=objIntroSonic.vspeed;
+            bike.hspeed -= i.hspeed;
+            bike.vspeed -= i.vspeed;
     
             soundplay(global.sndJump);
             }
@@ -516,6 +517,7 @@ if (bike.correction==1 && bike.able==0 && cos(degtorad(bike.dir))>0 && global.ti
             global.time=0.5;
         }
     }
+}
 
 /* */
 }

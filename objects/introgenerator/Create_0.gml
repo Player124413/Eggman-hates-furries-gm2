@@ -8,6 +8,13 @@ uberphase=0;
 slope=45;
 count=0;
 
+// Route markers are written while phases 4/6 generate the level and read on
+// later Step frames in phase 7. They must be instance variables, not locals.
+rxx = xx;
+ryy = yy;
+mxx = xx;
+myy = yy;
+
 surf=surface_create(640,480);
 
 rainmove=0;
