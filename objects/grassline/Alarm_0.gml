@@ -1,4 +1,4 @@
-d=point_distance(x,y,x2,y2);
+d = max(0.0001, point_distance(x,y,x2,y2));
 ux=(x2-x)/d;
 uy=(y2-y)/d;
 dir=point_direction(x,y,x2,y2);
@@ -9,7 +9,7 @@ i=instance_create(x,y,line);
 i.x2=x2;
 i.y2=y2;
 
-amount=floor(d/16)+random(ceil(d/16));
+amount = max(1, floor(d / 16) + random(ceil(d / 16)));
 
 
 

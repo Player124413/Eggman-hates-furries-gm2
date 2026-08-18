@@ -1,4 +1,4 @@
-d=point_distance(x,y,x2,y2);
+d = max(0.0001, point_distance(x,y,x2,y2));
 ux=(x2-x)/d;
 uy=(y2-y)/d;
 if(on==0)
@@ -6,7 +6,7 @@ if(on==0)
 i1.x2=x2;
 i1.y2=y2;
 
-amount=floor(d/28);
+amount = max(1, floor(d / 28));
 
 c3=make_color_rgb(16,24,32);
 c4=c_black;

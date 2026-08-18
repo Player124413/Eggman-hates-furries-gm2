@@ -19,7 +19,7 @@ if(instance_position(x,y,mtpoint)==noone)
 if(instance_position(x2,y2,mtpoint)==noone)
     i2=instance_create(x2,y2,mtpoint);
 //calculate unit vector in the direction of this line
-d=point_distance(x,y,x2,y2);
+d = max(0.0001, point_distance(x,y,x2,y2));
 ux=(x2-x)/d;
 uy=(y2-y)/d;
 //calculate orthogonal unit vector

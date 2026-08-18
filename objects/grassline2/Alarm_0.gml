@@ -1,4 +1,4 @@
-d=point_distance(x,y,x2,y2);
+d = max(0.0001, point_distance(x,y,x2,y2));
 ux=(x2-x)/d;
 uy=(y2-y)/d;
 
@@ -6,7 +6,7 @@ i=instance_create(x,y,line);
 i.x2=x2;
 i.y2=y2;
 
-amount=ceil(d/16);
+amount = max(1, ceil(d / 16));
 
 c3=make_color_rgb(64,16,0);
 c4=c_black;

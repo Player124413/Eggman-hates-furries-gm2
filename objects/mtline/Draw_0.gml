@@ -21,12 +21,16 @@ else if(yi>__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )+32)
 __b__ = action_if(on);
 if __b__
 {
-amount=ceil(d/16);
-for(j=0; j<=amount; j+=1)
+amount = max(1, ceil(d / 16));
+for (j = 0; j <= amount; j += 1)
     {
-    g=j/amount;
-    h=1-j/amount;
-    draw_sprite_ext(sprBlackRocks,j mod 6,x*g+x2*h,y*g+y2*h,1,1,(id-10000)*(j mod 7),c_white,1);
+    g = j / amount;
+    h = 1 - g;
+    // Modern GameMaker instance IDs are references, not numbers, so doing
+    // arithmetic such as (id - 10000) raises "DoSub: Malformed variable".
+    // Derive a stable visual variation from the segment position instead.
+    var rock_angle = (floor(x) + floor(y) + j * 53) mod 360;
+    draw_sprite_ext(sprBlackRocks, j mod 6, x * g + x2 * h, y * g + y2 * h, 1, 1, rock_angle, c_white, 1);
     }
     
 if(xdeep==-2)
