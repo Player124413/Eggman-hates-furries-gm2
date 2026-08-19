@@ -50,15 +50,13 @@ if (gnd > 0) // on ground
     if (dash > 0)
     {
         standcount = 0;
-        if (keyboard_check(vk_down))
-        {
-            frict = 10;
-            hspeed = (hspeed + nullh) / 2;
-            vspeed = (vspeed + nullv) / 2;
-            sprite_index = sdash;
-            image_speed = 1;
-        }
-        else
+        dash_charge_timeout -= global.time;
+        var release_dash = !keyboard_check(vk_down)
+            || keyboard_check(vk_left)
+            || keyboard_check(vk_right)
+            || dash_charge_timeout <= 0;
+
+        if (release_dash)
         {
             if (instance_exists(myfish))
                 myfish.kill = 1;
@@ -69,6 +67,15 @@ if (gnd > 0) // on ground
             hspeed += image_xscale * ux * (24 + dash * 8) * global.time;
             vspeed += image_xscale * uy * (24 + dash * 8) * global.time;
             dash = 0;
+            dash_charge_timeout = 0;
+        }
+        else
+        {
+            frict = 10;
+            hspeed = (hspeed + nullh) / 2;
+            vspeed = (vspeed + nullv) / 2;
+            sprite_index = sdash;
+            image_speed = 1;
         }
     }
     else if (abs(ts) < 1.5 && (sig == 0 || roll == 1))
@@ -150,6 +157,7 @@ else//not on ground
         if (instance_exists(myfish))
             myfish.kill = 1;
         dash = 0;
+        dash_charge_timeout = 0;
     }
     
     if (sprite_index==sstand || sprite_index==sstop || sprite_index==sduck || sprite_index==spush || 
@@ -187,8 +195,9 @@ lastgnd=gnd;
 }
 if(!able)
     {
-    with (objdashfish)kill=1;
-    dash=0;
+    with (objdashfish) kill = 1;
+    dash = 0;
+    dash_charge_timeout = 0;
     }
 /* */
 __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 );

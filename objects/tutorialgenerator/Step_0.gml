@@ -51,7 +51,7 @@ with (objTuText)
     instance_destroy();
 
 i=instance_create(0,0,objTuText);
-i.txt="WHILE HOLDING DOWN TO CROUCH#PRESS SPACE REPEATEDLY#RELEASE TO EXECUTE SPIN-DASH";
+i.txt="HOLD DOWN TO CROUCH#TAP SPACE TO CHARGE#RELEASE DOWN TO SPIN-DASH";
 i.alarm[1]=0;
 door=instance_create(xx+16,yy+64,objDreamDoor);
 
@@ -60,6 +60,15 @@ door=instance_create(xx+16,yy+64,objDreamDoor);
 __b__ = action_if(phase==1);
 if __b__
 {
+// Keep the tutorial interactive even if a previous scripted state left one
+// of Sonic's control locks enabled.
+if (instance_exists(sonic))
+{
+    sonic.able = 1;
+    sonic.physics = 1;
+    sonic.lockMovement = 0;
+    sonic.specialStopCase = 0;
+}
 if(sonic.x>door.x)
     {
     xx+=32;

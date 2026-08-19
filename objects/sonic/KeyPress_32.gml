@@ -22,6 +22,8 @@ if (gnd > 0 && able)
         if (dash < 6)
             dash += 1;
 
+        // Refresh the fail-safe while the player actively taps Space.
+        dash_charge_timeout = 45;
         sprite_index = sdash;
         image_speed = 1;
         soundfrequency(global.sndSpin, 0.15 + dash / 40);
