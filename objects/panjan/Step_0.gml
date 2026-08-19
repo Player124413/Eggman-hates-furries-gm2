@@ -1,16 +1,14 @@
 action_set_relative(1);
 
-// The spotter stays as an invisible controller after its explosion. Replace it
-// only after Sonic has passed the former loop position, so the next Panjan
-// phase receives a fresh shielded drone.
-if (!passedLoop && instance_exists(sonic) && sonic.x > loopExitX)
-    passedLoop = true;
-if (passedLoop && instance_exists(bot1) && variable_instance_exists(bot1, "dead") && bot1.dead)
+// Keep Panjan's spotter present in every active phase. The destroyed drone is
+// an invisible controller, so replace it on the next Step instead of waiting
+// for a coordinate trigger that may never fire after geometry conversion.
+if (instance_exists(bot1) && variable_instance_exists(bot1, "dead") && bot1.dead)
     {
     with (bot1) instance_destroy();
     bot1=noone;
     }
-if (passedLoop && !instance_exists(bot1))
+if (!instance_exists(bot1))
     {
     bot1=instance_create(x-128,y-128,objBot);
     bot1.kind=1;
