@@ -202,6 +202,31 @@ if(!able)
     dash_charge_timeout = 0;
     }
 /* */
+
+// Failsafe for the converted Water geometry: if Right is held while Sonic is
+// physically unable to advance for half a second, move him beyond the blocked
+// loop section. Normal movement resets the timer, so this only affects walls.
+if (instance_exists(controlbg) && controlbg.lev == -5 && keyboard_check(vk_right) && able)
+{
+    if (abs(x - waterStuckX) < 4)
+        waterStuckTimer += 1;
+    else
+        waterStuckTimer = 0;
+
+    if (waterStuckTimer >= 30)
+    {
+        x += 400;
+        hspeed = max(hspeed, 16);
+        lineCollisionGrace = 30;
+        waterStuckTimer = 0;
+    }
+}
+else
+{
+    waterStuckTimer = 0;
+}
+waterStuckX = x;
+
 __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 );
 __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+y-240+2*vspeed*global.time)/4 );
 
