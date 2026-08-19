@@ -60,6 +60,8 @@ if(nodesChanged)
     for(n=0; n<nodes; n+=1)
         {
         dir=n*360/nodes;
+        if (n >= array_length(node) || !instance_exists(node[n]))
+            node[n] = instance_create(x, y, line);
         node[n].x=x+lengthdir_x(nr[n],dir);
         node[n].y=y+lengthdir_y(nr[n],dir);
         node[n].x2=x+lengthdir_x(nr[n+1],dir+360/nodes);
