@@ -1,22 +1,20 @@
 action_set_relative(1);
 
-// The destroyed spotter remains as a harmless controller until Sonic exits
-// the loop. Respawn it after loopTrigger reaches 2, matching the next Panjan
-// phase instead of leaving the battle without its drone.
-if (instance_exists(bot1) && variable_instance_exists(bot1, "dead")
-    && bot1.dead && loopTrigger >= 2)
+// The spotter stays as an invisible controller after its explosion. Replace it
+// only after Sonic has passed the former loop position, so the next Panjan
+// phase receives a fresh shielded drone.
+if (!passedLoop && instance_exists(sonic) && sonic.x > loopExitX)
+    passedLoop = true;
+if (passedLoop && instance_exists(bot1) && variable_instance_exists(bot1, "dead") && bot1.dead)
     {
     with (bot1) instance_destroy();
     bot1=noone;
     }
-
-// The support bot can be removed by broad phase clean-ups while Panjan keeps
-// running. Recreate it before any goal/shield fields are updated.
-if (!instance_exists(bot1))
-{
-    bot1 = instance_create(x - 128, y - 128, objBot);
-    bot1.kind = 1;
-}
+if (passedLoop && !instance_exists(bot1))
+    {
+    bot1=instance_create(x-128,y-128,objBot);
+    bot1.kind=1;
+    }
 
 if(lightEmUp!=-1)
     {
@@ -876,82 +874,19 @@ if (subphs==2)
     i.x2=xx;
     i.y2=yy;
     i.depth=-3;
-    //o_0 OMG a loop:
-    //bounds
-    i=instance_create(xx-32,yy-288,sandline);
-    i.LH=1;
-    i.x2=i.x+32;
-    i.y2=i.y;
-    i.deep=288;
-    i.c3=c_white;
-    i.c4=c_white;
-    i.depth=2;
-    i=instance_create(xx+256,yy-288,sandline);
-    i.x2=i.x+32;
-    i.y2=i.y;
-    i.deep=288;
-    i.c3=c_white;
-    i.c4=c_white;
-    i.RH=1;
-    i.depth=-2;
-    //R
+    // The circular Panjan loop does not work with the converted collision
+    // resolver. Replace only its 256px footprint with ordinary flat sand;
+    // this preserves every later x/y trigger and the drone respawn sequence.
     mx=xx+128;
     my=yy-128;
-    b=6;
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx+lengthdir_x(128,270+a*90/b),my+lengthdir_y(128,270+a*90/b),sandline);
-        i.x2=mx+lengthdir_x(128,270+(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,270+(a+1)*90/b)
-        i.deep=128;
-        i.loopside=2;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=-2;
-        }
-    //R!
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx+lengthdir_x(128,a*90/b),my+lengthdir_y(128,a*90/b),upsand);
-        i.x2=mx+lengthdir_x(128,(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,(a+1)*90/b)
-        i.loopside=2;
-        i.ydeep=yy-288;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=-2;
-        }
-    //L
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx-lengthdir_x(128,270+a*90/b),my+lengthdir_y(128,270+a*90/b),sandline);
-        i.loopside=1;
-        i.x2=mx-lengthdir_x(128,270+(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,270+(a+1)*90/b)
-        i.deep=128;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=2;
-        }
-    //L!
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx-lengthdir_x(128,a*90/b),my+lengthdir_y(128,a*90/b),upsand);
-        i.x2=mx-lengthdir_x(128,(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,(a+1)*90/b)
-        i.loopside=1;
-        i.ydeep=yy-288;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=2;
-        }
-    //top;
-    i=instance_create(xx,yy-288,sandline);
-    i.y2=i.y;   
-    i.deep=0;
+    loopTrigger=2;
+    i=instance_create(xx,yy,sandline);
     i.x2=xx+256;
-    i.depth=-32;
-    
+    i.y2=yy;
+    i.depth=-3;
+    xx+=256;
+    loopExitX=xx;
+
     i=instance_create(xx,yy,sandline);
     loopFloor=i;
     xx+=480;
