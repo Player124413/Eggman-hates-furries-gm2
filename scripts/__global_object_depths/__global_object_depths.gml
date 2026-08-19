@@ -284,7 +284,6 @@ function __global_object_depths() {
 	global.__objectDepths[277] = 0; // objSuperRingGet
 	global.__objectDepths[278] = 0; // objSuperRing
 	global.__objectDepths[279] = -10; // objRainEnd
-	global.__objectDepths[280] = 0; // objFrontEnd
 	global.__objectDepths[281] = 1; // objSmokeEnd
 	global.__objectDepths[282] = -1; // objSonicEnd1
 	global.__objectDepths[283] = -2; // objTailsEnd1
@@ -599,7 +598,6 @@ function __global_object_depths() {
 	global.__objectNames[277] = "objSuperRingGet";
 	global.__objectNames[278] = "objSuperRing";
 	global.__objectNames[279] = "objRainEnd";
-	global.__objectNames[280] = "objFrontEnd";
 	global.__objectNames[281] = "objSmokeEnd";
 	global.__objectNames[282] = "objSonicEnd1";
 	global.__objectNames[283] = "objTailsEnd1";

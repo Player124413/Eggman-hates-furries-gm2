@@ -67,7 +67,7 @@ switch (timer)
         b.img=36;
         break;
     case 435:
-        objFrontEnd.next=1;
+        // The removed ending controller used to advance here.
         break;
     }
 //

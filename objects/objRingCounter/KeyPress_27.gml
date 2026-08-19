@@ -8,7 +8,7 @@ if (paused)
 }
 
 var __b__;
-__b__ = action_if(!instance_exists(objMenu) && !instance_exists(objMenuCreds) && !instance_exists(presentation) && !instance_exists(objFrontEnd));
+__b__ = action_if(!instance_exists(objMenu) && !instance_exists(objMenuCreds) && !instance_exists(presentation));
 if __b__
 {
 {

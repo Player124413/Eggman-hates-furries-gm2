@@ -308,7 +308,6 @@
     {"id":{"name":"objFloater","path":"objects/objFloater/objFloater.yy",},},
     {"id":{"name":"objFogDust","path":"objects/objFogDust/objFogDust.yy",},},
     {"id":{"name":"objFragile","path":"objects/objFragile/objFragile.yy",},},
-    {"id":{"name":"objFrontEnd","path":"objects/objFrontEnd/objFrontEnd.yy",},},
     {"id":{"name":"objFullDust","path":"objects/objFullDust/objFullDust.yy",},},
     {"id":{"name":"objFullSparkly","path":"objects/objFullSparkly/objFullSparkly.yy",},},
     {"id":{"name":"objGetOn","path":"objects/objGetOn/objGetOn.yy",},},
