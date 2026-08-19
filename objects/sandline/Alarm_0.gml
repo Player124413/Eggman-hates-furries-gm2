@@ -8,6 +8,13 @@ if(dir>180)
 i=instance_create(x,y,line);
 i.x2=x2;
 i.y2=y2;
+// Panjan loop sides start open so Sonic can cross the entrance. Panjan turns
+// these collision helpers back on after Sonic passes mx + 16.
+if (loopside != 0)
+{
+    i.loopGate = true;
+    i.on = 0;
+}
 
 amount = max(1, ceil(d / 20));
 

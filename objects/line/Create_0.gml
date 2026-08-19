@@ -14,3 +14,4 @@ i2=-1;
 action_set_alarm(1, 0);
 on = 0;
 frict = 1;
+loopGate = false;

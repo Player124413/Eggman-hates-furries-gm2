@@ -6,6 +6,12 @@ i=instance_create(x,y,line);
 i.x2=x2;
 i.y2=y2;
 i.visible=1;
+// Keep the Panjan loop gate open until the boss controller activates it.
+if (loopside != 0)
+{
+    i.loopGate = true;
+    i.on = 0;
+}
 
 
 
