@@ -1,3 +1,7 @@
+var boss = instance_find(panjan, 0);
+var water = instance_find(objWaterFront, 0);
+var water_y = instance_exists(water) ? water.y : __view_get(e__VW.YView, 0) + 480;
+
 var __b__;
 __b__ = action_if(phase==3);
 if __b__
@@ -7,7 +11,7 @@ var k;
 if (subphs==1)
     {
     k=384;
-    if (y<objWaterFront.y-240)
+    if (y<water_y-240)
         subphs=2;
     }
 else if (subphs==2)
@@ -15,8 +19,8 @@ else if (subphs==2)
     k=-96;
     
     var support_bot = noone;
-    if (instance_exists(panjan))
-        support_bot = panjan.bot1;
+    if (instance_exists(boss))
+        support_bot = boss.bot1;
 
     if (instance_exists(support_bot) && y + 24 > support_bot.y)
     {
@@ -45,5 +49,5 @@ else if (subphs==2)
     }
 else
     k=212;
-vspeed=(vspeed*39+global.time*(limitize(objWaterFront.y-k-y-vspeed*14,8)))/(39+global.time);
+vspeed=(vspeed*39+global.time*(limitize(water_y-k-y-vspeed*14,8)))/(39+global.time);
 }
