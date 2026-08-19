@@ -576,18 +576,23 @@ if(subphs<2)
         {
         subphs=2;
         }
-    if(timer==nextRock+31 && subphs==0 && firstGrass !=-1)
+    if (timer == nextRock + 31 && subphs == 0 && instance_exists(firstGrass))
+    {
+        if (variable_instance_exists(firstGrass, "i"))
         {
-        if(firstGrass.i!=-1)
+            var grass_collision = firstGrass.i;
+            if (instance_exists(grass_collision) && variable_instance_exists(grass_collision, "i1"))
             {
-            if(firstGrass.i.i1!=-1)
+                var grass_endpoint = grass_collision.i1;
+                if (instance_exists(grass_endpoint))
                 {
-                with (firstGrass.i.i1)
-                    instance_destroy();
-                firstGrass.i.i1=-1;
+                    with (grass_endpoint)
+                        instance_destroy();
+                    grass_collision.i1 = -1;
                 }
             }
         }
+    }
     if(timer==nextRock+30 && subphs==0) ////////NORMAL TINY ISLAND
         {
         if (tornado.phase!=3)
@@ -984,15 +989,20 @@ if(subphs==3 && sonic.x>rx-40)
             instance_destroy();
         firstLine.i1=-1;
         }*/
-    if(firstGrass.i!=-1)
+    if (instance_exists(firstGrass) && variable_instance_exists(firstGrass, "i"))
+    {
+        var grass_collision = firstGrass.i;
+        if (instance_exists(grass_collision) && variable_instance_exists(grass_collision, "i1"))
         {
-        if(firstGrass.i.i1!=-1)
+            var grass_endpoint = grass_collision.i1;
+            if (instance_exists(grass_endpoint))
             {
-            with (firstGrass.i.i1)
-                instance_destroy();
-            firstGrass.i.i1=-1;
+                with (grass_endpoint)
+                    instance_destroy();
+                grass_collision.i1 = -1;
             }
         }
+    }
     }
     
 if (subphs==3 && x>rx-40)

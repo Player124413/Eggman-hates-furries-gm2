@@ -81,6 +81,10 @@ if __b__
 //draw_set_color(c_white);
 //draw_surface(credSurf,0,credY);
 yy=0;
+// Preserve the logo's original black title card even if its black pixels are
+// interpreted as transparent during legacy background conversion.
+draw_set_color(c_black);
+draw_rectangle(0, credY, 320, credY + 240, false);
 draw_background(bgLogo,0,credY);
 for(a=0; a<totalCreds; a+=1)
     {

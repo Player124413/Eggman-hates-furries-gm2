@@ -1,9 +1,21 @@
 var __b__;
-__b__ = action_if(firstSand!=-1);
-if __b__
+// sandline creates its collision helper from Alarm 0, which runs after the
+// first Step. Wait until both references exist before adjusting it.
+if (instance_exists(firstSand))
 {
-firstSand.i.x=correctX;
-firstSand=-1;
+    if (variable_instance_exists(firstSand, "i"))
+    {
+        var sand_collision = firstSand.i;
+        if (instance_exists(sand_collision))
+        {
+            sand_collision.x = correctX;
+            firstSand = noone;
+        }
+    }
+}
+else
+{
+    firstSand = noone;
 }
 __b__ = action_if(phase==0 && sonic.x>xx+640);
 if __b__
