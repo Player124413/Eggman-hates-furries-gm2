@@ -247,17 +247,16 @@ ry=ly1;
 len=96;
 event_user(4);
 
-// This is the visible circular loop from the Water screenshot. Its first
-// collision segment became a solid cap after conversion, so assist this exact
-// entrance rather than the earlier small bend.
+// The converted Water loop closes itself with an impassable cap. Build its
+// geometry under a tag, then replace the whole loop with a straight sand path.
 waterLoopX = xx - 32;
 waterLoopY = yy + r;
 waterLoopDirection = 0;
-waterLoopActive = true;
+waterLoopActive = false;
+waterLoopBuilding = true;
 i=instance_create(waterLoopX,waterLoopY,objBoostPad);
 i.amount=48;
-i.image_angle=waterLoopDirection;
-i.entryAssist=true;
+i.image_angle=0;
 
 len=32;
 for(dir=10; dir<180; dir+=10)
@@ -279,6 +278,20 @@ i.x3=rx;
 i.y3=ry;
 i.x4=rx-80;
 i.y4=ry;
+
+// Remove only the tagged circular tunnel pieces before they create collision
+// helpers, then bridge the entrance and exit with ordinary passable ground.
+waterLoopBuilding = false;
+with (objTunnel)
+{
+    if (waterLoopPart)
+        instance_destroy();
+}
+var loop_bridge = instance_create(waterLoopX, waterLoopY, sandline);
+loop_bridge.x2 = fx + 32;
+loop_bridge.y2 = fy;
+loop_bridge.c3 = c_white;
+loop_bridge.c4 = c_black;
 
 //sonic.x=fx;
 //sonic.y=fy;

@@ -14,6 +14,7 @@ y4=yy+v2*r;
 
 //maek
 i=instance_create(0,0,objTunnel);
+i.waterLoopPart = waterLoopBuilding;
 i.x1=lx1;
 i.y1=ly1;
 i.x2=lx2;
