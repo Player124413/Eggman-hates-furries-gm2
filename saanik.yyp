@@ -643,6 +643,7 @@
     {"id":{"name":"makePipe2","path":"scripts/makePipe2/makePipe2.yy",},},
     {"id":{"name":"makePipe3","path":"scripts/makePipe3/makePipe3.yy",},},
     {"id":{"name":"makeRazer","path":"scripts/makeRazer/makeRazer.yy",},},
+    {"id":{"name":"mountLoop","path":"scripts/mountLoop/mountLoop.yy",},},
     {"id":{"name":"moveBike","path":"scripts/moveBike/moveBike.yy",},},
     {"id":{"name":"moveMap","path":"scripts/moveMap/moveMap.yy",},},
     {"id":{"name":"object_get_depth","path":"scripts/object_get_depth/object_get_depth.yy",},},
