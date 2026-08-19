@@ -98,8 +98,14 @@ else
     else if (mytails==stornadoHalf)
         mytails=stornado;
     }
-//hit the bot
-hspeed=(hspeed*19+global.time*(panjan.bot1.lulsp+limitize(panjan.bot1.x-48-x-(hspeed-panjan.bot1.lulsp)*11,14)))/(19+global.time);
+// Hit/follow the support bot only while both controller and bot exist.
+if (instance_exists(panjan))
+{
+    var support_bot = panjan.bot1;
+    if (instance_exists(support_bot))
+        hspeed = (hspeed * 19 + global.time * (support_bot.lulsp
+            + limitize(support_bot.x - 48 - x - (hspeed - support_bot.lulsp) * 11, 14))) / (19 + global.time);
+}
 }
 __b__ = action_if(phase==4);
 if __b__

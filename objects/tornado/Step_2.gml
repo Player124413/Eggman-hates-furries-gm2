@@ -14,33 +14,34 @@ else if (subphs==2)
     {
     k=-96;
     
-    if(y+24>panjan.bot1.y)
+    var support_bot = noone;
+    if (instance_exists(panjan))
+        support_bot = panjan.bot1;
+
+    if (instance_exists(support_bot) && y + 24 > support_bot.y)
+    {
+        subphs = 0;
+        if (support_bot.x > x - 96 && support_bot.x < x + 36)
         {
-        subphs=0;
-        if(panjan.bot1.x>x-96 && panjan.bot1.x<x+36)
-            {
-            direction+=4;
-            panjan.bot1.shield=0;
-            panjan.bot1.shieldTimer=90;
-            panjan.bot1.vspeed+=5;
-            i=instance_create(0,0,objBotShieldFail);
-            i.p=panjan.bot1;
+            direction += 4;
+            support_bot.shield = 0;
+            support_bot.shieldTimer = 90;
+            support_bot.vspeed += 5;
+            i = instance_create(0, 0, objBotShieldFail);
+            i.p = support_bot;
             soundplay(global.sndBlth);
-            repeat(12)
-                {
-                i=instance_create(panjan.bot1.x-16+random(32),panjan.bot1.y-8-random(16),objspark);
-                i.hspeed=hspeed-8+random(16);
-                i.vspeed=-3+random(6);
-                }
-            a=floor(random(3));
-            if(a==0)
-                soundplay(global.sndMetal1);
-            if(a==1)
-                soundplay(global.sndMetal2);
-            if(a==2)
-                soundplay(global.sndMetal3);
+            repeat (12)
+            {
+                i = instance_create(support_bot.x - 16 + random(32), support_bot.y - 8 - random(16), objspark);
+                i.hspeed = hspeed - 8 + random(16);
+                i.vspeed = -3 + random(6);
             }
+            a = floor(random(3));
+            if (a == 0) soundplay(global.sndMetal1);
+            if (a == 1) soundplay(global.sndMetal2);
+            if (a == 2) soundplay(global.sndMetal3);
         }
+    }
     }
 else
     k=212;

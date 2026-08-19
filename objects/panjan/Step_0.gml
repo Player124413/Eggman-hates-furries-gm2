@@ -1,4 +1,13 @@
 action_set_relative(1);
+
+// The support bot can be removed by broad phase clean-ups while Panjan keeps
+// running. Recreate it before any goal/shield fields are updated.
+if (!instance_exists(bot1))
+{
+    bot1 = instance_create(x - 128, y - 128, objBot);
+    bot1.kind = 1;
+}
+
 if(lightEmUp!=-1)
     {
     if (x>lightEmUp.x2)

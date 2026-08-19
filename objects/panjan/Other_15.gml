@@ -1,3 +1,4 @@
 sprite_index = sprcoredest;
-bot1.damaged = 1;
+if (instance_exists(bot1))
+    bot1.damaged = 1;
 firstCrash = 0;
