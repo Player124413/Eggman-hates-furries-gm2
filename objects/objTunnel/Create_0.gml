@@ -1,5 +1,4 @@
 active = 0;
-waterLoopPart = false;
 i1=-1;//left
 i2=-1;//right
 i3=-1;//down

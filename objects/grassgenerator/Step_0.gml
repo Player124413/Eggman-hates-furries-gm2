@@ -267,26 +267,14 @@ len=64;
 event_user(4);
 fx=lx2;
 fy=ly2;
-i.tex=background_get_texture(bgTunnelT2);
-i.right=0;
 len=32;
 for(dir=190; ly2<ry-16; dir+=10)
     {
     event_user(4);
     }
-i.x3=rx;
-i.y3=ry;
-i.x4=rx-80;
-i.y4=ry;
-
-// Remove only the tagged circular tunnel pieces before they create collision
-// helpers, then bridge the entrance and exit with ordinary passable ground.
+// No circular tunnel objects were created while waterLoopBuilding was true.
+// Bridge the computed entrance and exit with ordinary passable ground.
 waterLoopBuilding = false;
-with (objTunnel)
-{
-    if (waterLoopPart)
-        instance_destroy();
-}
 var loop_bridge = instance_create(waterLoopX, waterLoopY, sandline);
 loop_bridge.x2 = fx + 32;
 loop_bridge.y2 = fy;
