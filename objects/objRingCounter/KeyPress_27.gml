@@ -1,3 +1,12 @@
+if (paused)
+{
+    instance_activate_all();
+    paused = false;
+    audio_resume_all();
+    soundplay(global.sndType);
+    exit;
+}
+
 var __b__;
 __b__ = action_if(!instance_exists(objMenu) && !instance_exists(objMenuCreds) && !instance_exists(presentation) && !instance_exists(objFrontEnd));
 if __b__

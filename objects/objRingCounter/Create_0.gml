@@ -9,3 +9,4 @@ lastC = 0;
 dirr = 0;
 slowDownTimer = 0;
 slowDownMessage = 0;
+paused = false;

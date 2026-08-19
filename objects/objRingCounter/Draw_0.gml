@@ -118,4 +118,25 @@ if(slowDownMessage>0)
     draw_set_color(c_white);
     }
 /* */
+
+if (paused)
+{
+    var pause_x = __view_get(e__VW.XView, 0);
+    var pause_y = __view_get(e__VW.YView, 0);
+    draw_set_blend_mode(bm_normal);
+    draw_set_alpha(0.65);
+    draw_set_color(c_black);
+    draw_rectangle(pause_x, pause_y, pause_x + 640, pause_y + 480, false);
+    draw_set_alpha(1);
+    draw_set_color(c_white);
+    draw_set_font(tutorialFont);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(pause_x + 320, pause_y + 230, "PAUSED");
+    draw_set_font(assessmentfont);
+    draw_text(pause_x + 320, pause_y + 256, "Press Escape or Enter to resume");
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+}
+
 /*  */
