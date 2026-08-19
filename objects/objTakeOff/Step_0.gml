@@ -51,7 +51,10 @@ if (timer>815)//600
     //objectfg.darkness+=1/215;
     //if (objectfg.darkness>=1)
     make=1;
+    // Destroy runs immediately and deletes planeShadowSprite/surf. Do not
+    // continue this Step event with those now-invalid runtime resources.
     instance_destroy();
+    exit;
     }
 w=background_get_width(fgLand);
 h=background_get_height(fgLand);
