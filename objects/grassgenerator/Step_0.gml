@@ -12,7 +12,8 @@ if (waterLoopActive && instance_exists(sonic)
     sonic.roll = 1;
     sonic.sprite_index = sjump;
     sonic.lineCollisionGrace = 16;
-    waterLoopActive = false;
+    // Keep the gate active until Sonic is physically outside the entrance
+    // region; a single early trigger can otherwise be consumed before arrival.
     soundplay(global.sndBooster);
 }
 
