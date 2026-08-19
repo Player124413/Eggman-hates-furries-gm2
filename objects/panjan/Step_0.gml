@@ -1,5 +1,15 @@
 action_set_relative(1);
 
+// The destroyed spotter remains as a harmless controller until Sonic exits
+// the loop. Respawn it after loopTrigger reaches 2, matching the next Panjan
+// phase instead of leaving the battle without its drone.
+if (instance_exists(bot1) && variable_instance_exists(bot1, "dead")
+    && bot1.dead && loopTrigger >= 2)
+    {
+    with (bot1) instance_destroy();
+    bot1=noone;
+    }
+
 // The support bot can be removed by broad phase clean-ups while Panjan keeps
 // running. Recreate it before any goal/shield fields are updated.
 if (!instance_exists(bot1))
@@ -288,9 +298,25 @@ with (bot1)
 
     }
     
-if(sonic.x>mx+16 && loopTrigger==0)
+if(sonic.x>mx-24 && loopTrigger==0)
     {
     loopTrigger=1;
+
+    // At the loop entrance the flat sand collision overlaps the curved path.
+    // Disable only that floor segment while Sonic is inside the loop so the
+    // circular collision is selected instead of behaving like a wall.
+    if (instance_exists(loopFloor) && variable_instance_exists(loopFloor, "i"))
+        {
+        var floorCollision=loopFloor.i;
+        if (instance_exists(floorCollision))
+            floorCollision.on=0;
+        }
+    sonic.x=mx-12;
+    sonic.y=my+112;
+    sonic.speed=max(40,sonic.speed);
+    sonic.direction=0;
+    sonic.roll=1;
+
     with sandline
         {
         if(loopside!=0)
@@ -305,6 +331,12 @@ if(sonic.x>mx+16 && loopTrigger==0)
 if(((sonic.x<mx-16 && sonic.y<my) || sonic.x>mx+136) && loopTrigger==1)
     {
     loopTrigger=2;
+    if (instance_exists(loopFloor) && variable_instance_exists(loopFloor, "i"))
+        {
+        var exitFloorCollision=loopFloor.i;
+        if (instance_exists(exitFloorCollision))
+            exitFloorCollision.on=1;
+        }
     with sandline
         {
         if(loopside==2)
@@ -921,6 +953,7 @@ if (subphs==2)
     i.depth=-32;
     
     i=instance_create(xx,yy,sandline);
+    loopFloor=i;
     xx+=480;
     i.x2=xx;
     i.y2=yy;

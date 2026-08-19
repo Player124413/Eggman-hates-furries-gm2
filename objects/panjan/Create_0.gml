@@ -28,6 +28,7 @@ invulnerable = 0;
 fukTimer = 0;
 burnStage = 0;
 loopTrigger = 0;
+loopFloor = noone;
 firstCrash = 1;
 counter = 0;
 lastFire = 0;
