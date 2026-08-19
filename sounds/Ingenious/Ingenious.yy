@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":18.000000,
+  "duration":20.000000,
   "name":"Ingenious",
   "parent":{
     "name":"Sounds",
@@ -18,7 +18,7 @@
   "preload":true,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
+  "sampleRate":22050,
   "soundFile":"Ingenious.wav",
   "type":0,
   "volume":0.91,

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":177.741667,
+  "duration":181.566010,
   "name":"game",
   "parent":{
     "name":"Sounds",
@@ -18,7 +18,7 @@
   "preload":true,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
+  "sampleRate":22050,
   "soundFile":"game.wav",
   "type":0,
   "volume":0.96,
