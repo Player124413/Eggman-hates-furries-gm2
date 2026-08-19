@@ -19,7 +19,7 @@ with (sonails)
         
         ux=image_xscale*hspeed/speed;
         uy=image_xscale*vspeed/speed;
-        nx=-uy;
+        nx=uy;
         ny=-ux;
         
         soundplay(global.sndSpjoing);

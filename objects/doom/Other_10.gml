@@ -24,7 +24,7 @@ with (sonic)
         
         ux=image_xscale*hspeed/speed;
         uy=image_xscale*vspeed/speed;
-        nx=-uy;
+        nx=uy;
         ny=-ux;
     
     }
@@ -65,7 +65,7 @@ with (sonic)
         
         ux=image_xscale*hspeed/speed;
         uy=image_xscale*vspeed/speed;
-        nx=-uy;
+        nx=uy;
         ny=-ux;
     
     }
