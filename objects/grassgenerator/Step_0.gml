@@ -5,10 +5,10 @@ var __b__;
 if (waterLoopActive && instance_exists(sonic)
     && point_distance(sonic.x, sonic.y, waterLoopX, waterLoopY) < 192)
 {
-    sonic.x = waterLoopX + lengthdir_x(112, 270);
-    sonic.y = waterLoopY + lengthdir_y(112, 270);
+    sonic.x = waterLoopX + lengthdir_x(112, waterLoopDirection);
+    sonic.y = waterLoopY + lengthdir_y(112, waterLoopDirection);
     sonic.speed = 48;
-    sonic.direction = 270;
+    sonic.direction = waterLoopDirection;
     sonic.roll = 1;
     sonic.sprite_index = sjump;
     sonic.lineCollisionGrace = 16;
@@ -134,17 +134,6 @@ len=64;
 event_user(4);
 len=128;
 event_user(4);
-
-// Entry to the large Water loop. Put the assisted pad before the first curved
-// segment so Sonic crosses the converted cap instead of hitting it as a wall.
-waterLoopX = (lx1 + lx2) / 2;
-waterLoopY = (ly1 + ly2) / 2;
-waterLoopActive = true;
-var water_loop_entry = instance_create(waterLoopX, waterLoopY, objBoostPad);
-water_loop_entry.amount = 48;
-water_loop_entry.image_angle = 270;
-water_loop_entry.entryAssist = true;
-
 len=48;
 for(dir=270; dir<360+30; dir+=10)
     {
@@ -156,7 +145,6 @@ for(dir=270; dir<360+30; dir+=10)
         i=instance_create((lx2+ppx)/2,(ly2+ppy)/2,objBoostPad);
         i.amount=48;
         i.image_angle=dir;
-        i.entryAssist=true;
         }
     }
 while(dir>360)
@@ -258,8 +246,17 @@ ry=ly1;
 len=96;
 event_user(4);
 
-i=instance_create(xx-32,yy+r,objBoostPad);
-i.amount=40;
+// This is the visible circular loop from the Water screenshot. Its first
+// collision segment became a solid cap after conversion, so assist this exact
+// entrance rather than the earlier small bend.
+waterLoopX = xx - 32;
+waterLoopY = yy + r;
+waterLoopDirection = 0;
+waterLoopActive = true;
+i=instance_create(waterLoopX,waterLoopY,objBoostPad);
+i.amount=48;
+i.image_angle=waterLoopDirection;
+i.entryAssist=true;
 
 len=32;
 for(dir=10; dir<180; dir+=10)
