@@ -472,7 +472,9 @@ if((sonic.y-256-refY)/40>255)
 }
 else
 {
-sonic.image_blend=make_color_hsv(255-hue,255,255);
+// Sonic is intentionally destroyed when phase 7 transitions to phase 8.
+if (instance_exists(sonic))
+    sonic.image_blend=make_color_hsv(255-hue,255,255);
 /* */
 }
 __b__ = action_if(phase==8);

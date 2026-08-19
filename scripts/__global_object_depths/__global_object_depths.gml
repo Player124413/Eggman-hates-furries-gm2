@@ -16,7 +16,6 @@ function __global_object_depths() {
 	global.__objectDepths[8] = 0; // BottomFloor
 	global.__objectDepths[9] = -10; // objScratch
 	global.__objectDepths[10] = 0; // presentation
-	global.__objectDepths[11] = 0; // objTouchControls
 	global.__objectDepths[12] = 10001; // controlbg
 	global.__objectDepths[13] = -10001; // objectfg
 	global.__objectDepths[14] = -10002; // objRingCounter
@@ -332,7 +331,6 @@ function __global_object_depths() {
 	global.__objectNames[8] = "BottomFloor";
 	global.__objectNames[9] = "objScratch";
 	global.__objectNames[10] = "presentation";
-	global.__objectNames[11] = "objTouchControls";
 	global.__objectNames[12] = "controlbg";
 	global.__objectNames[13] = "objectfg";
 	global.__objectNames[14] = "objRingCounter";
