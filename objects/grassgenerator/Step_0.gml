@@ -117,6 +117,14 @@ len=64;
 event_user(4);
 len=128;
 event_user(4);
+
+// Entry to the large Water loop. Put the assisted pad before the first curved
+// segment so Sonic crosses the converted cap instead of hitting it as a wall.
+var water_loop_entry = instance_create((lx1 + lx2) / 2, (ly1 + ly2) / 2, objBoostPad);
+water_loop_entry.amount = 48;
+water_loop_entry.image_angle = 270;
+water_loop_entry.entryAssist = true;
+
 len=48;
 for(dir=270; dir<360+30; dir+=10)
     {
@@ -128,6 +136,7 @@ for(dir=270; dir<360+30; dir+=10)
         i=instance_create((lx2+ppx)/2,(ly2+ppy)/2,objBoostPad);
         i.amount=48;
         i.image_angle=dir;
+        i.entryAssist=true;
         }
     }
 while(dir>360)
