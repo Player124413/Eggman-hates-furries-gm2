@@ -11,6 +11,7 @@ roll = 0;
 able = true;
 dash = 0;
 dash_charge_timeout = 0;
+lineCollisionGrace = 0;
 lastgnd = 0;
 standcount = 0;
 damaged=0;

@@ -1,4 +1,6 @@
 action_set_relative(1);
+if (lineCollisionGrace > 0)
+    lineCollisionGrace = max(0, lineCollisionGrace - 1);
 var __b__;
 __b__ = action_if(!specialStopCase);
 if __b__

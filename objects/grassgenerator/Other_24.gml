@@ -3,6 +3,12 @@ len=130;
 r=64;
 event_user(4);
 
+// Reliable run-up into the loop. The original pad could sit beyond a collision
+// seam after conversion, so place one in the straight entrance corridor.
+var loop_entry_pad = instance_create(xx - 64, yy, objBoostPad);
+loop_entry_pad.amount = 48;
+loop_entry_pad.image_angle = 0;
+
 lx1=lx2;
 ly1=ly2;
 xx=lx2+24;

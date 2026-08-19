@@ -14,6 +14,9 @@ if (instance_exists(player))
             player.speed = amount;
             player.direction = image_angle + (image_xscale < 0 ? 180 : 0);
             player.roll = 1;
+            // Ignore seam/cap collision lines for a few frames so the boost
+            // can carry Sonic into loop geometry before normal walls re-engage.
+            player.lineCollisionGrace = 4;
             player.sprite_index = sjump;
             player.image_speed = 1;
             soundplay(global.sndBooster);

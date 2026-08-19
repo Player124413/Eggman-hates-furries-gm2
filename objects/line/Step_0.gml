@@ -9,10 +9,14 @@ var a,b,f,c;
 
 with (movable)
     {
-    if(x+radius+abs(hspeed)>=other.xi && y+radius+abs(vspeed)>=other.yi && 
+    var ignore_loop_seam = false;
+    if (object_index == sonic && variable_instance_exists(id, "lineCollisionGrace"))
+        ignore_loop_seam = lineCollisionGrace > 0;
+
+    if(!ignore_loop_seam && x+radius+abs(hspeed)>=other.xi && y+radius+abs(vspeed)>=other.yi &&
             x-radius-abs(hspeed)<=other.xa && y-radius-abs(vspeed)<=other.ya)
         {
-        with(other)    
+        with(other)
             {
             if(i1>-1 && instance_exists(i1))
                 i1.compute=1;
@@ -20,14 +24,14 @@ with (movable)
                 i2.compute=1;
 
             b=(other.y*ux-y*ux-other.x*uy+x*uy)/(-nx*uy+ny*ux);
-            
+
             if(uy==0)
                 a=(other.x-nx*b-x)/ux;
             else
                 a=(other.y-ny*b-y)/uy;
-            
+
             f=other.speed*cos(degtorad(p-90-other.direction));
-                
+
             if(abs(b)<=sign(b)*f+other.radius+min(4,other.speed/12) && a>=0 && a<=d)
                 {
                 //normal force
@@ -55,7 +59,7 @@ with (movable)
                     other.nx=nx*sign(b);
                     other.ny=ny*sign(b);
                     other.gnd=2;}
-                
+
                 }
             }
         }
