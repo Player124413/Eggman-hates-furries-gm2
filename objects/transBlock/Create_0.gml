@@ -9,7 +9,7 @@ if(instance_exists(sonails))
     i.doomable=false;
     }
 else
-    i=-1;
+    i = noone;
 c1=make_color_rgb(8,96,24);
 c2=make_color_rgb(16,160,64);
 

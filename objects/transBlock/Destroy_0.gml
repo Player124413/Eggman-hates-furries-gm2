@@ -1,5 +1,5 @@
-if (i!=-1)
-    {   
-    with i
-    instance_destroy();
-    }
+if (instance_exists(i))
+{
+    with (i)
+        instance_destroy();
+}

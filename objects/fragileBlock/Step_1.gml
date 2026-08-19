@@ -1,9 +1,12 @@
-i.y2=y+yskew;
-i.x2=x+width;
-i.hspeed=hspeed;
-i.vspeed=vspeed;
-i.hspeed2=hspeed;
-i.vspeed2=vspeed;
+if (instance_exists(i))
+{
+    i.y2 = y + yskew;
+    i.x2 = x + width;
+    i.hspeed = hspeed;
+    i.vspeed = vspeed;
+    i.hspeed2 = hspeed;
+    i.vspeed2 = vspeed;
+}
 
 if (active==0)
     height+=16;
