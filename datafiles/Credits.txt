@@ -1,0 +1,13 @@
+EGGMAN HATES FURRIES
+A game by Oddwarg
+
+Original game design, programming and artwork
+Oddwarg
+
+Created with GameMaker
+
+Sonic the Hedgehog and related characters
+SEGA
+
+Thank you for playing
+$EOF
