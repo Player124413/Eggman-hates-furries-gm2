@@ -1,4 +1,10 @@
 action_set_relative(0);
+if (!instance_exists(p))
+{
+    instance_destroy();
+    exit;
+}
+
 x+=hspeed*(2*global.time-1);
 y+=vspeed*(2*global.time-1);
 i=instance_create(x,y,objdollghost);

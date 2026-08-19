@@ -1,3 +1,9 @@
+if (!instance_exists(p))
+{
+    instance_destroy();
+    exit;
+}
+
 var s,c;
 draw_set_blend_mode(bm_add);
 c=make_color_rgb(255,64,0);

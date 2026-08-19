@@ -1,3 +1,6 @@
+if (!instance_exists(p))
+    exit;
+
 x=p.x+width*cos(cod);
 y=p.y+height*sin(sid)+yoff;
 

@@ -1,11 +1,14 @@
-image_index+=(global.time*2-1)*image_speed;
-var __b__;
-__b__ = action_if(kill==0);
-if __b__
-{
-x=p.x;
-y=p.y;
+image_index += (global.time * 2 - 1) * image_speed;
 
-image_angle=p.image_angle;
-image_xscale=p.image_xscale;
+// The owner can disappear during room transitions or scripted cut-scenes.
+// Never dereference a stale instance reference.
+if (kill || !instance_exists(p))
+{
+    instance_destroy();
+    exit;
 }
+
+x = p.x;
+y = p.y;
+image_angle = p.image_angle;
+image_xscale = p.image_xscale;

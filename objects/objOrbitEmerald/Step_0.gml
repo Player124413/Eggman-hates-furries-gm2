@@ -1,4 +1,9 @@
 action_set_relative(0);
+if (!instance_exists(p))
+{
+    instance_destroy();
+    exit;
+}
 var __b__;
 __b__ = action_if(active==0);
 if __b__

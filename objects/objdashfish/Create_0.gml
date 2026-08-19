@@ -1,2 +1,2 @@
 kill = 0;
-p = 0;
+p = noone;

@@ -7,10 +7,18 @@ ok = 1;
 }
 else
 {
-__b__ = action_if(objdoll.blink || objdoll.p.invulnerable==0);
+var doll_parent = objdoll.p;
+if (!instance_exists(doll_parent))
+{
+ok = 1;
+}
+else
+{
+__b__ = action_if(objdoll.blink || doll_parent.invulnerable==0);
 if __b__
 {
 ok = 1;
+}
 }
 }
 __b__ = action_if(ok);
