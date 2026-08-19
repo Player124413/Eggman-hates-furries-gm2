@@ -932,7 +932,7 @@ if (subphs==2)
     i.y2=yy;
     lx=xx;
     
-    instance_create(xx-32,yy-1,objBoostPad);
+    i=instance_create(xx-32,yy-1,objBoostPad);
     i.amount=48;
     
     i=instance_create(xx,yy,sandline);//CONTINUE
