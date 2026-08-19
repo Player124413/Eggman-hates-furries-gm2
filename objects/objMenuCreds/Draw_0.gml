@@ -1,3 +1,6 @@
+draw_set_blend_mode(bm_normal);
+draw_set_alpha(1);
+draw_clear(c_black);
 yy=0;
 // The migrated logo can be treated as colour-keyed/transparent by the runner.
 // Paint its original black backing explicitly so the title never sits on white.

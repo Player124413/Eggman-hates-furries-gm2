@@ -80,6 +80,11 @@ if __b__
 {
 //draw_set_color(c_white);
 //draw_surface(credSurf,0,credY);
+// The original title card is black; clear the full frame so no previous white
+// scene remains around the 320px logo.
+draw_set_blend_mode(bm_normal);
+draw_set_alpha(1);
+draw_clear(c_black);
 yy=0;
 // Preserve the logo's original black title card even if its black pixels are
 // interpreted as transparent during legacy background conversion.

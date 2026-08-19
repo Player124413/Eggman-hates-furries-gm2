@@ -1,4 +1,21 @@
 var __b__;
+
+// One-shot entry assist for the large Water loop. This runs from the generator
+// itself, so it cannot be blocked by the converted cap before a pad event fires.
+if (waterLoopActive && instance_exists(sonic)
+    && point_distance(sonic.x, sonic.y, waterLoopX, waterLoopY) < 192)
+{
+    sonic.x = waterLoopX + lengthdir_x(112, 270);
+    sonic.y = waterLoopY + lengthdir_y(112, 270);
+    sonic.speed = 48;
+    sonic.direction = 270;
+    sonic.roll = 1;
+    sonic.sprite_index = sjump;
+    sonic.lineCollisionGrace = 16;
+    waterLoopActive = false;
+    soundplay(global.sndBooster);
+}
+
 __b__ = action_if(phase==-1);
 if __b__
 {
@@ -120,7 +137,10 @@ event_user(4);
 
 // Entry to the large Water loop. Put the assisted pad before the first curved
 // segment so Sonic crosses the converted cap instead of hitting it as a wall.
-var water_loop_entry = instance_create((lx1 + lx2) / 2, (ly1 + ly2) / 2, objBoostPad);
+waterLoopX = (lx1 + lx2) / 2;
+waterLoopY = (ly1 + ly2) / 2;
+waterLoopActive = true;
+var water_loop_entry = instance_create(waterLoopX, waterLoopY, objBoostPad);
 water_loop_entry.amount = 48;
 water_loop_entry.image_angle = 270;
 water_loop_entry.entryAssist = true;
