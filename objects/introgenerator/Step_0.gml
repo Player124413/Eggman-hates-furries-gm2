@@ -270,9 +270,11 @@ if (__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )>xx-32)
         
         rxx=xx;
         ryy=yy;
-        
-        mountLoop();
-        
+
+        // The original Intro loop-de-loop is the circular obstacle shown in
+        // the screenshot. Its converted mtline collision blocks the bike, so
+        // omit the loop and keep the already-generated straight ground path.
+
         xx=rxx;
         yy=ryy;
         }
