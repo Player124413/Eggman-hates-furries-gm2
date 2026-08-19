@@ -1,7 +1,7 @@
 // Water's converted tunnel geometry contains several closed loop caps that act
 // as solid walls. Disable these decorative tunnel strips and their generated
 // collision helpers on this level; the underlying sand path remains playable.
-if (instance_exists(controlbg) && controlbg.lev == -5)
+if (instance_exists(controlbg) && controlbg.lev >= -5 && controlbg.lev <= -2)
 {
     visible = false;
     active = 1;

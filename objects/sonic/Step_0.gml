@@ -206,16 +206,17 @@ if(!able)
 // Failsafe for the converted Water geometry: if Right is held while Sonic is
 // physically unable to advance for half a second, move him beyond the blocked
 // loop section. Normal movement resets the timer, so this only affects walls.
-if (instance_exists(controlbg) && controlbg.lev == -5 && keyboard_check(vk_right) && able)
+if (instance_exists(controlbg) && controlbg.lev >= -5 && controlbg.lev <= -2
+    && keyboard_check(vk_right) && able)
 {
     if (abs(x - waterStuckX) < 4)
         waterStuckTimer += 1;
     else
         waterStuckTimer = 0;
 
-    if (waterStuckTimer >= 30)
+    if (waterStuckTimer >= 10)
     {
-        x += 400;
+        x += 600;
         hspeed = max(hspeed, 16);
         lineCollisionGrace = 30;
         waterStuckTimer = 0;
