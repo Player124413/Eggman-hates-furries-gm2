@@ -1,17 +1,35 @@
 action_set_relative(1);
 
+if (!passedLoop && instance_exists(sonic) && sonic.x > loopExitX)
+    {
+    passedLoop = true;
+    loopTrigger = 2;
+    }
+
 // Keep Panjan's spotter present in every active phase. The destroyed drone is
 // an invisible controller, so replace it on the next Step instead of waiting
 // for a coordinate trigger that may never fire after geometry conversion.
-if (instance_exists(bot1) && variable_instance_exists(bot1, "dead") && bot1.dead)
+if (passedLoop && instance_exists(bot1) && variable_instance_exists(bot1, "dead") && bot1.dead)
     {
     with (bot1) instance_destroy();
     bot1=noone;
     }
 if (!instance_exists(bot1))
     {
-    bot1=instance_create(x-128,y-128,objBot);
+    var botSpawnX=x-128;
+    var botSpawnY=y-128;
+    if (passedLoop && instance_exists(sonic))
+        {
+        botSpawnX=sonic.x+160;
+        botSpawnY=sonic.y-128;
+        }
+    bot1=instance_create(botSpawnX,botSpawnY,objBot);
     bot1.kind=1;
+    if (passedLoop && instance_exists(sonic))
+        {
+        bot1.goalx=sonic.x+96;
+        bot1.goaly=sonic.y-96;
+        }
     }
 
 if(lightEmUp!=-1)
@@ -877,7 +895,7 @@ if (subphs==2)
     // this preserves every later x/y trigger and the drone respawn sequence.
     mx=xx+128;
     my=yy-128;
-    loopTrigger=2;
+    // loopTrigger advances only after Sonic reaches loopExitX.
     i=instance_create(xx,yy,sandline);
     i.x2=xx+256;
     i.y2=yy;
