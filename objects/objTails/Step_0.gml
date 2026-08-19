@@ -4,7 +4,7 @@ if __b__
 {
 var j;
 sonic_log();
-j=-1;
+j = noone;
 with (objMoveLogger)
     {
     if (timer>other.maxt)
@@ -13,7 +13,7 @@ with (objMoveLogger)
         }
     }
     
-if (j>-1)
+if (instance_exists(j))
     {
     x=j.x;
     y=j.y;
@@ -26,7 +26,7 @@ if (j>-1)
         {
         soundfrequency(global.sndSpin,0.15+dash/40);
         soundplay(global.sndSpin);
-        if(myfish==-1)
+        if(!instance_exists(myfish))
             {    
             myfish=instance_create(x,y,objdashfish);
             myfish.p=id;
@@ -37,9 +37,9 @@ if (j>-1)
     if (dash==0 && pdash!=0)
         {
         soundplay(global.sndDash);
-        with (myfish)
-            kill=1;
-        myfish=-1;
+        if (instance_exists(myfish))
+            myfish.kill = 1;
+        myfish = noone;
         }
     
     if(j.sprite_index==sstand)

@@ -4,10 +4,8 @@ if __b__
 {
 var hn,vn,f, ok;
 ok=0;
-if(dependency==-1)
-    ok=1;
-else if (dependency.prog>0)
-    ok=1;
+if (!instance_exists(dependency) || dependency.prog > 0)
+    ok = 1;
 if(ok)
     rot+=global.time*rotsp;
 

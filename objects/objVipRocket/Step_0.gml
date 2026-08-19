@@ -1,7 +1,7 @@
 bigBoom = 0;
 timer+=global.time;
 
-if (obj>-1)
+if (instance_exists(obj))
     {
     t=4*point_distance(x,y,obj.x,obj.y)/(1+speed);
     gx=obj.x+xx+obj.hspeed*t;
@@ -51,7 +51,7 @@ if (point_distance(x,y,gx,gy)<speed || gnd>0)
     i=instance_create(x+hspeed,y+vspeed,objbigexp);
     i.hspeed=hspeed*0.5;
     i.vspeed=vspeed*0.5;
-    if(obj>-1)
+    if(instance_exists(obj))
         vspeed-=6;
     
     soundplay(global.sndGunstar1)

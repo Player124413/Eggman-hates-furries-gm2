@@ -1,4 +1,6 @@
-sonic.able=1;
+var player = instance_find(sonic, 0);
+if (instance_exists(player))
+    player.able = 1;
 xx=0;
 yy=320;
 a=0;

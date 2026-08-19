@@ -1,4 +1,4 @@
-obj=-1;
+obj = noone;
 xx=-1;
 yy=-1;
 
