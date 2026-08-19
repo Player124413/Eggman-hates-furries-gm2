@@ -41,12 +41,9 @@ if (global.gameCleared && global.hasStartedAfterClear==0)
 
 __view_set( e__VW.XView, 0, 0 );
 __view_set( e__VW.YView, 0, 0 );
-var __b__;
-__b__ = action_if(!instance_exists(objRingCounter));
-if __b__
-{
-action_create_object(objRingCounter, 0, 0);
-}
-objRingCounter.showRings = 0;
+var ring_counter = instance_find(objRingCounter, 0);
+if (!instance_exists(ring_counter))
+    ring_counter = instance_create(0, 0, objRingCounter);
+ring_counter.showRings = 0;
 timer = 0;
 action_set_alarm(1, 0);

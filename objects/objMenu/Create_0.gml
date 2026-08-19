@@ -1,6 +1,12 @@
 __view_set( e__VW.XView, 0, 0 );
 __view_set( e__VW.YView, 0, 0 );
-objRingCounter.showRings=0;
+
+// intro_finish() destroys every instance before creating the menu, including
+// objRingCounter. Recreate it instead of dereferencing an absent singleton.
+var ring_counter = instance_find(objRingCounter, 0);
+if (!instance_exists(ring_counter))
+    ring_counter = instance_create(0, 0, objRingCounter);
+ring_counter.showRings = 0;
 
 nSound[0]="sndAfterBurner.wav";
 nSound[1]="sndAfterBurnerLong.wav";

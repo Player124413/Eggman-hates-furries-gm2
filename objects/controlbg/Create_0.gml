@@ -12,13 +12,10 @@ if(SS_IsHandleValid(global.handle))
     SS_StopSound(global.handle);
     SS_FreeSound(global.handle);
     }
-var __b__;
-__b__ = action_if(!instance_exists(objRingCounter));
-if __b__
-{
-action_create_object(objRingCounter, 0, 0);
-}
-objRingCounter.showRings = 1;
+var ring_counter = instance_find(objRingCounter, 0);
+if (!instance_exists(ring_counter))
+    ring_counter = instance_create(0, 0, objRingCounter);
+ring_counter.showRings = 1;
 phase = 0;
 timer = 0;
 lev = global.startProg;
