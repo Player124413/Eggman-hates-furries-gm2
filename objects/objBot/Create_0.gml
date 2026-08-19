@@ -18,3 +18,4 @@ shieldTimer = 0;
 invulnerable = 0;
 blink = 0;
 damaged = 0;
+dead = false;
