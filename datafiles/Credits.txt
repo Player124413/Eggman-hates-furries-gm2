@@ -1,13 +1,161 @@
-EGGMAN HATES FURRIES
-A game by Oddwarg
+This game was created by the Oddwarg using
+Mark Overmars' Game Maker 7.
+Thanks to tsg1zzn for the Super Sound System.
 
-Original game design, programming and artwork
+
+MUSIC:
+
+The Opened Way
+ -Shadow of the Colossus(Kow Otani)
+
+Ubermongo
+ -Oddwarg
+
+Ingenious
+ -Oddwarg
+
+Invulnerability On
+ -Oddwarg
+
+Feisty One
+ -Oddwarg
+
+Io Sulfur Mine
+ -Descent(Interplay)
+
+Ør Smovr Bøs
+ -Oddwarg
+
+Før Bossen
+ -Oddwarg
+
+Samwedo
+ -Oddwarg
+
+Mental Machine
+ -Devil May Cry(Masami Ueda)
+
+Can You Feel the Sunshine
+ -Sonic R (Richard Jacques, TJ Davis, Jarel Jones)
+
+Theme of Seven Force
+ -Gunstar Heroes(Norio Hanzawa)
+
+Metal Scratchin'
+ -Sonic Rush(Hideki Naganuma)
+
+Terra vs Braig
+ -Kingdom Hearts: Birth by Sleep(Yoko Shimomura, Tsuyoshi Sekito, Takeharu Ishimoto)
+
+Super Ultra Violet
+ -Devil May Cry(Masami Ueda)
+
+A Ship Like This
+ -Oddwarg
+
+Tails' Poem
+ -Oddwarg
+
+A Spot in the Stairs
+ -Oddwarg
+
+Need Oxygen
+-Sonic 2(Masato Nakamura, John Weeks)
+
+SOUND EFFECTS:
+
+Oddwarg
+Sega/Sonic Team
+Carmageddon
+Descent 2
+Gunstar Heroes
+RPG Maker 2000 RTP
+The Faces of Evil
+Game Maker bundle
+Soldat by Jordan Mechner
+Truxton
+
+
+GRAPHICS:
+
+Sega/Sonic Team
+Descent 2 by Parallax & Interplay
+Psyguy.com
+The Mystical Forest Zone
+marblepark.com
 Oddwarg
 
-Created with GameMaker
+Steel Tornado:
+Oogaland
+That Guy With the Hat
+Shadowbot
+Nebula
 
-Sonic the Hedgehog and related characters
-SEGA
+Tails:
+CYLENT NITE
+NEBULA
+SHY KNIGHT
+AKUMA
+PDARKFOX
+GARDOW
+DAMIEN
+Fox Omega
 
-Thank you for playing
+Sonic:
+Snowflake
+Silverbolt
+Mikie
+Chaos Studios
+Need4speed123
+Fox Omega
+
+
+Tails Doll:
+ZinDinTimeYUM
+
+Items:
+KAKUMEI_SONIC
+
+Super Eggman:
+Minicle
+E-123 Omega
+E-106 Eta
+Eon Squirrel
+PanelMonkey.org
+
+
+Because of its nature, please do not use this project as a source for graphics and audio.
+Refer to the sources listed above, or ask me (Oddwarg) directly.
+
+
+Tools of the trade:
+Multicom KHLB2 laptop
+WP8060 Graphics Tablet
+Game Maker Game Creation Program
+Anvil Studio
+Psycle Modular Music Creation Studio
+Korg DS-10
+Paint Shop Pro 6
+Audacity
+EditPad Classic
+
+
+Special thanks to:
+TaksteinFloyd
+Hubol Gordon
+All other testers/contributors <3
+
+Email:
+oddvahu@alumni.ntnu.no
+deviantArt:
+http://hemmamann.deviantart.com/
+Website:
+http://www.oddwarg.com/
+
+- 2010
+
+
+
+
 $EOF
+Do not edit or delete this file

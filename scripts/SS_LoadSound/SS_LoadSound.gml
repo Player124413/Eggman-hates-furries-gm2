@@ -14,7 +14,25 @@ function SS_LoadSound(argument0) {
 	    _base = string_delete(_base, string_length(_base) - string_length(_ext) + 1,
 	                          string_length(_ext));
 	}
-	return asset_get_index(_base);
+    // Legacy MIDI filenames do not always match their converted sound asset
+    // names, and Sunshine has both OGG and MIDI variants.
+    var _lower = string_lower(_base);
+    var _ext_lower = string_lower(_ext);
+    var _is_midi = (_ext_lower == ".mid" || _ext_lower == "mid");
+    if (_is_midi)
+    {
+        switch (_lower)
+        {
+            case "foxface":   _base = "FoxFace"; break;
+            case "sulfur":    _base = "game"; break;
+            case "orsmovr":   _base = "OrSmovrBos"; break;
+            case "forbossen": _base = "ForBossenRepShort"; break;
+            case "yellowspot":_base = "Spot"; break;
+            case "timer":     _base = "oxygen"; break;
+            case "sunshine":  _base = "SunshineMidi"; break;
+        }
+    }
+    return asset_get_index(_base);
 
 
 
