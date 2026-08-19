@@ -1,15 +1,5 @@
 function goToCreds() {
-	//called in context of ultimate
-	controlbg.lev=20;
-	with all
-	    {
-	    if (object_index!=controlbg)
-	        {
-	        instance_destroy();
-	        }
-	    }
-	instance_create(0,0,objFrontEnd);
-	room_speed=30;
-
-
+    // The original objFrontEnd sequence contains the Sonic/Tails ending scene.
+    // Skip that sequence entirely, record completion, and return to the title.
+    game_completed();
 }

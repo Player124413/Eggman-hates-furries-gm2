@@ -945,10 +945,9 @@ if __b__
 {
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
-//sonic.windsound=-1;
 controlbg.on=0;
-
-instance_create(0,0,objFrontEnd);
-room_speed=30;
+// Ending scene removed: record completion and return to the title immediately.
+game_completed();
+exit;
 }
 }
