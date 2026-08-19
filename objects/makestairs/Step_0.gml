@@ -1,6 +1,6 @@
 action_set_relative(0);
 var __b__;
-__b__ = action_if(x<xnull+156 and hem=0);
+__b__ = action_if(x<xnull+156 and hem==0);
 if __b__
 {
 {
@@ -19,7 +19,7 @@ __b__ = action_if(x<xnull+129 and y>ynull);
 if __b__
 {
 {
-__b__ = action_if(hem=1);
+__b__ = action_if(hem==1);
 if __b__
 {
 {

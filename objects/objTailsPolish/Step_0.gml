@@ -12,7 +12,7 @@ if (trigger==0 && sonic.x>x+8)
     rub=2;
     rubTimer=45;
     }
-if (trigger=1 && sonic.x>x+400 || sonic.lockMovement==-1)
+if (trigger==1 && sonic.x>x+400 || sonic.lockMovement==-1)
     {
     if (sonic.hspeed>0)
         sonic.hspeed-=0.5*global.time;

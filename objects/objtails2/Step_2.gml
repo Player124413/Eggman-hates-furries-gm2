@@ -89,7 +89,7 @@ else
         }
     }
 }
-__b__ = action_if(phase=3);
+__b__ = action_if(phase==3);
 if __b__
 {
 vspeed+=global.time*(goaly-y)/60;

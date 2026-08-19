@@ -1,5 +1,5 @@
 var __b__;
-__b__ = action_if(phase=1);
+__b__ = action_if(phase==1);
 if __b__
 {
     if (hatch==0)
@@ -78,7 +78,7 @@ if (hatch<=0)
     
 
 }
-__b__ = action_if(phase=4);
+__b__ = action_if(phase==4);
 if __b__
 {
 if(hatch<1)

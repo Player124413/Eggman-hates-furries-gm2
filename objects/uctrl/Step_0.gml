@@ -136,7 +136,7 @@ if(trigger)
     }
     
 }
-__b__ = action_if(phase=3);
+__b__ = action_if(phase==3);
 if __b__
 {
 //sparse land1
@@ -150,7 +150,7 @@ else
     hema1.rotsp=0;
 }
 }
-__b__ = action_if(phase=4);
+__b__ = action_if(phase==4);
 if __b__
 {
 //sparse land2
@@ -165,7 +165,7 @@ else
     hema2.rotsp=0;
 }
 }
-__b__ = action_if(phase=6);
+__b__ = action_if(phase==6);
 if __b__
 {
 //pillars?
@@ -212,7 +212,7 @@ hema3.adjust=0;
 hema3.y=hema2.y-hema2.hr+16;
 }
 }
-__b__ = action_if(phase=8);
+__b__ = action_if(phase==8);
 if __b__
 {
 ////LAUNCHER
@@ -258,7 +258,7 @@ if(trigger>0)
 hema1.yG=hema1.y;
 }
 }
-__b__ = action_if(phase=11);
+__b__ = action_if(phase==11);
 if __b__
 {
 if instance_exists(hema1)
@@ -280,7 +280,7 @@ else
 if (viewPlus<0)
 viewPlus+=global.time*3;
 }
-__b__ = action_if(phase=12);
+__b__ = action_if(phase==12);
 if __b__
 {
 //rotating central block
@@ -320,7 +320,7 @@ else if (instance_exists(hema1))
     }
 }
 }
-__b__ = action_if(phase=13);
+__b__ = action_if(phase==13);
 if __b__
 {
 //rotating central block
@@ -360,7 +360,7 @@ else if (instance_exists(hema1))
     }
 }
 }
-__b__ = action_if(phase=14);
+__b__ = action_if(phase==14);
 if __b__
 {
 if instance_exists(hema1)
@@ -421,7 +421,7 @@ hema5.adjust=0;
 hema5.y=hema3.y-hema3.hr+16;
 }
 }
-__b__ = action_if(phase=15);
+__b__ = action_if(phase==15);
 if __b__
 {
 shaking=1;
@@ -445,7 +445,7 @@ if(objRean.phase==0)
     objRean.up=4;
     }
 }
-__b__ = action_if(phase=16);
+__b__ = action_if(phase==16);
 if __b__
 {
 if (trigger>=3)

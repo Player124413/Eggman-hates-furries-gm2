@@ -1,5 +1,5 @@
 var __b__;
-__b__ = action_if(x=xnull and instance_number(BottomFloor)=0);
+__b__ = action_if(x==xnull and instance_number(BottomFloor)==0);
 if __b__
 {
 {

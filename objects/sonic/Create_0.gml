@@ -19,7 +19,7 @@ damagey=-1;
 
 //Use only when gravity is WRONG
 specialStopCase=0;
-myfish = 0;
+myfish = noone;
 lockMovement = 0;
 ux = 1;
 uy = 0;

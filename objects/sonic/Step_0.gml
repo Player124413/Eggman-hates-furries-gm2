@@ -42,135 +42,115 @@ if(sprite_index!=shurt)
 
 frict=0.16;//Default
 
-if(gnd>0)//on ground
-    {    
-    if(abs(ts)<1.5 && (sig==0 || roll==1))//not in motion and (not pressing key or rolling)
+if (gnd > 0) // on ground
+{
+    // Handle an active spin dash before the normal standing/movement state.
+    // Previously this was nested inside abs(ts) < 1.5, so Dream's curved
+    // ground could leave dash > 0 forever and disable every direction key.
+    if (dash > 0)
+    {
+        standcount = 0;
+        if (keyboard_check(vk_down))
         {
-        frict=0.32;
-        standcount+=global.time;
-        if(keyboard_check(vk_down) && able && dash==0)
-            {
-            if(sprite_index!=sduck)
-                standcount=0;
-            
-            if (standcount<3)
-                image_index=0;
-            else
-                image_index=1;
-
-        image_speed=0;
-        sprite_index=sduck;
-            image_speed=0;
-            sprite_index=sduck;
-            }
-        else
-            {
-            if (dash>0)//dashing
-                {
-                if keyboard_check(vk_down)
-                    {
-                    frict=10;
-                    hspeed=(hspeed+nullh)/2;
-                    vspeed=(vspeed+nullv)/2;
-                    sprite_index=sdash;
-                    image_speed=1;
-                    }
-                else
-                    {
-                    with (myfish)
-                        {
-                        kill=1;
-                        }
-                    soundplay(global.sndDash);
-                    roll=1;
-                    sprite_index=sjump;
-                    image_speed=1;
-                    hspeed+=image_xscale*ux*(24+dash*8)*global.time;
-                    vspeed+=image_xscale*uy*(24+dash*8)*global.time;
-                    dash=0;
-                    }
-                }
-            else//Not dashing
-                {
-                sprite_index=sstand;
-                image_speed=0;
-                image_index=0;
-                if(standcount>100)
-                    image_index=1;
-                if(standcount>120)
-                    {
-                    if(standcount mod 30 <=15)
-                        image_index=3;
-                    else
-                        image_index=2;
-                    }
-                }
-            }
-        roll=0;
+            frict = 10;
+            hspeed = (hspeed + nullh) / 2;
+            vspeed = (vspeed + nullv) / 2;
+            sprite_index = sdash;
+            image_speed = 1;
         }
-    else//in motion or pressing key
-        {       
-        standcount=0;
-        if(roll==0)
-            {
-            if(sig*ts<=-2 && lengthdir_x(1,pd-flyRight)>=0.66 && canSkid)//trying to stop and it is not too steep
-                {
-                if (sprite_index!=sstop && image_speed!=1/10 && image_xscale!=sig)
-                    soundplay(global.sndStop);
-                f=1;
-                hspeed-=nx*0.25*global.time;
-                vspeed-=ny*0.25*global.time;
-                sprite_index=sstop;
-                image_speed=1/10;
-                }
-            else if(abs(ts)<8)//walking
-                {
-                f=acc*(1+max(0,-sign(ny)*power(ny,2)/(2+0.5*abs(ts))));
-                if(sig*ts<=-2)//if trying to stop and it's steep
-                    f=f/4;
-                sprite_index=swalk;
-                image_speed=ts*image_xscale/8;
-                }
-            else//running
-                {
-                f=acc;
-                if(sig*ts<=-2)//if trying to stop and it's steep
-                    f=f/4;
-                sprite_index=srun;
-                image_speed=2*sign(ts*image_xscale);
-                }
-            }
-        else//rolling
-            {
-            image_speed=min(1,ts*image_xscale/4);
-            if(sig==sign(ts))
-            f=acc/4;
-            else
-            f=acc;
-            }
-        hspeed+=sig*ux*f*global.time;
-        vspeed+=sig*uy*f*global.time;
-        
-        if(sig!=0 && dash==0/* && ts!=0*/)//pressing a key
-            {
-            if(ts==0)
-                image_xscale=sign(sig);
-            else
-                image_xscale=sign(ts);
-            frict=0.05;
-            }
-
-        
+        else
+        {
+            if (instance_exists(myfish))
+                myfish.kill = 1;
+            soundplay(global.sndDash);
+            roll = 1;
+            sprite_index = sjump;
+            image_speed = 1;
+            hspeed += image_xscale * ux * (24 + dash * 8) * global.time;
+            vspeed += image_xscale * uy * (24 + dash * 8) * global.time;
+            dash = 0;
         }
     }
+    else if (abs(ts) < 1.5 && (sig == 0 || roll == 1))
+    {
+        frict = 0.32;
+        standcount += global.time;
+        if (keyboard_check(vk_down) && able)
+        {
+            if (sprite_index != sduck)
+                standcount = 0;
+            image_index = (standcount < 3) ? 0 : 1;
+            image_speed = 0;
+            sprite_index = sduck;
+        }
+        else
+        {
+            sprite_index = sstand;
+            image_speed = 0;
+            image_index = 0;
+            if (standcount > 100)
+                image_index = 1;
+            if (standcount > 120)
+                image_index = (standcount mod 30 <= 15) ? 3 : 2;
+        }
+        roll = 0;
+    }
+    else // in motion or pressing a direction
+    {
+        standcount = 0;
+        if (roll == 0)
+        {
+            if (sig * ts <= -2 && lengthdir_x(1, pd - flyRight) >= 0.66 && canSkid)
+            {
+                if (sprite_index != sstop && image_speed != 1 / 10 && image_xscale != sig)
+                    soundplay(global.sndStop);
+                f = 1;
+                hspeed -= nx * 0.25 * global.time;
+                vspeed -= ny * 0.25 * global.time;
+                sprite_index = sstop;
+                image_speed = 1 / 10;
+            }
+            else if (abs(ts) < 8)
+            {
+                f = acc * (1 + max(0, -sign(ny) * power(ny, 2) / (2 + 0.5 * abs(ts))));
+                if (sig * ts <= -2)
+                    f /= 4;
+                sprite_index = swalk;
+                image_speed = ts * image_xscale / 8;
+            }
+            else
+            {
+                f = acc;
+                if (sig * ts <= -2)
+                    f /= 4;
+                sprite_index = srun;
+                image_speed = 2 * sign(ts * image_xscale);
+            }
+        }
+        else
+        {
+            image_speed = min(1, ts * image_xscale / 4);
+            f = (sig == sign(ts)) ? acc / 4 : acc;
+        }
+
+        hspeed += sig * ux * f * global.time;
+        vspeed += sig * uy * f * global.time;
+        if (sig != 0)
+        {
+            image_xscale = (ts == 0) ? sign(sig) : sign(ts);
+            frict = 0.05;
+        }
+    }
+}
 else//not on ground
     {
     //can't spindash in air
-    if(dash>0)
-        {
-        with (myfish)kill=1;
-        dash=0;
-        }
+    if (dash > 0)
+    {
+        if (instance_exists(myfish))
+            myfish.kill = 1;
+        dash = 0;
+    }
     
     if (sprite_index==sstand || sprite_index==sstop || sprite_index==sduck || sprite_index==spush || 
         sprite_index==swalk || sprite_index==sdash || sprite_index==srun || (sprite_index==sspjoing && vspeed>0))

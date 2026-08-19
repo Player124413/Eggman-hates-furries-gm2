@@ -25,10 +25,14 @@ if __b__
 var dir;
 phase=1;
 sonic.flyRight=0;
+// Explicitly return control after the opening ring/orbit section.
+sonic.specialStopCase = 0;
+sonic.physics = 1;
+sonic.able = 1;
+sonic.lockMovement = 0;
 timer=0;
 objDreamCircle.nodesChanged=1;
 objDreamCircle.mogen=1;
-sonic.specialStopCase=0;
 with objDreamCircle
     {
     dir=0;
@@ -497,22 +501,22 @@ mogusTimer+=global.time;
 if (mogusTimer>20)
     {
     c=floor(random(4));
-    if (c=0)
+    if (c==0)
         {
         a=random(640);
         b=-128;
         }
-    if (c=1)
+    if (c==1)
         {
         a=random(640);
         b=480+128;
         }
-    if (c=2)
+    if (c==2)
         {
         a=-128;
         b=random(480);
         }
-    if (c=3)
+    if (c==3)
         {
         a=640+128;
         b=random(480);

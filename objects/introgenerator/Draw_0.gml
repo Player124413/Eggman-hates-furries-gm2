@@ -22,21 +22,21 @@ if(ok)
 
 var ok;
 ok=0;
-if (phase=0 && timer>220 && timer<230+44*30)
+if (phase==0 && timer>220 && timer<230+44*30)
     {ok=1;
     if(txt=="")
         {txt=mono_0;
         newText=true;}
     textTime=10+44*30;
     }
-if (phase=3 && timer<10+19*30)
+if (phase==3 && timer<10+19*30)
     {ok=1;
     if(txt=="")
         {txt=mono_1;
         newText=true;}
     textTime=10+19*30;
     }
-if (phase=5 && timer<10+26*30)
+if (phase==5 && timer<10+26*30)
     {ok=1;
     if(txt=="")
         {txt=mono_2;

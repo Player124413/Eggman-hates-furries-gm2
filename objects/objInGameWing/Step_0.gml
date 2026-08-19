@@ -72,7 +72,7 @@ s3=(s3*a+5*2*global.time)/(a+2*global.time);
 }
 }
 }
-__b__ = action_if(flap=2);
+__b__ = action_if(flap==2);
 if __b__
 {
 
@@ -86,7 +86,7 @@ s3=(s3*a+25*2*global.time)/(a+2*global.time);
 
 
 }
-__b__ = action_if(flap=3);
+__b__ = action_if(flap==3);
 if __b__
 {
 

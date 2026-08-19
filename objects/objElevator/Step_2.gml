@@ -49,7 +49,7 @@ if (sonic.x>x+16 && phase==0)
     soundplay(global.sndElevatorSetup);
     }
 }
-__b__ = action_if(phase=1);
+__b__ = action_if(phase==1);
 if __b__
 {
 timer+=global.time;

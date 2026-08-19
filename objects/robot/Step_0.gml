@@ -270,7 +270,7 @@ if(timer<=72)
     {i=instance_create(a-32+random(64),y+96+random(64),objmedexp);
     i.vspeed=random(32);}
 
-if (timer=100)
+if (timer==100)
     {objtails1.sprite_index=stailrun;
     objtails1.phase=2;
     audio_play_sound(OrSmovrBos, 10, true);}

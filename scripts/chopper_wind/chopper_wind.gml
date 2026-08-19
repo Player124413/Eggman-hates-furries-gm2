@@ -9,7 +9,7 @@ function chopper_wind() {
 	rotsp=1;
 	rotsp2=2;
 	gld=point_direction(x,y,sonic.x,sonic.y-96);
-	if (subphs=1)
+	if (subphs==1)
 	    {
 	    if (timer>90 && timer mod 40==0)
 	        {

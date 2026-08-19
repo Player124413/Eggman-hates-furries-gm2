@@ -8,7 +8,7 @@ if(fade)
         }
     }
 var __b__;
-__b__ = action_if(hemma=0);
+__b__ = action_if(hemma==0);
 if __b__
 {
 {
@@ -83,7 +83,7 @@ hem = 1;
 y = ystart+5;
 }
 }
-__b__ = action_if(hem=1);
+__b__ = action_if(hem==1);
 if __b__
 {
 {

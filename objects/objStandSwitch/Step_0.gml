@@ -21,7 +21,7 @@ if (prog<1)
 else
 {
 {
-__b__ = action_if(report2!=0 && sonic.sprite_index=sstand);
+__b__ = action_if(report2!=0 && sonic.sprite_index==sstand);
 if __b__
 {
 init+=global.time;

@@ -4,7 +4,7 @@ __b__ = action_if(y<makestairs.ynull-48);
 if __b__
 {
 {
-__b__ = action_if(mogen=1 or instance_exists(BottomFloor));
+__b__ = action_if(mogen==1 or instance_exists(BottomFloor));
 if __b__
 {
 action_kill_object();
