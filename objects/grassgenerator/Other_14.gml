@@ -12,20 +12,17 @@ y3=yy-v2*r;
 x4=xx+h2*r;
 y4=yy+v2*r;
 
-// During removal of the broken Water loop we still advance the generator's
-// geometry, but deliberately create no objTunnel visual or collision object.
-if (!waterLoopBuilding)
-{
-    i=instance_create(0,0,objTunnel);
-    i.x1=lx1;
-    i.y1=ly1;
-    i.x2=lx2;
-    i.y2=ly2;
-    i.x3=x3;
-    i.y3=y3;
-    i.x4=x4;
-    i.y4=y4;
-}
+//maek
+i=instance_create(0,0,objTunnel);
+i.x1=lx1;
+i.y1=ly1;
+i.x2=lx2;
+i.y2=ly2;
+
+i.x3=x3;
+i.y3=y3;
+i.x4=x4;
+i.y4=y4;
 
 lx1=x3;
 ly1=y3;

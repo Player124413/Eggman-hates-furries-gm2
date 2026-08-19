@@ -1,22 +1,4 @@
 var __b__;
-
-// One-shot entry assist for the large Water loop. This runs from the generator
-// itself, so it cannot be blocked by the converted cap before a pad event fires.
-if (waterLoopActive && instance_exists(sonic)
-    && point_distance(sonic.x, sonic.y, waterLoopX, waterLoopY) < 192)
-{
-    sonic.x = waterLoopX + lengthdir_x(112, waterLoopDirection);
-    sonic.y = waterLoopY + lengthdir_y(112, waterLoopDirection);
-    sonic.speed = 48;
-    sonic.direction = waterLoopDirection;
-    sonic.roll = 1;
-    sonic.sprite_index = sjump;
-    sonic.lineCollisionGrace = 16;
-    // Keep the gate active until Sonic is physically outside the entrance
-    // region; a single early trigger can otherwise be consumed before arrival.
-    soundplay(global.sndBooster);
-}
-
 __b__ = action_if(phase==-1);
 if __b__
 {
@@ -247,16 +229,8 @@ ry=ly1;
 len=96;
 event_user(4);
 
-// The converted Water loop closes itself with an impassable cap. Build its
-// geometry under a tag, then replace the whole loop with a straight sand path.
-waterLoopX = xx - 32;
-waterLoopY = yy + r;
-waterLoopDirection = 0;
-waterLoopActive = false;
-waterLoopBuilding = true;
-i=instance_create(waterLoopX,waterLoopY,objBoostPad);
-i.amount=48;
-i.image_angle=0;
+i=instance_create(xx-32,yy+r,objBoostPad);
+i.amount=40;
 
 len=32;
 for(dir=10; dir<180; dir+=10)
@@ -267,19 +241,17 @@ len=64;
 event_user(4);
 fx=lx2;
 fy=ly2;
+i.tex=background_get_texture(bgTunnelT2);
+i.right=0;
 len=32;
 for(dir=190; ly2<ry-16; dir+=10)
     {
     event_user(4);
     }
-// No circular tunnel objects were created while waterLoopBuilding was true.
-// Bridge the computed entrance and exit with ordinary passable ground.
-waterLoopBuilding = false;
-var loop_bridge = instance_create(waterLoopX, waterLoopY, sandline);
-loop_bridge.x2 = fx + 32;
-loop_bridge.y2 = fy;
-loop_bridge.c3 = c_white;
-loop_bridge.c4 = c_black;
+i.x3=rx;
+i.y3=ry;
+i.x4=rx-80;
+i.y4=ry;
 
 //sonic.x=fx;
 //sonic.y=fy;

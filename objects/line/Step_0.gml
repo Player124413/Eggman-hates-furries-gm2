@@ -9,30 +9,7 @@ var a,b,f,c;
 
 with (movable)
     {
-    var ignore_loop_seam = false;
-    if (object_index == sonic && variable_instance_exists(id, "lineCollisionGrace"))
-        ignore_loop_seam = lineCollisionGrace > 0;
-
-    // Permanently open a doorway around the generated Water-loop entrance.
-    // This catches the actual cap line even if the boost trigger ran too early.
-    if (object_index == sonic)
-    {
-        var loop_generator = instance_find(grassgenerator, 0);
-        if (instance_exists(loop_generator)
-            && variable_instance_exists(loop_generator, "waterLoopActive")
-            && loop_generator.waterLoopActive)
-        {
-            var gate_x = loop_generator.waterLoopX;
-            var gate_y = loop_generator.waterLoopY;
-            if (max(other.x, other.x2) >= gate_x - 144
-                && min(other.x, other.x2) <= gate_x + 144
-                && max(other.y, other.y2) >= gate_y - 144
-                && min(other.y, other.y2) <= gate_y + 144)
-                ignore_loop_seam = true;
-        }
-    }
-
-    if(!ignore_loop_seam && x+radius+abs(hspeed)>=other.xi && y+radius+abs(vspeed)>=other.yi &&
+    if(x+radius+abs(hspeed)>=other.xi && y+radius+abs(vspeed)>=other.yi &&
             x-radius-abs(hspeed)<=other.xa && y-radius-abs(vspeed)<=other.ya)
         {
         with(other)

@@ -1,6 +1,4 @@
 action_set_relative(1);
-if (lineCollisionGrace > 0)
-    lineCollisionGrace = max(0, lineCollisionGrace - 1);
 var __b__;
 __b__ = action_if(!specialStopCase);
 if __b__
@@ -202,36 +200,6 @@ if(!able)
     dash_charge_timeout = 0;
     }
 /* */
-
-// Failsafe for the converted Water geometry: if Right is held while Sonic is
-// physically unable to advance for half a second, move him beyond the blocked
-// loop section. Normal movement resets the timer, so this only affects walls.
-if (keyboard_check(vk_right) && able)
-{
-    // Measure progress over a window instead of trusting the current level ID
-    // or velocity (the bad cap can reset speed to zero every frame).
-    if (waterStuckTimer == 0)
-        waterStuckX = x;
-    waterStuckTimer += 1;
-
-    if (waterStuckTimer >= 30)
-    {
-        if (x - waterStuckX < 32)
-        {
-            x += 800;
-            hspeed = max(hspeed, 16);
-            lineCollisionGrace = 30;
-        }
-        waterStuckTimer = 0;
-        waterStuckX = x;
-    }
-}
-else
-{
-    waterStuckTimer = 0;
-    waterStuckX = x;
-}
-
 __view_set( e__VW.XView, 0, (__view_get( e__VW.XView, 0 )*3+x-320+2*hspeed*global.time)/4 );
 __view_set( e__VW.YView, 0, (__view_get( e__VW.YView, 0 )*3+y-240+2*vspeed*global.time)/4 );
 
