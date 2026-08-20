@@ -291,7 +291,23 @@ with (bot1)
 // The circular loop is removed. Advance the original post-loop state when
 // Sonic reaches the end of the replacement flat section.
 if (loopTrigger < 2 && sonic.x > loopExitX)
-    loopTrigger = 2;
+    {
+    loopTrigger=2;
+    // Resume the round Panjan wheel itself after the removed loop section.
+    // The original waits on several geometry-dependent conditions that no
+    // longer fire once the loop is replaced by flat ground.
+    phase=3;
+    subphs=3;
+    pri=2;
+    visible=true;
+    x=sonic.x-320;
+    if (instance_exists(objWaterFront))
+        y=objWaterFront.y-64;
+    hspeed=20;
+    vspeed=0;
+    spin=-360*hspeed/(128*pi);
+    soundplay(global.sndAfterBurner);
+    }
 
 if (subphs>0)
     {vspeed=0;//!
