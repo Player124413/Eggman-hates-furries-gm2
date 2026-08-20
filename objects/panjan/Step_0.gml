@@ -539,7 +539,9 @@ if (subphs>0)
         zerogenerator.win=1;                      //EXPLODE//
         with (tornado) //just makin' sure
             instance_destroy();
-        instance_destroy();
+        // In GMS2 instance_destroy() invalidates the Panjan instance
+        // immediately. Build the explosion and detached round core first,
+        // then destroy Panjan after all state has been copied.
         draw_clear(c_white);
 
         SS_FreeSound(global.handle);
@@ -557,7 +559,8 @@ if (subphs>0)
         i.vspeed=vspeed-1;
         i.xx=xx-x;//OMG
         i.yy=yy;
-        objectfg.flashlight=1;
+        if (instance_exists(objectfg))
+            objectfg.flashlight=1;
 
         movX=x;
         with all
@@ -572,6 +575,8 @@ if (subphs>0)
             }
         __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (movX) );
 
+        instance_destroy();
+        exit;
         }
     }
 if(__view_get( e__VW.XView, 0 )+640>lx)
