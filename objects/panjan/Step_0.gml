@@ -305,6 +305,18 @@ if(sonic.x>mx+16 && loopTrigger==0)
 if(((sonic.x<mx-16 && sonic.y<my) || sonic.x>mx+136) && loopTrigger==1)
     {
     loopTrigger=2;
+
+    // Bring the round Panjan wheel back on-screen after Sonic exits the loop.
+    // This is the boss itself, not the flying spotter drone.
+    x=sonic.x-320;
+    if (instance_exists(objWaterFront))
+        y=objWaterFront.y-64;
+    hspeed=32;
+    vspeed=0;
+    spin=-360*hspeed/(128*pi);
+    visible=true;
+    subphs=0;
+
     with sandline
         {
         if(loopside==2)
