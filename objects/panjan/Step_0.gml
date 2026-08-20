@@ -288,7 +288,55 @@ with (bot1)
 
     }
 
-if(sonic.x>mx+16 && loopTrigger==0)
+// GameMaker 2024 resolves the overlapping flat and circular collision lines
+// differently from GM7. Guide Sonic around the original circle while Right is
+// held, preserving the visible loop and the post-loop Panjan state changes.
+if (!loopRide && loopTrigger==0 && keyboard_check(vk_right)
+    && point_distance(sonic.x,sonic.y,mx,my+128)<192)
+    {
+    loopRide=true;
+    loopAngle=270;
+    loopTrigger=1;
+    sonic.able=false;
+    sonic.physics=false;
+    sonic.roll=1;
+    }
+
+if (loopRide)
+    {
+    loopAngle+=8*global.time;
+    sonic.x=mx+lengthdir_x(112,loopAngle);
+    sonic.y=my+lengthdir_y(112,loopAngle);
+    sonic.hspeed=0;
+    sonic.vspeed=0;
+    sonic.sprite_index=sjump;
+    sonic.image_speed=1;
+    sonic.image_angle=loopAngle+90;
+
+    if (loopAngle>=630)
+        {
+        loopRide=false;
+        loopTrigger=2;
+        sonic.x=mx+24;
+        sonic.y=my+112;
+        sonic.able=true;
+        sonic.physics=true;
+        sonic.roll=1;
+        sonic.direction=0;
+        sonic.speed=40;
+        sonic.image_angle=0;
+        with sandline
+            {
+            if(loopside==2 && instance_exists(i)) i.on=0;
+            }
+        with upsand
+            {
+            if(loopside==2 && instance_exists(i)) i.on=0;
+            }
+        }
+    }
+
+if(!loopRide && sonic.x>mx+16 && loopTrigger==0)
     {
     loopTrigger=1;
     with sandline
@@ -302,7 +350,7 @@ if(sonic.x>mx+16 && loopTrigger==0)
             i.on=1;
         }
     }
-if(((sonic.x<mx-16 && sonic.y<my) || sonic.x>mx+136) && loopTrigger==1)
+if(!loopRide && ((sonic.x<mx-16 && sonic.y<my) || sonic.x>mx+136) && loopTrigger==1)
     {
     loopTrigger=2;
     with sandline
