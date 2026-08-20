@@ -288,82 +288,11 @@ with (bot1)
 
     }
 
-// GameMaker 2024 resolves the overlapping flat and circular collision lines
-// differently from GM7. Guide Sonic around the original circle while Right is
-// held, preserving the visible loop and the post-loop Panjan state changes.
-if (!loopRide && loopTrigger==0 && keyboard_check(vk_right)
-    && point_distance(sonic.x,sonic.y,mx,my+128)<192)
-    {
-    loopRide=true;
-    loopAngle=270;
-    loopTrigger=1;
-    sonic.able=false;
-    sonic.physics=false;
-    sonic.roll=1;
-    }
+// The circular loop is removed. Advance the original post-loop state when
+// Sonic reaches the end of the replacement flat section.
+if (loopTrigger < 2 && sonic.x > loopExitX)
+    loopTrigger = 2;
 
-if (loopRide)
-    {
-    loopAngle+=8*global.time;
-    sonic.x=mx+lengthdir_x(112,loopAngle);
-    sonic.y=my+lengthdir_y(112,loopAngle);
-    sonic.hspeed=0;
-    sonic.vspeed=0;
-    sonic.sprite_index=sjump;
-    sonic.image_speed=1;
-    sonic.image_angle=loopAngle+90;
-
-    if (loopAngle>=630)
-        {
-        loopRide=false;
-        loopTrigger=2;
-        sonic.x=mx+24;
-        sonic.y=my+112;
-        sonic.able=true;
-        sonic.physics=true;
-        sonic.roll=1;
-        sonic.direction=0;
-        sonic.speed=40;
-        sonic.image_angle=0;
-        with sandline
-            {
-            if(loopside==2 && instance_exists(i)) i.on=0;
-            }
-        with upsand
-            {
-            if(loopside==2 && instance_exists(i)) i.on=0;
-            }
-        }
-    }
-
-if(!loopRide && sonic.x>mx+16 && loopTrigger==0)
-    {
-    loopTrigger=1;
-    with sandline
-        {
-        if(loopside!=0)
-            i.on=1;
-        }
-    with upsand
-        {
-        if(loopside!=0)
-            i.on=1;
-        }
-    }
-if(!loopRide && ((sonic.x<mx-16 && sonic.y<my) || sonic.x>mx+136) && loopTrigger==1)
-    {
-    loopTrigger=2;
-    with sandline
-        {
-        if(loopside==2)
-            i.on=0;
-        }
-    with upsand
-        {
-        if(loopside==2)
-            i.on=0;
-        }
-    }
 if (subphs>0)
     {vspeed=0;//!
     if(angle2>0)
@@ -897,81 +826,15 @@ if (subphs==2)
     i.x2=xx;
     i.y2=yy;
     i.depth=-3;
-    //o_0 OMG a loop:
-    //bounds
-    i=instance_create(xx-32,yy-288,sandline);
-    i.LH=1;
-    i.x2=i.x+32;
-    i.y2=i.y;
-    i.deep=288;
-    i.c3=c_white;
-    i.c4=c_white;
-    i.depth=2;
-    i=instance_create(xx+256,yy-288,sandline);
-    i.x2=i.x+32;
-    i.y2=i.y;
-    i.deep=288;
-    i.c3=c_white;
-    i.c4=c_white;
-    i.RH=1;
-    i.depth=-2;
-    //R
+    // Panjan loop removed: bridge its 256px footprint with ordinary sand.
     mx=xx+128;
     my=yy-128;
-    b=6;
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx+lengthdir_x(128,270+a*90/b),my+lengthdir_y(128,270+a*90/b),sandline);
-        i.x2=mx+lengthdir_x(128,270+(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,270+(a+1)*90/b)
-        i.deep=128;
-        i.loopside=2;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=-2;
-        }
-    //R!
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx+lengthdir_x(128,a*90/b),my+lengthdir_y(128,a*90/b),upsand);
-        i.x2=mx+lengthdir_x(128,(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,(a+1)*90/b)
-        i.loopside=2;
-        i.ydeep=yy-288;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=-2;
-        }
-    //L
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx-lengthdir_x(128,270+a*90/b),my+lengthdir_y(128,270+a*90/b),sandline);
-        i.loopside=1;
-        i.x2=mx-lengthdir_x(128,270+(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,270+(a+1)*90/b)
-        i.deep=128;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=2;
-        }
-    //L!
-    for(a=0; a<b; a+=1)
-        {
-        i=instance_create(mx-lengthdir_x(128,a*90/b),my+lengthdir_y(128,a*90/b),upsand);
-        i.x2=mx-lengthdir_x(128,(a+1)*90/b)
-        i.y2=my+lengthdir_y(128,(a+1)*90/b)
-        i.loopside=1;
-        i.ydeep=yy-288;
-        i.c3=c_white;
-        i.c4=c_white;
-        i.depth=2;
-        }
-    //top;
-    i=instance_create(xx,yy-288,sandline);
-    i.y2=i.y;
-    i.deep=0;
+    i=instance_create(xx,yy,sandline);
     i.x2=xx+256;
-    i.depth=-32;
+    i.y2=yy;
+    i.depth=-3;
+    xx+=256;
+    loopExitX=xx;
 
     i=instance_create(xx,yy,sandline);
     xx+=480;
