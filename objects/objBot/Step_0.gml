@@ -12,9 +12,6 @@ var player = instance_find(sonic, 0);
 var water = instance_find(objWaterFront, 0);
 var tornado_instance = instance_find(tornado, 0);
 
-if (dead)
-    exit;
-
 image_index-=(1-global.time)*image_speed;
 x-=(1-global.time)*hspeed;
 y-=(1-global.time)*vspeed;
@@ -128,36 +125,17 @@ if(invulnerable<60 && damaged>=2)
     {
     if (instance_exists(tornado_instance) && tornado_instance.phase < 4)
         tornado_instance.phase = 0;
-
-    // Make the spotter drone's destruction clearly visible, matching the
-    // original Panjan footage: a large flash followed by several fragments.
-    repeat (5)
-        {
-        i = instance_create(x - 20 + random(40), y - 20 + random(40), objbigexp);
-        i.hspeed = hspeed + lulsp * 0.6;
-        i.vspeed = vspeed;
-        i.depth = -10000;
-        i.image_xscale = 1.5;
-        i.image_yscale = 1.5;
-        }
-    repeat (12)
-        {
-        i = instance_create(x - 16 + random(32), y - 16 + random(32), objdebris);
-        i.hspeed = hspeed + lulsp - 8 + random(16);
-        i.vspeed = vspeed - 8 + random(16);
-        i.sprite_index = sprCamApp;
-        i.image_angle = random(360);
-        i.rotation = -12 + random(24);
-        i.exploding = 0.08;
-        }
-    soundplay(global.sndExplosion);
+    i=instance_create(x,y,objbigexp);
+    i.hspeed=hspeed+lulsp*0.6;
+    i.vspeed=vspeed;
     soundplay(global.sndGunstar2);
     soundplay(global.sndGunstar1);
-
-    dead = true;
-    visible = false;
-    shield = 0;
-    speed = 0;
+    i=instance_create(x,y,objdebris);
+    i.hspeed=hspeed+lulsp;
+    i.vspeed=vspeed;
+    i.sprite_index=sprCamApp;
+    i.image_angle=mainDir;
+    instance_destroy();
     exit;
     }
 }

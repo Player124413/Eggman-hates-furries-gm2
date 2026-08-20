@@ -1,6 +1,3 @@
-if (dead)
-    exit;
-
 var water = instance_find(objWaterFront, 0);
 var player = instance_find(sonic, 0);
 var water_speed = instance_exists(water) ? water.hspeed : 0;

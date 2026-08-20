@@ -1,10 +1,3 @@
-// Reset state left by the previous scene and guarantee the original dark menu
-// backdrop even when the compatibility background layer is unavailable.
-draw_set_blend_mode(bm_normal);
-draw_set_alpha(1);
-draw_set_color(c_white);
-draw_clear(c_black);
-
 for(a=0; a<640; a+=8)
     {
     draw_background(bgMenu,a,0);
