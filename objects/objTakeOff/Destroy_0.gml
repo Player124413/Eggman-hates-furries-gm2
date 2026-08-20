@@ -1,5 +1,6 @@
 
-objectfg.darkness=0;
+if (instance_exists(objectfg))
+    objectfg.darkness = 0;
 if (sprite_exists(planeShadowSprite))
     sprite_delete(planeShadowSprite);
 if surface_exists(surf)

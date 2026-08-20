@@ -97,7 +97,7 @@ if(__view_get( e__VW.XView, 0 )+640>xx)
         }
     }
 var __b__;
-__b__ = action_if(point_distance(x,y,sonic.x,sonic.y)<64 || point_distance(x+8,y-40,sonic.x,sonic.y)<40);
+__b__ = action_if(instance_exists(sonic) && (point_distance(x,y,sonic.x,sonic.y)<64 || point_distance(x+8,y-40,sonic.x,sonic.y)<40));
 if __b__
 {
 sonic.damaged=1;

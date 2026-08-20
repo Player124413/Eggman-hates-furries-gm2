@@ -1,3 +1,5 @@
+if (!instance_exists(objWaterFront))
+    exit;
 y=objWaterFront.y;
 top=y;
 

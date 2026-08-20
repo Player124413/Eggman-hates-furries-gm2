@@ -1,5 +1,5 @@
 var __b__;
-__b__ = action_if(x-128<__view_get( e__VW.XView, 0 )+640 && y-128<__view_get( e__VW.YView, 0 )+480 && x+128>__view_get( e__VW.XView, 0 ) && y+128>__view_get( e__VW.YView, 0 ) || controlbg.outsideOn);
+__b__ = action_if(x-128<__view_get( e__VW.XView, 0 )+640 && y-128<__view_get( e__VW.YView, 0 )+480 && x+128>__view_get( e__VW.XView, 0 ) && y+128>__view_get( e__VW.YView, 0 ) || (instance_exists(controlbg) && controlbg.outsideOn));
 if __b__
 {
 var a,b;

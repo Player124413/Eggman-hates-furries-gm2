@@ -24,7 +24,7 @@ deleteSelf();
 __b__ = action_if(on);
 if __b__
 {
-__b__ = action_if(xi-128<__view_get( e__VW.XView, 0 )+640 && yi-128<__view_get( e__VW.YView, 0 )+480 && xa+128>__view_get( e__VW.XView, 0 ) && ya+128>__view_get( e__VW.YView, 0 ) || controlbg.outsideOn);
+__b__ = action_if(xi-128<__view_get( e__VW.XView, 0 )+640 && yi-128<__view_get( e__VW.YView, 0 )+480 && xa+128>__view_get( e__VW.XView, 0 ) && ya+128>__view_get( e__VW.YView, 0 ) || (instance_exists(controlbg) && controlbg.outsideOn));
 if __b__
 {
 var a,b,f,c,hk;

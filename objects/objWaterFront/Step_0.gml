@@ -1,4 +1,11 @@
 x = __view_get( e__VW.XView, 0 );
+if (!instance_exists(sonic))
+{
+    image_index -= (1 - global.time) * image_speed;
+    x -= (1 - global.time) * hspeed;
+    y -= (1 - global.time) * vspeed;
+    exit;
+}
 var __b__;
 __b__ = action_if(upTimer>0);
 if __b__
