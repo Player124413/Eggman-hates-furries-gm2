@@ -26,6 +26,23 @@ var foreground = instance_find(objectfg, 0);
 if (!instance_exists(player) || !instance_exists(water))
     exit;
 
+// Some converted Panjan transitions advance this controller to phase 2 in the
+// same frame that the wheel is removed. Recover once unless the boss has
+// legitimately completed and set win=1.
+if (phase==2 && win==0 && !panjanRespawned
+    && !instance_exists(panjan) && !instance_exists(objPanjanCore))
+{
+    var restoredPanjan=instance_create(player.x-320,water.y-64,panjan);
+    restoredPanjan.phase=0;
+    restoredPanjan.subphs=0;
+    restoredPanjan.firstCrash=0;
+    restoredPanjan.hspeed=max(20,player.hspeed);
+    restoredPanjan.visible=true;
+    panjanRespawned=true;
+    phase=1;
+    timer=0;
+}
+
 __b__ = action_if(phase==0 && player.x>xx+640);
 if __b__
 {
@@ -48,9 +65,27 @@ if __b__
         target = instance_find(objPanjanCore, 0);
 
     timer += global.time;
+    if (!instance_exists(target) && !panjanRespawned)
+    {
+        // If the round Panjan vanished during the converted platform/loop
+        // transition, recreate the boss from this persistent level controller.
+        // Unlike Panjan's own Step, this still runs after the boss is gone.
+        target = instance_create(player.x - 320, water.y - 64, panjan);
+        target.phase = 0;
+        target.subphs = 0;
+        target.firstCrash = 0;
+        target.hspeed = max(20, player.hspeed);
+        target.vspeed = 0;
+        target.visible = true;
+        panjanRespawned = true;
+        timer = 0;
+        soundplay(global.sndExplosion);
+        soundloop(global.sndTurbulence);
+    }
+
     if (!instance_exists(target))
     {
-        // Panjan has finished/despawned; stop tracking a dead object.
+        // A replacement was already used, so this is the real boss completion.
         phase = 2;
         timer = 0;
     }

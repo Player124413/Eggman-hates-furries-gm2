@@ -74,3 +74,4 @@ action_create_object(objWaterFront, 0, 0);
 timer = 0;
 win = 0;
 stufu = 0;
+panjanRespawned = false;
