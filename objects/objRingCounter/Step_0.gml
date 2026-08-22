@@ -1,5 +1,10 @@
 x=__view_get( e__VW.XView, 0 );
 y=__view_get( e__VW.YView, 0 );
+// The counter is reused across rooms. Show rings in every playable scene,
+// but keep the intro and menus clean.
+showRings = !instance_exists(introgenerator) && !instance_exists(presentation)
+    && !instance_exists(objMenu) && !instance_exists(objMenuCreds);
+
 var __b__;
 __b__ = action_if(instance_exists(sonic));
 if __b__

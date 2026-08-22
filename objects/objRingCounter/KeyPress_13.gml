@@ -9,11 +9,10 @@ if (paused)
     exit;
 }
 
-var can_pause = false;
-if (instance_exists(sonic) && sonic.able) can_pause = true;
-if (instance_exists(objSuperSonic) && objSuperSonic.able) can_pause = true;
-if (instance_exists(sonails) && sonails.able) can_pause = true;
-if (instance_exists(bike) && bike.able) can_pause = true;
+var can_pause = !instance_exists(introgenerator)
+    && !instance_exists(presentation)
+    && !instance_exists(objMenu)
+    && !instance_exists(objMenuCreds);
 
 if (can_pause)
 {
