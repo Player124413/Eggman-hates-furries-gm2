@@ -25,6 +25,11 @@ cb=0;
 pcb=0;
 soundloop(global.sndIdle);
 soundloop(global.sndRunning);
+// Start with a quiet running loop and an audible idle loop. Without explicit
+// initial volumes both loops played at full volume until the first input.
+var bikeVolume = variable_global_exists("maxVolume") ? global.maxVolume : 0.85;
+soundvolume(global.sndRunning,0);
+soundvolume(global.sndIdle,bikeVolume);
 idle = 1;
 gear = 0;
 interval = 20;
