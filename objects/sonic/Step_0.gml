@@ -1,4 +1,23 @@
 action_set_relative(1);
+
+if (keyboard_check_pressed(vk_f1))
+{
+    cheatImmortal=!cheatImmortal;
+    global.cheatImmortal=cheatImmortal;
+}
+if (keyboard_check_pressed(vk_f2))
+{
+    cheatHighJump=!cheatHighJump;
+    global.cheatHighJump=cheatHighJump;
+}
+jump = cheatHighJump ? 32 : 9;
+if (cheatImmortal)
+{
+    damaged=0;
+    invulnerable=60;
+    visible=1;
+}
+
 var __b__;
 __b__ = action_if(!specialStopCase);
 if __b__

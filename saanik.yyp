@@ -343,6 +343,7 @@
     {"id":{"name":"objMechanicCart","path":"objects/objMechanicCart/objMechanicCart.yy",},},
     {"id":{"name":"objmedexp","path":"objects/objmedexp/objmedexp.yy",},},
     {"id":{"name":"objMenu","path":"objects/objMenu/objMenu.yy",},},
+    {"id":{"name":"objFrontEnd","path":"objects/objFrontEnd/objFrontEnd.yy",},},
     {"id":{"name":"objMenuAir","path":"objects/objMenuAir/objMenuAir.yy",},},
     {"id":{"name":"objMenuCreds","path":"objects/objMenuCreds/objMenuCreds.yy",},},
     {"id":{"name":"objMiniGunGround","path":"objects/objMiniGunGround/objMiniGunGround.yy",},},

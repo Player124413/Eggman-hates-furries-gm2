@@ -5,12 +5,11 @@ speed-=global.air*speed*speed*global.time;
 x-=(1-global.time)*hspeed;
 y-=(1-global.time)*vspeed;
 
-if (target!=-1)
-    {
+// The target is created at the correct Doom-relative position by objDoomGun.
+// Do not move it here: target is a helper object and its x/y may be managed by
+// the current runtime as read-only during this Step event.
+if (target!=-1 && instance_exists(target) && instance_exists(doom))
     c=point_direction(doom.x,doom.y,x,y);
-    target.x=doom.x+lengthdir_x(192,c);
-    target.y=doom.y+lengthdir_y(192,c);
-    }
 action_set_vspeed(global.grav/global.meter*global.time);
 var __b__;
 __b__ = action_if(explosive);
@@ -21,12 +20,12 @@ if (gnd>0)
     {
     soundplay(global.sndExplosion);
     instance_create(x,y,objmedexp);
-    if (point_distance(sonic.x,sonic.y,x,y)<30)
+    if (instance_exists(sonic) && point_distance(sonic.x,sonic.y,x,y)<30)
         {sonic.damaged=1;
         sonic.damagex=x;
         sonic.damagey=y;
         }
-    if (target!=-1)
+    if (target!=-1 && instance_exists(target))
         {
         with (target)
             instance_destroy();

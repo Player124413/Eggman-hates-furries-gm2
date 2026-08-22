@@ -285,7 +285,7 @@ with objbouncer
                 y=(y*7+ystart+8)/8;
         }
 }
-__b__ = action_if(ik!=-1);
+__b__ = action_if(ik!=-1 && instance_exists(ik));
 if __b__
 {
 ik.x=x;
@@ -295,7 +295,9 @@ with (ik)
 ik.hspeed=hspeed;
 ik.vspeed=vspeed;
 }
-__b__ = action_if(ia!=-1);
+else
+    ik=-1;
+__b__ = action_if(ia!=-1 && instance_exists(ia));
 if __b__
 {
 ia.x=x+lengthdir_x(60,angle+90);
@@ -303,13 +305,13 @@ ia.y=y+lengthdir_y(60,angle+90);
 ia.image_xscale=1.66;
 ia.image_angle=angle;
 }
-if (ib!=-1)
+if (ib!=-1 && instance_exists(ib))
     {
     ib.x=x+hspeed+lengthdir_x(72,angle+90);
     ib.y=y+vspeed+lengthdir_y(72,angle+90);
     ib.image_angle=angle;
     }
-__b__ = action_if(instance_exists(objassessment) && phase!=1);
+__b__ = action_if(instance_exists(objassessment) && ib!=-1 && instance_exists(ib) && phase!=1);
 if __b__
 {
 objassessment.x=ib.x;

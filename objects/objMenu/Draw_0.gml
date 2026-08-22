@@ -1,10 +1,19 @@
+// Reset render state left by boss/end scenes before drawing the menu.
+draw_set_blend_mode(bm_normal);
+draw_set_color(c_white);
+draw_set_alpha(1);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
 for(a=0; a<640; a+=8)
     {
-    draw_background(bgMenu,a,0);
+    draw_sprite(bgMenu,0,a,0);
     }
 
-draw_background_ext(bgFlashy3,3,32+3,1,1,0,c_black,1);
-draw_background_ext(bgFlashy3,0,32,1,1,0,c_white,1);
+// Draw legacy menu assets as sprites to avoid a stale/magenta background
+// resource when returning from gameplay.
+draw_sprite_ext(bgFlashy3,0,3,35,1,1,0,c_black,1);
+draw_sprite_ext(bgFlashy3,0,0,32,1,1,0,c_white,1);
 
 
 c=360/7;

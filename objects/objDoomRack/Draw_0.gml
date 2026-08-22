@@ -1,26 +1,28 @@
+if (!instance_exists(doom))
+    exit;
 x=doom.x;
 y=doom.y;
 
 c=360/7;
 for (i=0; i<360; i+=90)
     draw_sprite_ext(sprDoomRack1,0,x,y,1,1,rackAngle+i,image_blend,image_alpha);
-for (i=0; i<7; i+=1)
+for (var slot=0; slot<7; slot+=1)
     {
-    h=lengthdir_x(92,rackAngle+i*c);
-    v=lengthdir_y(92,rackAngle+i*c);
-    draw_sprite_ext(sprDoomRack2,0,x+h,y+v,1,1,rackAngle+i*c,image_blend,image_alpha);
-    if(i<emeralds)
+    h=lengthdir_x(92,rackAngle+slot*c);
+    v=lengthdir_y(92,rackAngle+slot*c);
+    draw_sprite_ext(sprDoomRack2,0,x+h,y+v,1,1,rackAngle+slot*c,image_blend,image_alpha);
+    if(slot<emeralds)
     {
-    draw_sprite_ext(sprEmerald,0,x+h,y+v,1,1,0,controlbg.emerald_c[i],image_alpha);
+    draw_sprite_ext(sprEmerald,0,x+h,y+v,1,1,0,controlbg.emerald_c[slot],image_alpha);
     if (charge>0)
-        {draw_sprite_ext(sprElectroSpin,timer,x+h,y+v,1,1,rackAngle+i*c+timer*12,c_white,sqrt(charge));
+        {draw_sprite_ext(sprElectroSpin,timer,x+h,y+v,1,1,rackAngle+slot*c+timer*12,c_white,sqrt(charge));
         draw_set_blend_mode(bm_add);
         draw_set_alpha(power(charge,2));
-        draw_circle_color(x+h,y+v,32,controlbg.emerald_c[i],c_black,0);
+        draw_circle_color(x+h,y+v,32,controlbg.emerald_c[slot],c_black,0);
         draw_set_alpha(1);
         draw_set_blend_mode(bm_normal);
         }
-    if (timerReset && cos(degtorad(rackAngle+i*c))<-0.8)
+    if (timerReset && cos(degtorad(rackAngle+slot*c))<-0.8)
         {
         i=instance_create(x+h,y+v,objElArc);
         i.x2=x;

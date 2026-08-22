@@ -1,3 +1,5 @@
+if (i1 != -1 && !instance_exists(i1)) i1=-1;
+if (i2 != -1 && !instance_exists(i2)) i2=-1;
 if(i1==-1)
     {i1=instance_create(x,y,movingline);
     i1.p=id;

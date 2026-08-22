@@ -1,6 +1,10 @@
 
 
 
+if (!instance_exists(a1) || !instance_exists(a2)
+    || !instance_exists(a3) || !instance_exists(a4))
+    exit;
+
 h=lengthdir_x(32,open+image_angle);
 v=lengthdir_y(32,open+image_angle);
 h2=lengthdir_x(32,image_angle);

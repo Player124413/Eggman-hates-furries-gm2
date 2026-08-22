@@ -929,9 +929,12 @@ if(subphs==2)
     if(speed==0)
         {
         instance_create(xx-32,yy-32,objsmoke);
-        myBouncer.x=approach(myBouncer.x,15,xx-32,1);
-        myBouncer.y=approach(myBouncer.y,15,yy-32,1);
-        myBouncer.depth=depth+1;
+        if (myBouncer != -1 && instance_exists(myBouncer))
+        {
+            myBouncer.x=approach(myBouncer.x,15,xx-32,1);
+            myBouncer.y=approach(myBouncer.y,15,yy-32,1);
+            myBouncer.depth=depth+1;
+        }
         }
     }
 }

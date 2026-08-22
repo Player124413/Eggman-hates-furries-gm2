@@ -169,7 +169,12 @@ for(a=0; a<8; a+=1)
     }
 on = 0;
 action_set_alarm(1, 0);
-emeralds = 7;
+emeralds = 9;
+
+if (!variable_global_exists("cheatImmortal"))
+    global.cheatImmortal=false;
+if (!variable_global_exists("cheatHighJump"))
+    global.cheatHighJump=false;
 action_move_to(32, 480-32);
 timer = 0;
 room_speed=30;
@@ -189,7 +194,11 @@ else
 emerald_t[3]="Music Box";
 emerald_t[4]="Sound Test";
 emerald_t[5]="Credits";
-emerald_t[6]="Quit";
+emerald_t[6]="Immortality: Off";
+emerald_t[7]="High Jump: Off";
+emerald_t[8]="Quit";
+if (global.cheatImmortal) emerald_t[6]="Immortality: On";
+if (global.cheatHighJump) emerald_t[7]="High Jump: On";
 
 a=0;  music_t[a]=0; music_f[a]="OpenedWay.ogg";
 music_n[a]="The Opened Way";

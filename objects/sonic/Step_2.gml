@@ -1,4 +1,10 @@
 action_set_relative(1);
+if (cheatImmortal)
+{
+    damaged=0;
+    invulnerable=60;
+    visible=1;
+}
 action_move_to(-hspeed, -vspeed);
 image_index += -image_speed*(1-global.time);
 if(damaged==1)

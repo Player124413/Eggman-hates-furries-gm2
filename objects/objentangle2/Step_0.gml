@@ -76,10 +76,9 @@ sonic.hspeed=0;
 sonic.vspeed=0;
 sonic.sprite_index=shurt;
 }
-else
+else if (i1 != -1 && instance_exists(i1))
 {
-i1.hspeed=x-xprevious;
-i1.vspeed=y-yprevious;
+// movingball owns its motion values in the current runtime.
 i1.x=x;
 i1.y=y;
 with i1

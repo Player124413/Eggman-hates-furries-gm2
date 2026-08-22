@@ -1,11 +1,13 @@
 action_set_relative(1);
 
-// The support bot can be removed by broad phase clean-ups while Panjan keeps
-// running. Recreate it before any goal/shield fields are updated.
+// The support bot can be removed during cleanup; restore only a real objBot
+// before assigning its movement goals.
+if (instance_exists(bot1) && bot1.object_index!=objBot)
+    bot1=-1;
 if (!instance_exists(bot1))
 {
-    bot1 = instance_create(x - 128, y - 128, objBot);
-    bot1.kind = 1;
+    bot1=instance_create(x-128,y-128,objBot);
+    bot1.kind=1;
 }
 
 if(lightEmUp!=-1)
@@ -33,8 +35,8 @@ if (angle>=360)
     angle-=360;
 if (angle<0)
     angle+=360;
-
-
+    
+    
 soundfrequency(global.sndTurbulence,min(1,abs(spin/60)));
 soundvolume(global.sndTurbulence,1-power(max(0,1-abs(spin/60)),2));
 var __b__;
@@ -122,7 +124,7 @@ if(subphs==0)
             vspeed-=1.2*global.time*global.grav/global.meter;
         else
             vspeed-=0.9*global.time*global.grav/global.meter;
-
+        
             spin-=global.time/4;
         }
     if (spin<-45)
@@ -139,7 +141,7 @@ if(subphs==0)
 timer+=global.time;
 if (subphs>0 && subphs<=2 && angle2>-15)
     angle2-=global.time*5;
-
+    
 if (subphs==1)//falling
     {
     if (y>obj.y-56)
@@ -205,7 +207,7 @@ if(phase==1)
         soundstop(global.sndAfterBurnerLong)
         soundplay(global.sndAfterBurnerStop2);
         sec=0;
-
+        
         //hard cancel the standing on tornado thing
         sonic.physics=1;
         sonic.able=1;
@@ -241,7 +243,7 @@ if(invulnerable<120 && subphs<2)
     {
     if (vspeed>0 && global.time<0.5)
         global.time=0.5;
-
+    
     if(y>=ry-64)
         {
         y=ry-64;
@@ -287,29 +289,36 @@ with (bot1)
     secDir=approach(secDir,15,a,1);
 
     }
-
-// The circular loop is removed. Advance the original post-loop state when
-// Sonic reaches the end of the replacement flat section.
-if (loopTrigger < 2 && sonic.x > loopExitX)
+    
+if(sonic.x>mx+16 && loopTrigger==0)
+    {
+    loopTrigger=1;
+    with sandline
+        {
+        if(loopside!=0)
+            i.on=1;
+        }
+    with upsand
+        {
+        if(loopside!=0)
+            i.on=1;
+        }
+    }
+if(((sonic.x<mx-16 && sonic.y<my) || sonic.x>mx+136) && loopTrigger==1)
     {
     loopTrigger=2;
-    // Resume the round Panjan wheel itself after the removed loop section.
-    // The original waits on several geometry-dependent conditions that no
-    // longer fire once the loop is replaced by flat ground.
-    phase=3;
-    subphs=3;
-    pri=2;
-    visible=true;
-    x=sonic.x-320;
-    if (instance_exists(objWaterFront))
-        y=objWaterFront.y-64;
-    hspeed=20;
-    vspeed=0;
-    spin=-360*hspeed/(128*pi);
-    soundplay(global.sndAfterBurner);
+    with sandline
+        {
+        if(loopside==2)
+            i.on=0;
+        }
+    with upsand
+        {
+        if(loopside==2)
+            i.on=0;
+        }
     }
-
-if (subphs>0)
+if (subphs>0)    
     {vspeed=0;//!
     if(angle2>0)
         angle2-=global.time;
@@ -327,7 +336,7 @@ if(x>=fx-56 && subphs==1)
     spin=0;
     subphs=2;
     }
-
+    
 if(subphs==2 && sonic.y>yy-32 && sonic.x>fx)
     {
     subphs=3;
@@ -391,7 +400,7 @@ if(subphs>=3)
         if (x>sonic.x && hspeed>sonic.hspeed-8 && phase!=1)
             hspeed-=global.time/2;
         if (x<__view_get( e__VW.XView, 0 )-128)
-            hspeed+=global.time/4;
+            hspeed+=global.time/4;    
         }
     if(x>lx-10)
         {
@@ -444,7 +453,7 @@ if(invulnerable<120 && subphs<2)
 
     if (vspeed>0 && global.time<0.5)
         global.time=0.5;
-
+    
     if(y>=ry-64)
         {
         y=ry-64;
@@ -456,7 +465,7 @@ if(invulnerable<120 && subphs<2)
                 i.hspeed=hspeed+random(4);
                 i.vspeed=-random(4);
                 }
-
+            
             vspeed=-vspeed*0.6;
             if(vspeed>-2)
                 {
@@ -474,21 +483,19 @@ if(invulnerable<120 && subphs<2)
             }
         }
     }
-if (subphs>0)
+if (subphs>0)    
     {vspeed=0;//!
     if(angle2>0)
         angle2-=global.time;
     timer+=global.time;
     if (timer>60)
-        {
+        {         
         zerogenerator.win=1;                      //EXPLODE//
         with (tornado) //just makin' sure
             instance_destroy();
-        // In GMS2 instance_destroy() invalidates the Panjan instance
-        // immediately. Build the explosion and detached round core first,
-        // then destroy Panjan after all state has been copied.
+        instance_destroy();
         draw_clear(c_white);
-
+        
         SS_FreeSound(global.handle);
         global.handle=SS_LoadSound("FeistyOne1.ogg");
         i=instance_create(x,y,objbigexp);
@@ -504,9 +511,8 @@ if (subphs>0)
         i.vspeed=vspeed-1;
         i.xx=xx-x;//OMG
         i.yy=yy;
-        if (instance_exists(objectfg))
-            objectfg.flashlight=1;
-
+        objectfg.flashlight=1;
+        
         movX=x;
         with all
             {
@@ -519,9 +525,7 @@ if (subphs>0)
                 }
             }
         __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (movX) );
-
-        instance_destroy();
-        exit;
+        
         }
     }
 if(__view_get( e__VW.XView, 0 )+640>lx)
@@ -546,15 +550,15 @@ __b__ = action_if(phase==2);
 if __b__
 {
 if(subphs<2)
-    {
-
+    { 
+    
     if (timer==0)
         {
         soundplay(global.sndArmChange);
         }
     if(angle2<60)
         angle2+=global.time;
-
+    
     if(timer==nextRock && subphs==0)
         {
         soundplay(global.sndSnipe);
@@ -563,7 +567,7 @@ if(subphs<2)
     if (timer==nextRock+10*(1-2*firstRock))
         {i=instance_create(0,0,objRockWarning);
         i.timer=-1;}
-
+    
     if (timer==nextRock+8 && subphs==0)
         {
         dangerRadius=80;
@@ -574,35 +578,30 @@ if(subphs<2)
         {
         subphs=2;
         }
-    if (timer == nextRock + 31 && subphs == 0 && instance_exists(firstGrass))
-    {
-        if (variable_instance_exists(firstGrass, "i"))
+    if(timer==nextRock+31 && subphs==0 && firstGrass !=-1)
         {
-            var grass_collision = firstGrass.i;
-            if (instance_exists(grass_collision) && variable_instance_exists(grass_collision, "i1"))
+        if(firstGrass.i!=-1)
             {
-                var grass_endpoint = grass_collision.i1;
-                if (instance_exists(grass_endpoint))
+            if(firstGrass.i.i1!=-1)
                 {
-                    with (grass_endpoint)
-                        instance_destroy();
-                    grass_collision.i1 = -1;
+                with (firstGrass.i.i1)
+                    instance_destroy();
+                firstGrass.i.i1=-1;
                 }
             }
         }
-    }
     if(timer==nextRock+30 && subphs==0) ////////NORMAL TINY ISLAND
         {
         if (tornado.phase!=3)
             tornado.subphs=0;
         tornado.phase=3;
-
+        
         xx=__view_get( e__VW.XView, 0 )+640;
         yy=objWaterFront.y-40;
         i=instance_create(xx,yy,verySpecialLine);
         i.x2=i.x;
         i.y2=yy+800;
-
+        
         i=instance_create(xx,yy,sandline);
         xx+=192;
         firstGrass=i;
@@ -611,7 +610,7 @@ if(subphs<2)
         i.y2=yy;
         i.RH=1;
         i.LH=1;
-
+        
         i=instance_create(xx,yy,line);
         i.x2=i.x;
         i.y2=yy+800;
@@ -641,8 +640,11 @@ if(subphs<2)
 timer+=global.time;
 if(subphs<1)
     {
-    bot1.goalx=x+320+hspeed;
-    bot1.goaly=obj.y-160;
+    with (bot1)
+        {
+        goalx=other.x+320+other.hspeed;
+        goaly=objWaterFront.y-160;
+        }
     with (bot1)
         {
         a=point_direction(x,y,__view_get( e__VW.XView, 0 )+960,objWaterFront.y)+1;
@@ -653,8 +655,11 @@ if(subphs<1)
     }
 else
     {
-    bot1.goalx=x-32;
-    bot1.goaly=y-96;
+    with (bot1)
+        {
+        goalx=other.x-32;
+        goaly=other.y-96;
+        }
     with (bot1)
         {
         a=point_direction(x,y,other.x,other.y)+1;
@@ -668,7 +673,7 @@ if (subphs==2)
     {
     tornado.phase=4;
     subphs=3;
-
+    
     if(firstCrash)
     {
     xx=__view_get( e__VW.XView, 0 )+640;
@@ -677,24 +682,24 @@ if (subphs==2)
     i=instance_create(xx,yy,verySpecialLine);
     i.visible=1;
     firstLine=i;
-
+    
     i.x2=i.x;
     i.y2=yy+800;
-
+      
     i=instance_create(xx,yy,sandline);
     xx+=192;
     i.x2=xx;
     i.y2=yy;
     firstGrass=i;
-
+    
     i=instance_create(xx,yy,sandline);
     xx+=192;
     yy-=32;
     i.x2=xx;
     i.y2=yy;
     ry=yy;
-
-
+    
+        
     i=instance_create(xx,yy,sandline);
     xx+=2560;
     i.x2=xx;
@@ -703,12 +708,12 @@ if (subphs==2)
     i=instance_create(xx-16,yy,objbouncer);//BOUNCER
     i.amount=18;
     i.image_angle=90;
-
+    
     i=instance_create(xx,yy-48,objBoostPad);//SPEEDER
     i.amount=20;
     i.image_angle=90;
     muPad=i;
-
+        
     i=instance_create(xx,yy-240,line);
     muLine=i;
     i.x2=i.x;
@@ -730,7 +735,7 @@ if (subphs==2)
     i.tex=background_get_texture(bgSand)
     i.x2=xx+128;
     i.y2=yy;
-
+    
     i=instance_create(xx-16,yy-240-32,upsand);
     i.c4=c_white;
     i.c3=merge_color(c_white,c_gray,0.5);
@@ -762,7 +767,7 @@ if (subphs==2)
     i=instance_create(xx-96,yy-400,line);
     i.x2=i.x;
     i.y2=yy-240-80;
-
+    
     i=instance_create(xx-320,yy-128,greatbrown2);
     i.tex=background_get_texture(bgSand);
     i.c3=c_dkgray;
@@ -801,11 +806,11 @@ if (subphs==2)
     i.visible=1;
     i.x2=xx-192;
     i.y2=yy-128;
-
+    
     i=instance_create(xx-256,yy-440,objbouncer);
     i.image_angle=0;
     i.amount=14;
-
+    
     i=instance_create(xx+384,yy-640,sandline);
     i.x2=xx+480;
     i.y2=i.y;
@@ -829,55 +834,121 @@ if (subphs==2)
     i=instance_create(xx+480,yy-128,line);
     i.x2=i.x;
     i.y2=yy-640;
-
+    
     instance_create(xx+448,yy-1,objBoostPad);
     instance_create(xx+448-16,yy-24,objring);
     instance_create(xx+448,yy-24,objring);
     instance_create(xx+448+16,yy-24,objring);
-
+    
     fx=xx;
-
+    
     i=instance_create(xx,yy,sandline);
     xx+=640;
     i.x2=xx;
     i.y2=yy;
     i.depth=-3;
-    // Panjan loop removed: bridge its 256px footprint with ordinary sand.
+    //o_0 OMG a loop:
+    //bounds
+    i=instance_create(xx-32,yy-288,sandline);
+    i.LH=1;
+    i.x2=i.x+32;
+    i.y2=i.y;
+    i.deep=288;
+    i.c3=c_white;
+    i.c4=c_white;
+    i.depth=2;
+    i=instance_create(xx+256,yy-288,sandline);
+    i.x2=i.x+32;
+    i.y2=i.y;
+    i.deep=288;
+    i.c3=c_white;
+    i.c4=c_white;
+    i.RH=1;
+    i.depth=-2;
+    //R
     mx=xx+128;
     my=yy-128;
-    i=instance_create(xx,yy,sandline);
+    b=6;
+    for(a=0; a<b; a+=1)
+        {
+        i=instance_create(mx+lengthdir_x(128,270+a*90/b),my+lengthdir_y(128,270+a*90/b),sandline);
+        i.x2=mx+lengthdir_x(128,270+(a+1)*90/b)
+        i.y2=my+lengthdir_y(128,270+(a+1)*90/b)
+        i.deep=128;
+        i.loopside=2;
+        i.c3=c_white;
+        i.c4=c_white;
+        i.depth=-2;
+        }
+    //R!
+    for(a=0; a<b; a+=1)
+        {
+        i=instance_create(mx+lengthdir_x(128,a*90/b),my+lengthdir_y(128,a*90/b),upsand);
+        i.x2=mx+lengthdir_x(128,(a+1)*90/b)
+        i.y2=my+lengthdir_y(128,(a+1)*90/b)
+        i.loopside=2;
+        i.ydeep=yy-288;
+        i.c3=c_white;
+        i.c4=c_white;
+        i.depth=-2;
+        }
+    //L
+    for(a=0; a<b; a+=1)
+        {
+        i=instance_create(mx-lengthdir_x(128,270+a*90/b),my+lengthdir_y(128,270+a*90/b),sandline);
+        i.loopside=1;
+        i.x2=mx-lengthdir_x(128,270+(a+1)*90/b)
+        i.y2=my+lengthdir_y(128,270+(a+1)*90/b)
+        i.deep=128;
+        i.c3=c_white;
+        i.c4=c_white;
+        i.depth=2;
+        }
+    //L!
+    for(a=0; a<b; a+=1)
+        {
+        i=instance_create(mx-lengthdir_x(128,a*90/b),my+lengthdir_y(128,a*90/b),upsand);
+        i.x2=mx-lengthdir_x(128,(a+1)*90/b)
+        i.y2=my+lengthdir_y(128,(a+1)*90/b)
+        i.loopside=1;
+        i.ydeep=yy-288;
+        i.c3=c_white;
+        i.c4=c_white;
+        i.depth=2;
+        }
+    //top;
+    i=instance_create(xx,yy-288,sandline);
+    i.y2=i.y;   
+    i.deep=0;
     i.x2=xx+256;
-    i.y2=yy;
-    i.depth=-3;
-    xx+=256;
-    loopExitX=xx;
-
+    i.depth=-32;
+    
     i=instance_create(xx,yy,sandline);
     xx+=480;
     i.x2=xx;
     i.y2=yy;
-    i.depth=-3;
-
+    i.depth=-3;    
+    
     i=instance_create(xx,yy,sandline);//CONTINUE
     xx+=480;
     i.x2=xx;
     i.y2=yy;
     lx=xx;
-
-    i=instance_create(xx-32,yy-1,objBoostPad);
+    
+    instance_create(xx-32,yy-1,objBoostPad);
     i.amount=48;
-
+    
     i=instance_create(xx,yy,sandline);//CONTINUE
     xx+=128;
     yy-=32;
     i.x2=xx;
     i.y2=yy;
-
+        
     i=instance_create(xx,yy,line);
     i.visible=1;
     i.x2=i.x;
     i.y2=yy+800;
-
+    
     yy+=32;
     }
     else
@@ -888,23 +959,23 @@ if (subphs==2)
     i=instance_create(xx,yy,verySpecialLine);
     firstLine=i;
     i.visible=1;
-
+    
     i.x2=i.x;
     i.y2=yy+800;
-
+      
     i=instance_create(xx,yy,sandline);
     xx+=192;
     firstGrass=i;
     i.x2=xx;
     i.y2=yy;
-
+    
     i=instance_create(xx,yy,sandline);
     xx+=192;
     yy-=32;
     i.x2=xx;
     i.y2=yy;
     ry=yy;
-
+        
     i=instance_create(xx,yy,sandline);
     xx+=2560;
     i.x2=xx;
@@ -921,22 +992,17 @@ if(subphs==3 && sonic.x>rx-40)
             instance_destroy();
         firstLine.i1=-1;
         }*/
-    if (instance_exists(firstGrass) && variable_instance_exists(firstGrass, "i"))
-    {
-        var grass_collision = firstGrass.i;
-        if (instance_exists(grass_collision) && variable_instance_exists(grass_collision, "i1"))
+    if(firstGrass.i!=-1)
         {
-            var grass_endpoint = grass_collision.i1;
-            if (instance_exists(grass_endpoint))
+        if(firstGrass.i.i1!=-1)
             {
-                with (grass_endpoint)
-                    instance_destroy();
-                grass_collision.i1 = -1;
+            with (firstGrass.i.i1)
+                instance_destroy();
+            firstGrass.i.i1=-1;
             }
         }
     }
-    }
-
+    
 if (subphs==3 && x>rx-40)
     {
     if (!firstCrash)
@@ -964,13 +1030,19 @@ if (subphs==3 && x>rx-40)
     global.time=0.1;
     with sandline
         {
-        if(loopside==1)
-            i.on=0;
+        if(loopside==1 && variable_instance_exists(id,"i") && instance_exists(i))
+        {
+            with (i)
+                on=0;
+        }
         }
     with upsand
         {
-        if(loopside==1)
-            i.on=0;
+        if(loopside==1 && variable_instance_exists(id,"i") && instance_exists(i))
+        {
+            with (i)
+                on=0;
+        }
         }
     }
 /* */
@@ -1013,13 +1085,13 @@ if(ok)
     {
     bot1.goalx=sonic.x;
     bot1.goaly=sonic.y;
-    }
+    }   
 else
     {
     timer+=global.time;
     bot1.goalx=x-32+hspeed;
     bot1.goaly=y-128;
-    }
+    }   
 with (bot1)
     {
     a=point_direction(x,y,sonic.x,sonic.y)+1;

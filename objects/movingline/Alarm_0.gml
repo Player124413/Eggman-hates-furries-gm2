@@ -3,6 +3,8 @@ d = max(0.0001, point_distance(x,y,x2,y2));
 ux=(x2-x)/d;
 uy=(y2-y)/d;
 p=point_direction(x,y,x2,y2);
+if (i1 != -1 && !instance_exists(i1)) i1=-1;
+if (i2 != -1 && !instance_exists(i2)) i2=-1;
 nx=cos(degtorad(p+90));
 ny=-sin(degtorad(p+90));
 if(i1==-1)

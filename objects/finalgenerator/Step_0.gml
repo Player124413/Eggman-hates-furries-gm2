@@ -659,14 +659,21 @@ if(myswitch.prog>=1 || prog<1)
             i.depth=-1;}
         with objStatic {if(sprite_index==sprlavawalk)x+=2;}
         }
-    if (objLava.y<yy+96)
-        {objLava.vspeed=0;
-        objLavaBlob.vspeed=0;
-        objLavaWave.vspeed=0;}
-    else if (timer>=180 && objLava.vspeed==0)
-        {objLava.vspeed=-0.85;
-        objLavaBlob.vspeed=-0.85;
-        objLavaWave.vspeed=-0.85;}
+    var lava=instance_find(objLava,0);
+    var lavaBlob=instance_find(objLavaBlob,0);
+    var lavaWave=instance_find(objLavaWave,0);
+    if (instance_exists(lava) && lava.y<yy+96)
+        {
+        lava.vspeed=0;
+        if (instance_exists(lavaBlob)) lavaBlob.vspeed=0;
+        if (instance_exists(lavaWave)) lavaWave.vspeed=0;
+        }
+    else if (instance_exists(lava) && timer>=180 && lava.vspeed==0)
+        {
+        lava.vspeed=-0.85;
+        if (instance_exists(lavaBlob)) lavaBlob.vspeed=-0.85;
+        if (instance_exists(lavaWave)) lavaWave.vspeed=-0.85;
+        }
     
     
     if (sonic.x>xx+800)

@@ -1,7 +1,15 @@
+// Endpoint instances may be removed by collision/cleanup code before this
+// line receives its next update. A stale instance id is not the same as -1
+// in GMS2, so validate both references before dereferencing them.
+if (i1 != -1 && !instance_exists(i1))
+    i1 = -1;
+if (i2 != -1 && !instance_exists(i2))
+    i2 = -1;
+
 //sprite_index=sprPixel;
 p=point_direction(x,y,x2,y2);
 //image_angle=p;
-d=point_distance(x,y,x2,y2)-1;
+d=max(0.0001,point_distance(x,y,x2,y2)-1);
 //image_xscale=d;
 dx=x2-x;
 dy=y2-y;
@@ -10,7 +18,6 @@ uy=dy/d;
 
 nx=cos(degtorad(p+90));
 ny=-sin(degtorad(p+90));
-
 
 if(i1==-1)
     {if(instance_position(x,y,endpoint)==noone)

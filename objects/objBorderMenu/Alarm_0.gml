@@ -86,18 +86,10 @@ a+=1; item[a]="End";
 item_n[a]=18;
 a+=1; item[a]="Ultimate";
 item_n[a]=19;
-a+=1; item[a]="Love";
-item_n[a]=20;
 a+=1;
-if(global.gameCleared)
-    items=a;
-else
-    {
-    items=0;
-    while(item_n[items]<global.gameProgress && items<a)
-        items+=1;
-    items+=1;
-    }
+// All levels are available from the level select screen. Keep the full
+// catalogue visible regardless of saved progress or completion state.
+items=a;
 
 item[items]="back";
 items+=1;

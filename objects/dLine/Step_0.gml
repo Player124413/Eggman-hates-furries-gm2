@@ -130,9 +130,12 @@ if(close<1)
     x2=fx2+nx*drill.closeS*close*ck;
     y2=fy2+ny*drill.closeS*close*ck;
     
-    iR.x2=x2;
-    iR.y2=y2;
-    with iR event_perform(ev_alarm,0);
+    if (iR != -1 && instance_exists(iR))
+    {
+        iR.x2=x2;
+        iR.y2=y2;
+        with iR event_perform(ev_alarm,0);
+    }
     on=-2;
     event_user(0);
     }

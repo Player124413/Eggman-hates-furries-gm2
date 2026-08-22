@@ -1,3 +1,7 @@
+if (!instance_exists(i1) || !instance_exists(i2) || !instance_exists(i3)
+    || !instance_exists(i4) || !instance_exists(i5) || !instance_exists(i6))
+    exit;
+
 var h,v,h2,v2,c,d;
 h=-32*sin(angle);
 v=+32*cos(angle);

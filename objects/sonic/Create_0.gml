@@ -31,5 +31,8 @@ nullh=0;
 nullv=0;
 render = 1;
 rings = 0;
+// Optional gameplay cheats. Toggle with F1/F2.
+cheatImmortal = variable_global_exists("cheatImmortal") ? global.cheatImmortal : false;
+cheatHighJump = variable_global_exists("cheatHighJump") ? global.cheatHighJump : false;
 flyRight = 0;
 windSound=global.sndWind;

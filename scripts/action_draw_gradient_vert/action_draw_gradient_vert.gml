@@ -20,7 +20,10 @@ function action_draw_gradient_vert(argument0, argument1, argument2, argument3, a
 		yy2 += y;
 	}  // end if
 
-	draw_rectangle_ext( xx1, yy1, xx2, yy2, c1, c1, c2, c2, false );
+	// draw_rectangle_ext was a legacy compatibility call and is not a GMS2
+	// runtime function. draw_rectangle_color provides the same four-corner
+	// interpolation without raising an undefined-function error.
+	draw_rectangle_color(xx1, yy1, xx2, yy2, c1, c1, c2, c2, false);
 
 
 

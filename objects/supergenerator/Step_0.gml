@@ -802,25 +802,25 @@ if (timer==180)
 __b__ = action_if(phase==24);
 if __b__
 {
-var xx,yy;
+var shiftX,shiftY;
 
 controlbg.lev=12;
-xx=doom.x;
-yy=doom.y;
+shiftX=doom.x;
+shiftY=doom.y;
 doom.phase=0;
 with doom
     event_user(1);
 
-__view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (xx) );
-__view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (yy) );
+__view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - shiftX );
+__view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - shiftY );
 with all
     {
-    x-=xx;
-    y-=yy;
+    x-=shiftX;
+    y-=shiftY;
     if (object_index==movingline)
         {
-        x2-=xx;
-        y2-=yy;
+        x2-=shiftX;
+        y2-=shiftY;
         event_user(0);
         }
     if (x<__view_get( e__VW.XView, 0 )-320 && object_index!=objFinalRail)

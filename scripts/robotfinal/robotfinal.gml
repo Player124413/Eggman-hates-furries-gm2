@@ -1,5 +1,10 @@
 function robotfinal() {
 	var goal;
+	var player=instance_find(sonic,0);
+	// The player can be removed during a death/room transition while the
+	// robot's final attack still receives one more Step event.
+	if (!instance_exists(player))
+	    exit;
 	//useless script
 
 	if(finalcount>=30)
@@ -19,7 +24,7 @@ function robotfinal() {
 	sparetimer+=global.time;
 	if (sparetimer>96)
 	    {hspeed=(hspeed*29+(lastnnx+(nnx-lastnnx)*(y+vspeed*5-lastnny)/(nny-lastnny)-x)/5)/30;
-	    vspeed=(vspeed*99+(sonic.y+advance-y)/5)/100;}
+	    vspeed=(vspeed*99+(player.y+advance-y)/5)/100;}
 	else
 	    {robot_boost_sonic();}
 
@@ -58,7 +63,7 @@ function robotfinal() {
 	    soundplay(global.sndTargetConfirm);
 
     
-	if (sonic.gnd>0 && point_distance(sonic.x,sonic.y,x+lengthdir_x(base,image_angle)+hspeed*global.time,y+lengthdir_y(base,image_angle)+vspeed*global.time)<56 && faps==2)
+	if (player.gnd>0 && point_distance(player.x,player.y,x+lengthdir_x(base,image_angle)+hspeed*global.time,y+lengthdir_y(base,image_angle)+vspeed*global.time)<56 && faps==2)
 	    {
 	    finalcount+=1;
 	    }

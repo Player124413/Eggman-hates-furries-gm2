@@ -1,5 +1,4 @@
 function goToCreds() {
-    // The original character ending has been removed. Record completion and
-    // return directly to the title.
+    // Ultimate is the final playable scene; return to the title afterwards.
     game_completed();
 }

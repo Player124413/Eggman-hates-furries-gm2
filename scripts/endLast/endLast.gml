@@ -13,10 +13,11 @@ function endLast() {
 	        }
 	    }
 
-	controlbg.lev=19;
-	room_speed=60;
-	instance_create(0,0,uctrl);
-	//uctrl handles the rest.
+	// Show the End scene first. Ultimate starts after its presentation.
+	controlbg.lev=20;
+	room_speed=30;
+	instance_create(0,0,objFrontEnd);
+	// objFrontEnd hands off to Ultimate when it finishes.
 
 
 }

@@ -1,9 +1,16 @@
+// Render the Ultimate background before all scene objects and clear any
+// stale room texture left by the story transition.
+depth=10000;
 action_create_object(ubgline, 0, 256);
 action_create_object(ufore, 0, 0);
 action_create_object(objRean, 96, 64);
 action_create_object(sonails, 288, ubgline.y-16);
 __view_set( e__VW.YView, 0, 0 );
 __view_set( e__VW.XView, 0, 0 );
+// Story transitions retain the previous room's background layers. Disable
+// them so they cannot overlay Ultimate with stale/magenta textures.
+for (var bg_slot=0; bg_slot<8; bg_slot+=1)
+    __background_set(e__BG.Visible, bg_slot, 0);
 global.time=0.5;
 
 xx=240;

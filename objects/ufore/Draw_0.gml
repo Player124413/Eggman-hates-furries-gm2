@@ -2,9 +2,10 @@ ax=192*(__view_get( e__VW.XView, 0 ) div 192);
 ax+=((__view_get( e__VW.XView, 0 )*1.1) mod 192)-192;
 while (ax<__view_get( e__VW.XView, 0 )-192)
     ax+=192;
+if (sprite_exists(global.bgDustBottomRuntime))
 while (ax<__view_get( e__VW.XView, 0 )+640)
     {
-    draw_background(global.bgDustBottomRuntime, ax, 288);
+    draw_sprite(global.bgDustBottomRuntime, 0, ax, 288);
     ax+=192;
     }
 if(instance_exists(objUltima) && rA>0)
@@ -28,7 +29,7 @@ if(whiteNoise>0)
     {
     h=round(random(1));
     v=round(random(1));
-    draw_background_ext(bgWhiteSurf, __view_get( e__VW.XView, 0 )+h*640,__view_get( e__VW.YView, 0 )+v*480,2*sign(0.5-h),2*sign(0.5-v),0,c_white,1);
+    draw_sprite_ext(bgWhiteSurf,0,__view_get( e__VW.XView, 0 )+h*640,__view_get( e__VW.YView, 0 )+v*480,2*sign(0.5-h),2*sign(0.5-v),0,c_white,1);
     
     whiteNoise-=1;//NOT GLOBAL.TIME!!!
     if(whiteNoise<=0)
@@ -41,3 +42,8 @@ if(light>0)
     draw_rectangle(__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),__view_get( e__VW.XView, 0 )+640,__view_get( e__VW.YView, 0 )+480,0);
     draw_set_alpha(1);
     }
+
+// Keep Ultimate effects from tinting characters and UI drawn afterwards.
+draw_set_blend_mode(bm_normal);
+draw_set_color(c_white);
+draw_set_alpha(1);

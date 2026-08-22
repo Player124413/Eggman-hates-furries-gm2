@@ -16,7 +16,7 @@ soundvolume(global.sndEngine,0);
 instance_create(0,0,tutorialgenerator);
 soundvolume(global.sndWind,0)
 soundloop(global.sndOoze4);
-sonic.windSound=global.sndOoze4;
+if (instance_exists(sonic)) sonic.windSound=global.sndOoze4;
 }
 }
 __b__ = action_if(lev==-9);
@@ -60,8 +60,8 @@ if __b__
 action_create_object(sonic, 0, 0);
 global.handle=SS_LoadSound("FeistyOne1.ogg");
 i=instance_create(0,0,objWaterFront)
-sonic.x=128;
-sonic.y=i.y-64-16;
+if (instance_exists(sonic)) sonic.x=128;
+if (instance_exists(sonic)) sonic.y=i.y-64-16;
 i=instance_create(0,objWaterFront.y-64,grassgenerator);
 
 
@@ -88,8 +88,8 @@ action_create_object(sonic, 0, 0);
 global.handle=SS_LoadSound("FeistyOne1.ogg");
 soundloop(global.handle);
 i=instance_create(0,0,objWaterFront)
-sonic.x=640;
-sonic.y=i.y-64-16;
+if (instance_exists(sonic)) sonic.x=640;
+if (instance_exists(sonic)) sonic.y=i.y-64-16;
 i=instance_create(640,objWaterFront.y-64,grassgenerator);
 i.xx=i.x;
 i.yy=i.y;
@@ -130,16 +130,16 @@ if __b__
 action_create_object(sonic, 0, 0);
 //soundloop(global.handle);
 i=instance_create(0,0,objWaterFront)
-sonic.x=640;
-sonic.y=i.y-64-16;
+if (instance_exists(sonic)) sonic.x=640;
+if (instance_exists(sonic)) sonic.y=i.y-64-16;
 i=instance_create(640,objWaterFront.y-64,grassgenerator);
 i.xx=i.x;
 i.yy=i.y;
 i.r=24;
 with (i) {event_user(10); event_user(11);}
 i.phase=3;
-sonic.x=i.xx-320;
-sonic.y=i.yy-16;
+if (instance_exists(sonic)) sonic.x=i.xx-320;
+if (instance_exists(sonic)) sonic.y=i.yy-16;
 
 
 i=instance_create(640-1280,objWaterFront.y-64,sandline);
@@ -176,12 +176,12 @@ var h,v;
 global.handle=SS_LoadSound("FeistyOne2.ogg");
 //soundloop(global.handle);
 i=instance_create(0,0,objWaterFront)
-sonic.x=2560;
-sonic.y=i.y-256-16;
+if (instance_exists(sonic)) sonic.x=2560;
+if (instance_exists(sonic)) sonic.y=i.y-256-16;
 i=instance_create(2560,objWaterFront.y-256,grassgenerator);
 i.phase=6;
-sonic.x=i.x-128;
-sonic.y=i.y-16;
+if (instance_exists(sonic)) sonic.x=i.x-128;
+if (instance_exists(sonic)) sonic.y=i.y-16;
 
 i=instance_create(0,0,drill);
 i.layerExists=0;
@@ -319,7 +319,7 @@ y=5120;
     y-=320;
                             
             i=instance_create(x,y,robot);
-            i.vspeed=sonic.speed+8;
+            if (instance_exists(sonic)) i.vspeed=sonic.speed+8;
             i.nnx=sendx;
             i.nny=sendy;
             soundplay(global.sndBreakDown);
@@ -329,7 +329,7 @@ y=5120;
                 i.sprite_index=stornadopieces;
                 i.exploding=1/30;
                 i.hspeed=random(a/2);
-                i.vspeed=sonic.vspeed+9+random(2);
+                if (instance_exists(sonic)) i.vspeed=sonic.vspeed+9+random(2);
                 i.rotation=2+random(10);
                 i.image_single=a;
                 }
@@ -386,7 +386,7 @@ y=5120;
     y-=320;
                             
             i=instance_create(x,y,robot);
-            i.vspeed=sonic.speed+8;
+            if (instance_exists(sonic)) i.vspeed=sonic.speed+8;
             i.nnx=sendx;
             i.nny=sendy;
             
@@ -408,7 +408,7 @@ if __b__
 
 soundstop(global.sndWind);
 soundloop(global.sndShaft);
-sonic.windsound=global.sndShaft;
+if (instance_exists(sonic)) sonic.windsound=global.sndShaft;
 
 
 hallength=9600;
@@ -416,7 +416,8 @@ hh=192;
 
 x=0;
 y=0;
-instance_create(160,0,sonic);
+i=instance_create(160,0,sonic);
+i.windsound=global.sndShaft;
 
 x-=hallength;
 i=instance_create(x,y,metaline);
@@ -462,7 +463,7 @@ if __b__
 
 soundstop(global.sndWind);
 soundloop(global.sndLavaAmb1);
-sonic.windsound=global.sndLavaAmb1;
+if (instance_exists(sonic)) sonic.windsound=global.sndLavaAmb1;
 
 soundvolume(global.sndEngine,0);
 i=instance_create(0,448,objLava);
@@ -489,7 +490,7 @@ if __b__
 
 soundstop(global.sndWind);
 soundloop(global.sndLavaAmb1);
-sonic.windsound=global.sndLavaAmb1;
+if (instance_exists(sonic)) sonic.windsound=global.sndLavaAmb1;
 
 i=instance_create(0,0,objLava);
 
@@ -525,7 +526,7 @@ if __b__
 
 soundstop(global.sndWind);
 soundloop(global.sndLavaAmb1);
-sonic.windsound=global.sndLavaAmb1;
+if (instance_exists(sonic)) sonic.windsound=global.sndLavaAmb1;
 soundloop(global.sndLavaAmb2);
 
 i=instance_create(-1280-960+800,-16,sonic);
@@ -571,7 +572,7 @@ if __b__
 
 
 soundstop(global.sndWind);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 soundloop(global.sndNonRythmic);
 
 
@@ -591,7 +592,7 @@ with (i)
     vspeed=-29;
     phase=1;
     y+=32*global.time;
-    sonic.y-=32*global.time;
+    if (instance_exists(sonic)) sonic.y-=32*global.time;
     }
 }
 }
@@ -600,7 +601,7 @@ if __b__
 {
 {
 soundstop(global.sndWind);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 soundloop(global.sndNonRythmic);
 
 
@@ -616,7 +617,7 @@ if __b__
 {
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 //soundloop(global.sndNonRythmic);
 
 
@@ -643,7 +644,7 @@ if __b__
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
 instance_create(48,-16,sonic);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 //soundloop(global.sndNonRythmic);
 
 
@@ -670,8 +671,8 @@ if __b__
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
 instance_create(0,-192,sonic);
-sonic.windsound=-1;
-sonic.specialStopCase=1;
+if (instance_exists(sonic)) sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.specialStopCase=1;
 //soundloop(global.sndNonRythmic);
 global.handle=SS_LoadSound("MetalScratchin1.ogg");
 
@@ -698,8 +699,8 @@ if __b__
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
 instance_create(0,-192,sonic);
-sonic.windsound=-1;
-sonic.specialStopCase=1;
+if (instance_exists(sonic)) sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.specialStopCase=1;
 //soundloop(global.sndNonRythmic);
 
 i=instance_create(0,0,doom);
@@ -726,7 +727,7 @@ if __b__
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
 instance_create(320+96,-16,sonic);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 //soundloop(global.sndNonRythmic);
 global.handle=SS_LoadSound("Library.ogg");
 SS_LoopSound(global.handle);
@@ -734,10 +735,10 @@ SS_LoopSound(global.handle);
 objectfg.flashlight=1;
 soundplay(global.sndGunstar3);
 
-sonic.able=0;
-sonic.image_xscale=-1;
-sonic.physics=0;
-sonic.sprite_index=sawful;
+if (instance_exists(sonic)) sonic.able=0;
+if (instance_exists(sonic)) sonic.image_xscale=-1;
+if (instance_exists(sonic)) sonic.physics=0;
+if (instance_exists(sonic)) sonic.sprite_index=sawful;
 
 instance_create(0,0,objDarkDepths);
 
@@ -820,7 +821,7 @@ if __b__
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
 instance_create(0,0,sonic);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 controlbg.on=0;
 //soundloop(global.sndNonRythmic);
 global.handle=SS_LoadSound("Library.ogg");
@@ -832,8 +833,8 @@ objCraft2.phase=1;
 soundplay(global.sndLand1);
 soundplay(global.sndPull);
 soundloop(global.sndEngine2);
-sonic.able=0;
-sonic.physics=0;
+if (instance_exists(sonic)) sonic.able=0;
+if (instance_exists(sonic)) sonic.physics=0;
 
 }
 }
@@ -844,7 +845,7 @@ if __b__
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
 instance_create(0,0,sonic);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 controlbg.on=1;
 //soundloop(global.sndNonRythmic);
 global.handle=SS_LoadSound("Library.ogg");
@@ -866,12 +867,12 @@ i=instance_create(0,0,objRamEgg);
 i.sprite_index=sprSuperEgg8;
 i.auraColor=c_black;
 soundloop(global.sndEngine2);
-sonic.able=0;
+if (instance_exists(sonic)) sonic.able=0;
 if(global.zeroRingMode)
-    sonic.rings=30;
+    if (instance_exists(sonic)) sonic.rings=30;
 else
-    sonic.rings=60;
-sonic.physics=0;
+    if (instance_exists(sonic)) sonic.rings=60;
+if (instance_exists(sonic)) sonic.physics=0;
 background_color=make_color_rgb(12,0,17);
 
 i=instance_create(-800,0,objLimitedGrass);
@@ -885,7 +886,7 @@ if __b__
 {
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 controlbg.on=0;
 //soundloop(global.sndNonRythmic);
 global.handle=SS_LoadSound("Library.ogg");
@@ -917,7 +918,7 @@ if __b__
 {
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
-sonic.windsound=-1;
+if (instance_exists(sonic)) sonic.windsound=-1;
 controlbg.on=0;
 global.handle=SS_LoadSound("Library.ogg");
     soundloop(global.handle);
@@ -946,8 +947,8 @@ if __b__
 soundstop(global.sndWind);
 soundvolume(global.sndEngine,0);
 controlbg.on=0;
-// Ending scene removed: record completion and return to the title immediately.
-game_completed();
-exit;
+if (!instance_exists(objFrontEnd))
+    instance_create(0,0,objFrontEnd);
+room_speed=30;
 }
 }

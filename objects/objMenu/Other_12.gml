@@ -1,5 +1,5 @@
 choice=-option;
-if (choice<0) choice+=7;
+if (choice<0) choice+=9;
 var __b__;
 __b__ = action_if(up==0 && able);
 if __b__
@@ -33,6 +33,22 @@ else
     emerald_t[2]="Zero Ring Mode: Off";
 }
 __b__ = action_if(choice==6);
+if __b__
+{
+global.cheatImmortal=!global.cheatImmortal;
+emerald_t[6]="Immortality: "+(global.cheatImmortal ? "On" : "Off");
+if (instance_exists(sonic))
+    sonic.cheatImmortal=global.cheatImmortal;
+}
+__b__ = action_if(choice==7);
+if __b__
+{
+global.cheatHighJump=!global.cheatHighJump;
+emerald_t[7]="High Jump: "+(global.cheatHighJump ? "On" : "Off");
+if (instance_exists(sonic))
+    sonic.cheatHighJump=global.cheatHighJump;
+}
+__b__ = action_if(choice==8);
 if __b__
 {
 action_end_game();

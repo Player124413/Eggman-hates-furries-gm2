@@ -335,7 +335,9 @@ if (damaged==1)
         }
     if(fake==0)
         {
-        bosul4.on=0; bosul5.on=0; bosul6.on=0;
+        if (instance_exists(bosul4)) bosul4.on=0;
+        if (instance_exists(bosul5)) bosul5.on=0;
+        if (instance_exists(bosul6)) bosul6.on=0;
         damaged=2;
         atk=-2;
         soundstop(global.sndCharge);
@@ -396,7 +398,13 @@ if (damaged>1)
         //ARMS
         if(destroyed==3)
             {a=4;
-            bosuc.on=0; bosul1.on=0; bosul2.on=0; bosul3.on=0; bosul4.on=0; bosul5.on=0; bosul6.on=0;
+            if (instance_exists(bosuc)) bosuc.on=0;
+            if (instance_exists(bosul1)) bosul1.on=0;
+            if (instance_exists(bosul2)) bosul2.on=0;
+            if (instance_exists(bosul3)) bosul3.on=0;
+            if (instance_exists(bosul4)) bosul4.on=0;
+            if (instance_exists(bosul5)) bosul5.on=0;
+            if (instance_exists(bosul6)) bosul6.on=0;
             destroyx=x-64+random(128);
             destroyy=y-64+random(128);}
         if(destroyed==4)
@@ -427,9 +435,9 @@ if (damaged>1)
         if(y<sonic.y-240-480)
             image_angle=270;
         platform=0;
-        bosul4.on=1; 
-        bosul5.on=1; 
-        bosul6.on=1;}
+        if (instance_exists(bosul4)) bosul4.on=1;
+        if (instance_exists(bosul5)) bosul5.on=1;
+        if (instance_exists(bosul6)) bosul6.on=1;}
     
     if (damaged==540 && ps==0)
         {
@@ -440,14 +448,13 @@ if (damaged>1)
     if (damaged>600)
         {
         soundplay(global.sndGunstar2);
-        instance_destroy();
-        with(bosul1) instance_destroy();
-        with(bosul2) instance_destroy();
-        with(bosul3) instance_destroy();
-        with(bosul4) instance_destroy();
-        with(bosul5) instance_destroy();
-        with(bosul5) instance_destroy();
-        with(bosuc) instance_destroy();
+        if (instance_exists(bosul1)) with (bosul1) instance_destroy();
+        if (instance_exists(bosul2)) with (bosul2) instance_destroy();
+        if (instance_exists(bosul3)) with (bosul3) instance_destroy();
+        if (instance_exists(bosul4)) with (bosul4) instance_destroy();
+        if (instance_exists(bosul5)) with (bosul5) instance_destroy();
+        if (instance_exists(bosul6)) with (bosul6) instance_destroy();
+        if (instance_exists(bosuc)) with (bosuc) instance_destroy();
         
         i=instance_create(x,y,objdebris);
         i.sprite_index=sprbooster;
@@ -485,6 +492,7 @@ if (damaged>1)
         sonic.acc=remAcc;
         objectfg.flashlight=1;
         soundstop(global.sndRobot);
+        instance_destroy();
         }
         
     spawnKillTimer=30;        

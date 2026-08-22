@@ -1,3 +1,11 @@
+// Support geometry can be removed by room cleanup before the boss itself.
+// Skip this draw rather than dereferencing stale helper ids.
+if (!instance_exists(bosuc) || !instance_exists(bosul1)
+    || !instance_exists(bosul2) || !instance_exists(bosul3)
+    || !instance_exists(bosul4) || !instance_exists(bosul5)
+    || !instance_exists(bosul6))
+    exit;
+
 f=image_angle+60;
 draw_sprite_ext(sprsocket,0,x,y,1,1,f,image_blend,image_alpha);
 if(ps)

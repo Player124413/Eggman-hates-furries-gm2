@@ -4,14 +4,10 @@ image_index+=-image_speed*(1-global.time);
 
 dist=point_distance(x,y,sonic.x,sonic.y);
 
-a1.hspeed=hspeed;
-a1.vspeed=vspeed;
-a2.hspeed=hspeed;
-a2.vspeed=vspeed;
-a3.hspeed=hspeed;
-a3.vspeed=vspeed;
-a4.hspeed=hspeed;
-a4.vspeed=vspeed;
+if (instance_exists(a1)) { a1.hspeed=hspeed; a1.vspeed=vspeed; }
+if (instance_exists(a2)) { a2.hspeed=hspeed; a2.vspeed=vspeed; }
+if (instance_exists(a3)) { a3.hspeed=hspeed; a3.vspeed=vspeed; }
+if (instance_exists(a4)) { a4.hspeed=hspeed; a4.vspeed=vspeed; }
 var __b__;
 __b__ = action_if(grav);
 if __b__
@@ -33,7 +29,11 @@ with (sonic)
 gravitate(objfallring,2);
 gravitate(objFlashG2,2);
 }
-__b__ = action_if(i1!=-1);
+// The outer helper can be removed during boss cleanup. Do not dereference
+// its stale instance id on the next step.
+if (i1 != -1 && !instance_exists(i1))
+    i1 = -1;
+__b__ = action_if(i1!=-1 && instance_exists(i1));
 if __b__
 {
 i1.x=x;
@@ -166,8 +166,8 @@ if (gnd>0)
     {
     with objFinalOuter
         {
-        with i1
-            instance_destroy();
+        if (i1 != -1 && instance_exists(i1))
+            with i1 instance_destroy();
         i1=-1;
         }
         
