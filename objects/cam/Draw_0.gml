@@ -1,3 +1,8 @@
+// Atomic explosion effects can leave a non-normal GPU blend/color state.
+// Reset it before drawing the 3D cutscene so textures keep their colours.
+draw_set_blend_mode(bm_normal);
+draw_set_color(c_white);
+draw_set_alpha(1);
 u=2;
 dd=800;
 maxx=3200;
