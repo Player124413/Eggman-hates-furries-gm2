@@ -1,3 +1,8 @@
+// Reset the GPU state before clearing: the atomic/3D scene may leave an
+// inverted blend mode active for the first End frame.
+draw_set_blend_mode(bm_normal);
+draw_set_color(c_white);
+draw_set_alpha(1);
 // Draw a self-contained fallback background. This avoids the magenta texture
 // placeholder produced by legacy End background resources after conversion.
 draw_clear(c_black);
