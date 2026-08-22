@@ -1,6 +1,7 @@
 function endLast() {
 	// Leave the 3D atomic-explosion pass with a clean 2D render state.
 	d3d_set_culling(0);
+	d3d_set_fog(false,c_black,0,0);
 	d3d_end();
 	gpu_set_ztestenable(false);
 	gpu_set_zwriteenable(false);

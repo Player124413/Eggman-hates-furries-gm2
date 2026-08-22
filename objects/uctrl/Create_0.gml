@@ -1,3 +1,5 @@
+// Explicitly disable the atomic cutscene fog before drawing Ultimate.
+d3d_set_fog(false,c_black,0,0);
 // Render the Ultimate background before all scene objects and clear any
 // stale room texture left by the story transition.
 depth=10000;

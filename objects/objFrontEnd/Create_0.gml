@@ -1,3 +1,5 @@
+// Explicitly disable the atomic cutscene fog before drawing End.
+d3d_set_fog(false,c_black,0,0);
 // End scene: prepare the two-layer background and instantiate the original
 // Sonic/Tails ending actors. Keep Ultimate (lev 19) separate from this scene.
 __view_set(e__VW.XView, 0, 0);
