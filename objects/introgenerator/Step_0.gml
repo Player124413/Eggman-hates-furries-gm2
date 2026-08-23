@@ -642,15 +642,14 @@ if __b__
 {
 if(white<1)
     {
-    if (white==0)
-        soundloop(global.sndWhitenoise);
+    // Do not start the legacy white-noise/siren layer during the intro.
     white+=global.time/60;
     if (white>=1)
         {white=1;
         intro_finish();
         }
         
-    soundvolume(global.sndWhitenoise,1-power(1-white,2));
+    // The intro stays on its normal music and speech only.
     }
 
 
