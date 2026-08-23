@@ -1,3 +1,8 @@
+// Some converted child objects do not receive line's Create defaults.
+// Initialise the switch explicitly before the inherited collision code reads it.
+if (!variable_instance_exists(id,"on"))
+    on=1;
+
 var __b__;
 __b__ = action_if(on);
 if __b__
