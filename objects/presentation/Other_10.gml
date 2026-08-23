@@ -16,7 +16,7 @@ action_create_object(viper, 128, 320);
 action_create_object(objCloudMaker, 0, 0);
 action_create_object(introgenerator, 0, 0);
 action_kill_object();
-soundplay(global.sndThunder1);
+// No thunder/siren effects in the intro presentation.
 if(global.introHasBeenCleared && global.introProg==0)
     {
     i=instance_create(0,0,objTuText);
