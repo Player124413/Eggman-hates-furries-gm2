@@ -14,7 +14,7 @@ jump = cheatHighJump ? 32 : 9;
 if (cheatImmortal)
 {
     damaged=0;
-    invulnerable=60;
+    invulnerable=0;
     visible=1;
 }
 

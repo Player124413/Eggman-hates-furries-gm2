@@ -2,7 +2,7 @@ action_set_relative(1);
 if (cheatImmortal)
 {
     damaged=0;
-    invulnerable=60;
+    invulnerable=0;
     visible=1;
 }
 action_move_to(-hspeed, -vspeed);
@@ -52,7 +52,7 @@ if(damaged==1)
     damaged=0;
     }
     
-if(invulnerable>0)
+if(invulnerable>0 && !cheatImmortal)
     {visible=1-visible;
     
     if(invulnerable>180)//it counts up from 60 and then counts down from 60...
