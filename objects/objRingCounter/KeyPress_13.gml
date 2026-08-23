@@ -9,8 +9,7 @@ if (paused)
     exit;
 }
 
-var can_pause = !instance_exists(introgenerator)
-    && !instance_exists(presentation)
+var can_pause = !instance_exists(presentation)
     && !instance_exists(objMenu)
     && !instance_exists(objMenuCreds);
 

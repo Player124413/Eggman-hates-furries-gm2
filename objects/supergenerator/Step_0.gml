@@ -397,7 +397,7 @@ if (instance_exists(objtails3))
         
         j=instance_create(x+256+xRight-64,y,objStandSwitch);
         i=instance_create(x+256+xRight-16,y-160,objdoormaker3);
-        i.mycolor=c_white;
+        i.mycolor=make_color_rgb(176,128,80);
         i.dependency=j;
         
         i=instance_create(x-xLeft-640,y-800,greatbrown);//Left side patch
@@ -444,7 +444,7 @@ i.ydeep=i.y-256;
 
 j=instance_create(x+320-64,y,objStandSwitch);
 i=instance_create(x+320-16,y-160,objdoormaker3);
-i.mycolor=c_white;
+i.mycolor=make_color_rgb(176,128,80);
 i.dependency=j;
         
 
@@ -479,7 +479,7 @@ i.ydeep=i.y-256;
 
 j=instance_create(x+320-64,y,objStandSwitch);
 i=instance_create(x+320-16,y-160,objdoormaker3);
-i.mycolor=c_white;
+i.mycolor=make_color_rgb(176,128,80);
 i.dependency=j;
 
 i=instance_create(x+128,y-64,objBallHolder);
@@ -515,7 +515,7 @@ i.ydeep=i.y-256;
 
 j=instance_create(x+320-64,y,objStandSwitch);
 i=instance_create(x+320-16,y-160,objdoormaker3);
-i.mycolor=c_white;
+i.mycolor=make_color_rgb(176,128,80);
 i.dependency=j;
 
 i=instance_create(x+128,y-224,objPanjan1);
@@ -550,7 +550,7 @@ i.ydeep=i.y-256;
 
 j=instance_create(x+320-64,y,objStandSwitch);
 i=instance_create(x+320-16,y-160,objdoormaker3);
-i.mycolor=c_white;
+i.mycolor=make_color_rgb(176,128,80);
 i.dependency=j;
 i.depth=-4;
 myDoor=i;

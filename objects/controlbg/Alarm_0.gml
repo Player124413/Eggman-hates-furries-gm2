@@ -653,7 +653,7 @@ i=instance_create(0,0,supergenerator);
 with (i)
     {
     myDoor=instance_create(x-16,y-160,objdoormaker3);
-    myDoor.mycolor=c_white;
+    myDoor.mycolor=make_color_rgb(176,128,80);
     myDoor.depth=-4;
     phase=21;
     remX=0;
