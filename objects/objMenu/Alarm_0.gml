@@ -1,3 +1,3 @@
-soundloop(global.sndDarkO);
-//soundvolume(global.sndDarkO,0.7);
-on = 1;
+// The menu must contain only its selected music. The old DarkO loop was a
+// repeating siren/beeping layer that was mistaken for background music.
+soundstop(global.sndDarkO);
