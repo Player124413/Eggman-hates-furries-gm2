@@ -1,4 +1,5 @@
-objRean.forceReturn=1;
+if (instance_exists(objRean))
+    objRean.forceReturn=1;
 
 eightstage+=1;
 if (eightstage>=8)
