@@ -1,4 +1,5 @@
-soundstop(global.sndDarkO);
+if (variable_global_exists("sndDarkO") && SS_IsHandleValid(global.sndDarkO))
+    soundstop(global.sndDarkO);
 
 if(file_exists("dat.dat"))
     {

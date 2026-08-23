@@ -1,5 +1,6 @@
 // Keep the menu ambience from leaking into the intro.
-soundstop(global.sndDarkO);
+if (variable_global_exists("sndDarkO") && SS_IsHandleValid(global.sndDarkO))
+    soundstop(global.sndDarkO);
 
 xx=-640;
 yy=1280;
