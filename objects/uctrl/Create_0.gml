@@ -3,6 +3,11 @@ d3d_set_fog(false,c_black,0,0);
 // Render the Ultimate background before all scene objects and clear any
 // stale room texture left by the story transition.
 depth=10000;
+var hud_counter = instance_find(objRingCounter, 0);
+if (!instance_exists(hud_counter))
+    hud_counter = instance_create(0, 0, objRingCounter);
+hud_counter.showRings = 1;
+
 action_create_object(ubgline, 0, 256);
 action_create_object(ufore, 0, 0);
 action_create_object(objRean, 96, 64);
