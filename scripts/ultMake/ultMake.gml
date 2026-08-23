@@ -1,5 +1,6 @@
 function ultMake(argument0) {
-	if (argument0==0)
+	// ultMake is also called without an argument for a single segment.
+	if (argument_count < 1 || argument0==0)
 	    argument0=1;
 
 	xp=xp/argument0;
