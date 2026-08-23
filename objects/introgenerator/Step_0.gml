@@ -511,7 +511,7 @@ if (bike.correction==1 && bike.able==0 && cos(degtorad(bike.dir))>0 && global.ti
             bike.hspeed -= i.hspeed;
             bike.vspeed -= i.vspeed;
     
-            // Intro contains only music and voice-over.
+            soundplay(global.sndJump);
             }
         else
             global.time=0.5;
