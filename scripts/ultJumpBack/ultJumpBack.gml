@@ -10,7 +10,7 @@ function ultJumpBack() {
 	ultMake(2);
 	xp=64;
 	sk=64;
-	ultMake();
+	ultMake(1);
 	xp=64;
 	sk=32;
 	ultMake(2);
