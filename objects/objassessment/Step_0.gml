@@ -1,6 +1,7 @@
 action_set_relative(1);
 if (timer==0||timer==10||timer==20)
-    {visible=1;
+    {soundplay(global.sndBeep);
+    visible=1;
     alarm[0]=4;}
     
 if (timer==45)
