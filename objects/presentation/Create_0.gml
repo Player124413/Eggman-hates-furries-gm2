@@ -1,3 +1,5 @@
+soundstop(global.sndDarkO);
+
 if(file_exists("dat.dat"))
     {
     load();

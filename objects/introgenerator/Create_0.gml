@@ -1,3 +1,6 @@
+// Keep the menu ambience from leaking into the intro.
+soundstop(global.sndDarkO);
+
 xx=-640;
 yy=1280;
 
