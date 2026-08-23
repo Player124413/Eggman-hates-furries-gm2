@@ -8,8 +8,12 @@ bottom=top-(top-(__view_get( e__VW.YView, 0 )+240))/1.5;
 left=__view_get( e__VW.XView, 0 )-(__view_get( e__VW.XView, 0 )*(1-1/1.5) mod 960)-960*(__view_get( e__VW.XView, 0 )<0);
 draw_set_blend_mode(bm_normal);
 draw_set_alpha(1);
-draw_sprite(bgOverWater,0,left,bottom-286);
-draw_sprite(bgOverWater,0,left+960,bottom-286);
+// Reset state before drawing the transparent mountain texture.
+draw_set_blend_mode(bm_normal);
+draw_set_color(c_white);
+draw_set_alpha(1);
+draw_sprite_ext(bgOverWater,0,left,bottom-286,1,1,0,c_white,1);
+draw_sprite_ext(bgOverWater,0,left+960,bottom-286,1,1,0,c_white,1);
 
 gpu_set_texrepeat(1);
 draw_set_color(c_white);    
