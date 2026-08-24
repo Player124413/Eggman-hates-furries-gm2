@@ -1,5 +1,13 @@
 action_set_relative(1);
 
+// Robot can receive one more Step during a room/death cleanup after Sonic
+// has already been removed.
+if (!instance_exists(sonic))
+{
+    instance_destroy();
+    exit;
+}
+
 soundvolume(global.sndRobot,1-min(1,power(point_distance(x,y,sonic.x,sonic.y)/512,4)));
 
 if(gnd==2)
