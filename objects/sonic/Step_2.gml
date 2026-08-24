@@ -1,4 +1,6 @@
 action_set_relative(1);
+if (global.cheatInfiniteRings)
+    global.rings=999;
 if (cheatImmortal)
 {
     damaged=0;
