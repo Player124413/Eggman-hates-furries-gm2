@@ -9,7 +9,7 @@ __b__ = action_if(phase==1);
 if __b__
 {
 
-if (point_distance(sonic.x,sonic.y,x,y+26)<14+18*global.time)
+if (instance_exists(sonic) && point_distance(sonic.x,sonic.y,x,y+26)<14+18*global.time)
     {
     timer=0;
     soundplay(global.sndLand1);
@@ -87,7 +87,7 @@ if (timer>10 && abs(vspeed)<0.2 && phase==3)
 if (phase==4)
     {sonic_log();}
     
-if (vspeed<-1.5 && phase==4)
+if (vspeed<-1.5 && phase==4 && instance_exists(sonic))
     {
     sonic.able=1;
     soundstop(global.sndTailsFly);
