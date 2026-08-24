@@ -347,6 +347,10 @@ if __b__
 {
 phase=9;
 i=instance_create(x+128,y-256,objtails3);
+i.visible=true;
+i.sprite_index=stailfly;
+i.image_alpha=1;
+i.depth=-10;
 i.goaly=y+512-112;
 }
 __b__ = action_if(phase==9);
