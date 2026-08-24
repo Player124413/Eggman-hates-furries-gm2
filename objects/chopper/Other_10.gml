@@ -63,7 +63,9 @@ if (life<=0)
     
     soundstop(global.handle);
     SS_FreeSound(global.handle);
-    supergenerator.phase=7;
+    // Phase 7 has no handler in supergenerator; phase 8 is the next
+// post-Chopper section and creates the Tails escape sequence.
+supergenerator.phase=8;
     global.time=0.1;
     }
 

@@ -10,10 +10,6 @@ if (keyboard_check_pressed(vk_f2))
     cheatHighJump=!cheatHighJump;
     global.cheatHighJump=cheatHighJump;
 }
-if (keyboard_check_pressed(vk_f3))
-    global.cheatInfiniteRings=!global.cheatInfiniteRings;
-if (global.cheatInfiniteRings)
-    global.rings=999;
 jump = cheatHighJump ? 32 : 9;
 if (cheatImmortal)
 {

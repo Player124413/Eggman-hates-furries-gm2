@@ -1,10 +1,3 @@
-if (!variable_global_exists("cheatInfiniteRings"))
-    global.cheatInfiniteRings=false;
-if (keyboard_check_pressed(vk_f3))
-    global.cheatInfiniteRings=!global.cheatInfiniteRings;
-if (global.cheatInfiniteRings && instance_exists(objUltima))
-    objUltima.myRings=999;
-
 var __b__;
 __b__ = action_if(physics);
 if __b__

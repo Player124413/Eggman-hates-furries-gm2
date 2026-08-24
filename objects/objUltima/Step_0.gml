@@ -15,9 +15,6 @@ action_set_relative(1);
 maxSize += global.time;
 action_set_relative(0);
 }
-if (variable_global_exists("cheatInfiniteRings") && global.cheatInfiniteRings)
-    myRings=999;
-
 if(myRings>1)
     myRings-=global.time/30;
 else
